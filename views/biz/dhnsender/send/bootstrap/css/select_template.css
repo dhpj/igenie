@@ -1,0 +1,35 @@
+
+/* 메세지발송 */
+/* 알림톡버튼 변경하기 모달창 */
+.temp_type_wrap{position: absolute; top:55px; left:50%; transform: translateX(-11%); width:fit-content; display: inline-block; text-align: left;}
+.temp_type_wrap span{ display: inline-block; float:left; cursor: pointer; font-size:15px; margin-right:10px; border-radius:30px; border:solid 1px #7341c0; padding:0px 0 1px;
+}
+.temp_type_wrap span label{display: block; padding:5px 25px;}
+.temp_type_wrap span:hover,
+.temp_type_wrap span.type_on,
+.temp_type_wrap span:has(input[checked]){background-image: linear-gradient(to right, #bc67d4 0%, #2a1bad 100%); color:#fff;}
+
+.temp_type_wrap span input,
+.temp_type_wrap span label{cursor: pointer;}
+.temp_type_wrap span input{display: none;}
+
+.modal-content .al_talk_list {height:551px;}
+.modal-content .al_talk_list .al_talk_cate[style*="none"] + .list{height:551px;}
+
+.sel_tem_wrap .modal-content .al_talk_list .list{height:495px;}
+.sel_tem_img_wrap .modal-content .al_talk_list .list{height:410px;}
+
+.li_templet_list span.xi-star,
+.li_templet_list span.xi-star-o{
+    position: absolute;
+    top:-9px;
+    right:-7px;
+}
+.li_templet_list span.xi-star:before,
+.li_templet_list span.xi-star-o:before{
+    font-size:32px;
+    background: linear-gradient(0deg,#be68d5,#281aac);
+    color: transparent;
+    -webkit-background-clip: text;
+    cursor: pointer;
+}

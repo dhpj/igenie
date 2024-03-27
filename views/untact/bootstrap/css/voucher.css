@@ -1,0 +1,603 @@
+@charset "utf-8";
+
+/*바우처*/
+.voucher_wrap {width: 100%; overflow-x:hidden;}
+.voucher_visual{
+    width: 100%;
+    /* height:733px;  */
+    height:680px;
+    overflow: hidden;
+    position:relative;
+    display: inline-block;
+    background: url(/images/untact/untact_mbg.jpg) no-repeat bottom center;
+}
+
+.voucher_wrap .voucher_top{width:100%; position: absolute; top:0; left:0; right:0; display: inline-block; }
+.voucher_wrap .voucher_logo{margin:50px 0 0 50px; width:200px; height:200px; float:left; text-align:left;}
+.voucher_wrap .voucher_btn{margin:65px 50px 0 0; width:200px; float:right; text-align: right;}
+.voucher_wrap .voucher_btn a{color:#fff; padding:10px 20px; border:solid 1px #fff; font-size:15px; }
+.voucher_wrap .voucher_btn a:hover{background-color: #fff; color:#000;}
+
+.voucher_slogan{width:1100px; text-align: left; margin:0 auto; letter-spacing: -0.05em; position: relative;}
+.voucher_slogan .tst1{
+    color:#fff; font-family: 'Gmarket Sans Light'; font-weight: 300; letter-spacing: -0.05em; font-size:44px; line-height:120%;
+    /* margin-top:270px; */
+    margin-top:170px;
+}
+.voucher_slogan .tst1 span{font-family: 'Gmarket Sans'; color:#feeb14; font-weight: 700;}
+.voucher_slogan .tst2{color:#fff; font-family: 'Noto Sans KR'; font-size:16px; opacity: 0.5; margin-top:10px;}
+.voucher_slogan .tst3{margin-top:30px; display:flex;}
+.voucher_slogan .tst3 a{background-color: #292929; font-size:28px; padding:15px 60px; border-radius: 5px; color:#fff; font-family: 'Noto Sans KR'; margin-top:-5px;}
+.voucher_slogan .img_ing {position:absolute; top:-95px; left:-90px; z-index:2}
+
+.voucher_mbox1{width: 100%; background-color:#fff;}
+.voucher_mbox1 .content{width:1200px; margin: 0 auto; padding:0 20px 30px; text-align: center;}
+.voucher_mbox1 .b_tit1{font-size:35px; padding-top: 120px;}
+.voucher_mbox1 .b_tit2{font-size:18px; opacity: 0.5;}
+/* .voucher_mbox1 ul{width:950px; margin: 30px auto;}
+.voucher_mbox1 ul li{float:left; width:231px; height: 230px; margin: 24px 40px; padding-top:140px;}
+.voucher_mbox1 ul li:nth-of-type(1){background: url(/images/untact/untact_box_icon1.jpg) no-repeat 0 0;}
+.voucher_mbox1 ul li:nth-of-type(2){background: url(/images/untact/untact_box_icon2.jpg) no-repeat 0 0;}
+.voucher_mbox1 ul li:nth-of-type(3){background: url(/images/untact/untact_box_icon3.jpg) no-repeat 0 0;} */
+
+/* 마트 정육점 2개일때 */
+/* .voucher_mbox1 ul.mbox_type_02{width:100%; margin-top:50px; padding:20px 20px; display:flex; justify-content; background-color:#f0f5ff; border-radius: 10px;}
+.voucher_mbox1 ul.mbox_type_02 li{float:left; min-height:230px; margin:0px; padding:5px 5px 15px;}
+.voucher_mbox1 ul.mbox_type_02 li p{float:left;}
+.voucher_mbox1 ul.mbox_type_02 li p img{width:300px; border:1px solid #eee;  border-radius:5px;}
+.voucher_mbox1 ul.mbox_type_02 li dl{float: left; width:430px; margin:30px 0 0 15px; height: auto; padding:20px 20px 25px; background-color: #fff; letter-spacing: 0.3px; border-radius: 40px; box-shadow: 0px 0px 5px 1px rgb(130 130 130 / 20%);}
+.voucher_mbox1 ul.mbox_type_02 li dt{margin:-17px 0 20px;}
+.voucher_mbox1 ul.mbox_type_02 li dt span{padding:5px 50px; background-color:#a9d44f; font-size:18px; font-weight:400; color:#fff; border-radius:  0 0 20px 20px; text-shadow:0 0 1px 1px #333; text-shadow: 0 0 5px #66666699;}
+.voucher_mbox1 ul.mbox_type_02 li dd{text-align:left; line-height:1.6; font-size:16px; color: #333; letter-spacing:0px;}
+
+.voucher_mbox1 ul.mbox_type_02 li .clippy_wrap{filter: drop-shadow(0px 6px 5px rgb(130 130 130 / 10%));}
+.voucher_mbox1 ul.mbox_type_02 li .clippy_wrap p.clippy {width: 40px; height: 40px; margin-left: 50px; margin-top:-5px; clip-path: polygon(100% 0, 20% 0, 0 100%); background: #fff;}
+
+.voucher_mbox1 ul.mbox_type_02 li:last-child {margin-left:-390px;}
+.voucher_mbox1 ul.mbox_type_02 li:last-child p {float:right; margin-left:15px;}
+.voucher_mbox1 ul.mbox_type_02 li:last-child dl {margin:450px 0 0 0;}
+.voucher_mbox1 ul.mbox_type_02 li:last-child dl dt span{background-color:#fea4a3;}
+.voucher_mbox1 ul.mbox_type_02 li:last-child .clippy_wrap{}
+.voucher_mbox1 ul.mbox_type_02 li:last-child .clippy_wrap p.clippy {margin-right: 30px; clip-path: polygon(80% 0, 0 0, 100% 100%); background: #fff;} */
+
+
+.voucher_mbox2{width: 100%; padding-bottom:50px; border-bottom:80px solid #f0f5ff;}
+.voucher_mbox2 .content{width:1200px; padding:0 20px; text-align: center;}
+.voucher_mbox2 .b_tit1{font-size:35px; padding-top: 80px;}
+.voucher_mbox2 .b_tit2{font-size:18px; opacity: 0.5;}
+
+.voucher_mbox2 .b_tit3{font-size:30px; padding-top:30px;}
+.voucher_mbox2 .b_tit3 p{display: inline-block; border-radius:100px; width:180px; height:180px; margin:5px; padding:55px 0 0 17px; background: #8264ff;}
+.voucher_mbox2 .b_tit3 p img{width:75%;}
+.voucher_mbox2 .b_tit3 span{position:sticky; margin-left:15px;}
+.voucher_mbox2 ul.use_genie{width:100%; margin:30px auto 0;   display: inline-block; }
+.voucher_mbox2 ul.use_genie li{margin:30px 0;  display: inline-block; }
+.voucher_mbox2 ul.use_genie li img{border-radius:20px;}
+/* .voucher_mbox2 ul.untact_icon{width:1062px; margin:15px auto;}
+.voucher_mbox2 ul.untact_icon li{float:left; display: inline-block; border-radius: 100px; width:153px; height:153px; margin:12px; padding-top:140px;}
+.voucher_mbox2 ul.untact_icon li:nth-of-type(1){background:#fff url(/images/untact/untact_icon1.jpg) no-repeat 50px 40px; padding-top:100px;}
+.voucher_mbox2 ul.untact_icon li:nth-of-type(2){background:#fff url(/images/untact/untact_icon2.jpg) no-repeat 50px 40px; padding-top:100px;}
+.voucher_mbox2 ul.untact_icon li:nth-of-type(3){background:#fff url(/images/untact/untact_icon3.jpg) no-repeat 50px 40px; padding-top:100px;}
+.voucher_mbox2 ul.untact_icon li:nth-of-type(4){background:#fff url(/images/untact/untact_icon4.jpg) no-repeat 50px 40px; padding-top:100px;}
+.voucher_mbox2 ul.untact_icon li:nth-of-type(5){background:#fff url(/images/untact/untact_icon5.jpg) no-repeat 50px 40px; padding-top:100px;}
+.voucher_mbox2 ul.untact_icon li:nth-of-type(6){background:#fff url(/images/untact/untact_icon6.jpg) no-repeat 50px 40px; padding-top:100px;}
+.voucher_mbox2 ul.untact_icon li:nth-of-type(7){background:#fff url(/images/untact/untact_icon7.jpg) no-repeat 50px 40px; padding-top:100px;}
+.voucher_mbox2 ul.untact_icon li:nth-of-type(8){background:#fff url(/images/untact/untact_icon8.jpg) no-repeat 50px 40px; padding-top:100px;}
+.voucher_mbox2 ul.untact_icon li:nth-of-type(9){background:#fff url(/images/untact/untact_icon9.jpg) no-repeat 50px 40px; padding-top:100px;}
+.voucher_mbox2 ul.untact_icon li:nth-of-type(10){background:#fff url(/images/untact/untact_icon10.jpg) no-repeat 50px 40px; padding-top:100px;}
+.voucher_mbox2 ul.untact_icon li:nth-of-type(11){background:#fff url(/images/untact/untact_icon11.jpg) no-repeat 50px 40px; padding-top:100px;}
+.voucher_mbox2 ul.untact_icon li:nth-of-type(12){background:#fff url(/images/untact/untact_icon12.jpg) no-repeat 50px 40px; padding-top:100px;} */
+
+.voucher_mbox3{width: 100%; padding-bottom:120px; background-color:#fff;}
+.voucher_mbox3 .content{width:1200px; padding:0 20px; text-align: center;  position:relative;}
+.voucher_mbox3 .b_tit1{font-size:35px; padding-top:100px; line-height:140%;}
+.voucher_mbox3 .b_tit1 span{position:sticky; font-weight:bold;}
+/* .voucher_mbox3 .b_tit1 span:before{content: ''; position:absolute;top:50%; left:50%; width:102%; height:45%; background:rgba(255, 235, 20, .2); transform:translate(-50%,10%); display:inline-block;  z-index: -1;} */
+.voucher_mbox3 img{margin-top:30px;}
+.voucher_mbox3 table{width:960px; margin:50px auto 15px; line-height:22px; font-size:18px; border-collapse:collapse; border:1px solid #eee;}
+.voucher_mbox3 table th{height:60px; font-weight:normal; background-color:#f5f5f5; border:1px solid #ddd;}
+.voucher_mbox3 table td{height:70px; font-size:22px; font-weight:bold; color:#222; border:1px solid #ddd;}
+.voucher_mbox3 table th span{line-height:20px; margin-left:8px; padding:3px 8px 5px; border-radius:5px; font-size:20px; color:#fff; font-style:normal; letter-spacing:0px; display:inline-block;}
+.voucher_mbox3 table th.c1 span{background-color:#5014d6;}
+.voucher_mbox3 table th.c2 span{background-color:#da281c;}
+.voucher_mbox3 table td.c1{color:#5014d6;}
+.voucher_mbox3 table td.c2{color:#da281c;}
+.voucher_mbox3 .untact_price_notice{font-size:16px; color:#999;}
+.voucher_mbox3 .notice_txt_02{position: absolute; top:55px; right:200px;}
+
+.voucher_mbox4{width: 100%; height:700px; background-color:#8264ff; color:#fff;}
+.voucher_mbox4 .content{width:1200px; padding:0 20px; text-align: center;}
+.voucher_mbox4 .b_tit1{font-size:35px; padding-top: 100px; line-height:110%;}
+.voucher_mbox4 .voucher_info{width:770px; background-color: #fff; padding:50px 50px 20px 50px; margin-top:50px; display: inline-block; border-radius: 5px;}
+.voucher_mbox4 .voucher_info dl{width:100%; display: inline-block; margin-bottom:20px;}
+.voucher_mbox4 .voucher_info dl dt{width:60px; float:left; font-size:17px; color:#5014d6; border-top:solid 1px #5014d6;}
+.voucher_mbox4 .voucher_info dl dd{width:calc(100% - 80px); float:left; margin-left:20px; color:#404040; letter-spacing:-0.5px;}
+.voucher_mbox4 .voucher_info dl dd p:nth-of-type(1){font-size:18px; text-align: left; line-height:1.7;}
+.voucher_mbox4 .voucher_info dl dd p:nth-of-type(2){font-size:13px; opacity: 0.5; text-align: left; margin-top:2px;}
+.voucher_mbox4 .voucher_info dl dd p em{font-weight:bold; color:#5014d6;}
+
+.voucher_mbox4 ul.apply_date li{width:100%; text-align: left; font-size: 18px; display: flex;}
+.voucher_mbox4 ul.apply_date li span.tag_br{margin-left:3px;}
+.voucher_mbox4 ul.apply_date li em{margin-left:3px; font-size: 0.9em; color:#da281c;}
+.voucher_mbox4 .grant_info dl dd p.apply_date_txt {font-size:13px; opacity: 0.5; text-align: left; margin-top:2px;}
+
+.voucher_mbox5{width: 100%; padding-bottom:80px; background-color:#f5f5f5;}
+.voucher_mbox5 .content{width:1200px; padding:0 20px; text-align: center;}
+.voucher_mbox5 .b_tit1{width:770px; margin:0 auto; font-size:35px; padding-top:120px; line-height:110%; border-bottom:1px solid #ccc; text-align:left;}
+.voucher_mbox5 p{text-align: center; width: 100%; padding:20px 0;}
+.voucher_mbox5 .voucher_form{width:770px; background-color: #fff; padding:50px 50px 30px 50px; margin-top:30px; display: inline-block; border-radius: 5px;}
+.voucher_mbox5 .voucher_form ul{}
+.voucher_mbox5 .voucher_form ul li{width:50%; margin-bottom:20px; float:left; text-align: left;}
+.voucher_mbox5 .voucher_form ul li:last-child{width:100%;}
+.voucher_mbox5 .voucher_form ul li span{width:70px; float:left; display:inline-block; font-size:14px;}
+.voucher_mbox5 .voucher_form ul li input{width:calc(90% - 80px); float:left; margin-left:10px;}
+.voucher_mbox5 .voucher_form ul li select{width:calc(90% - 80px); float:left; margin-left:10px;}
+.voucher_mbox5 .voucher_form ul li:last-child textarea{margin-top:5px;}
+.voucher_mbox5 .voucher_form p{padding:5px 0;}
+
+/* 2023 바우처 */
+.nicedocu .main_box1_r{padding:130px 0 0 77px;}
+.nicedocu .tst3{margin:20px 0 0 0; text-align:left; line-height:30px;}
+.nicedocu .tst3 i{width:30px; height:30px; border-radius:30px; margin:0 5px 3px 0; line-height:28px; font-size:14px; color:#fff; font-style:normal; display:inline-block;  text-align:center; background-color:#01cc9b;}
+.nicedocu .tst3 i:first-child{background-color:#7de314;}
+.nicedocu .tst3 i{}
+.nicedocu .tst3 i:last-child{background-color:#5059ab;}
+.nicedocu .btn_nicedocu{margin:10px 170px 0 0; padding:5px 10px; font-size:14px; color:; background-color:#; border:1px solid #ddd; border-radius:3px; display:inline-block;}
+.nicedocu .btn_nicedocu2{width:32px; height:28px; border-radius:3px; margin-left:3px; padding:5px 2px 5px 5px; font-size:16px; color:#aaa; background-color:#eee; display:inline-block;}
+.nicedocu .btn_nicedocu2:hover{color:#fff; background-color:#ccc;}
+
+/* 스마트상점/ 비대면바우처 신청하기 */
+.grant_wrap {width: 100%; position:relative; min-width: 1200px; overflow-x: hidden;}
+.grant_wrap em{font-style:normal;}
+.grant_wrap .btn_apply{position:fixed; bottom:100px; right:150px;}
+.grant_wrap .btn_apply a{background-color: #111; color: #fff; margin-top: 20px; padding: 30px 15px; border-radius: 50%; font-size: 18px;  display: inline-block; opacity: 0.6; cursor: pointer;}
+.voucher_wrap .btn_apply a{background-color: #5014d6;}
+.smartMall_wrap .btn_apply a{background-color: #8e28ba;}
+.grant_wrap .smartMall_form ul li:last-child{width:100%;}
+.grant_wrap .halfLine{position:sticky;}
+.grant_wrap .halfLine:before{content: ''; position: absolute;	top: 50%; left: 50%;transform: translate(-50%,10%); display: inline-block; width: 102%; height: 45%; z-index: -1;}
+.voucher_wrap .halfLine:before{background: rgba(152, 83, 229, .2);}
+.smartMall_wrap .halfLine:before{background: rgba(99, 83, 229, .2);}
+.grant_wrap .grant_top{width:100%; position: absolute; top:0; left:0; right:0; display:flex; justify-content: space-between; z-index: 1;}
+.grant_wrap .grant_logo{margin:40px 0 0 45px; width:180px; height:200px; float:left; text-align:left;}
+.grant_wrap .grant_btn{margin:50px 45px 0 0; width:125px; float:right; text-align: right;}
+.grant_wrap .grant_btn a{color:#fff; padding:10px 20px; border:solid 1px #fff; font-size:15px; }
+.grant_wrap .grant_btn a:hover{background-color: #fff; color:#000;}
+
+.grant_wrap .grant_top .grant_tap{
+    float: left;
+    width: 780px;
+    margin: 25px auto;
+    text-align: center;
+    font-size:28px;
+    position: relative;
+}
+.grant_wrap .grant_top .grant_tap p{
+    line-height:0.9;
+    font-family: 'Gmarket Sans Light';
+    font-weight:600;
+    color:rgba(255, 255, 255, 0.5);
+    display: inline-block;
+    cursor: pointer;
+}
+.grant_wrap .grant_top .grant_tap p:hover,
+.grant_wrap .grant_top .grant_tap p.on{color:rgba(255, 255, 255, 1);}
+.grant_wrap .grant_top .grant_tap p span{
+    font-size:18px;
+    opacity: 0.6;
+    letter-spacing: 0.1px;
+}
+.grant_wrap .grant_top .grant_tap .tab01{
+    padding:15px 130px 12px 100px;
+    background-color:#8e28ba44;
+    clip-path: polygon(0 0, 100% 0%, 85% 100%, 0 100%);
+    border-radius:15px 0 0 15px;
+}
+.grant_wrap .grant_top .grant_tap .tab02{
+    margin-left:-60px;
+    padding:15px 100px 12px 130px;
+    background-color:#5014d644;
+    clip-path: polygon(15% 0, 100% 0%, 100% 100%, 0 100%);
+    border-radius:0 15px 15px 0;
+}
+.grant_wrap .grant_top .grant_tap .tab01.on{background-color:#5014d6;}
+.grant_wrap .grant_top .grant_tap .tab02.on{background-color:#8e28ba;}
+.grant_wrap .grant_top .grant_tap .tab_icon_01,
+.grant_wrap .grant_top .grant_tap .tab_icon_02{position:absolute; top:20px; left:378px;}
+.grant_wrap .grant_top .grant_tap .tab_notice_01,
+.grant_wrap .grant_top .grant_tap .tab_notice_02{position:absolute; top:62px; left:234px;}
+
+
+.smartMall_wrap{}
+.smartMall_visual{width: 100%; height:733px; overflow: hidden; position:relative; display: inline-block; background: url(/images/untact/untact_mbg2.jpg) no-repeat top center;}
+
+.smartMall_slogan{position:relative; width:1100px; text-align: left; margin:0 auto; letter-spacing: -0.05em;}
+.smartMall_slogan .tst1{color:#fff; font-family: 'Gmarket Sans Light'; font-weight: 300; letter-spacing: -0.05em; font-size:44px; line-height:120%;  margin-top:250px;}
+.smartMall_slogan .tst1 span{font-family: 'Gmarket Sans'; color:#feeb14; font-weight: 700;}
+.smartMall_slogan .tst2{color:#fff; font-family: 'Noto Sans KR'; font-size:16px; opacity: 0.5; margin-top:10px;}
+.smartMall_slogan .tst3{margin-top:30px; display:flex;}
+.smartMall_slogan .tst3 a{background-color: #292929; font-size:28px; padding:15px 60px; border-radius: 5px; color:#fff; font-family: 'Noto Sans KR'; margin-top:-5px;}
+.smartMall_slogan .tst4{position:absolute; top:262px; left:235px; font-size:24px; font-weight:500; color:#feeb14;}
+.smartMall_slogan .tst5{position:absolute; top:168px; left:498px; z-index:2}
+/* .smartMall_slogan .tst4{position:absolute; top:265px; left:235px; font-size:24px; font-weight:500; color:#feeb14;}
+.smartMall_slogan .tst5{position:absolute; top:173px; left:455px; z-index:2} */
+
+.smartMall_slogan .tst5 img{width:70%;}
+/* .smartMall_slogan .tst6{position:absolute; top:340px; left:235px; font-size:20px; font-weight:500; color:#feeb14;} */
+
+.smartMall_slogan #demo{position: absolute; top:302px; left:235px; font-size:16px; color:#333; width:; text-align:left; font-family: 'Spoqa Han Sans'; background-color: #8e28ba88; padding:5px 10px; border-radius:5px;}
+.smartMall_slogan #demo span{font-size:23px; margin:0 3px 0 5px; background-color: #222222ee; color:#fff; padding:0 6px; border-radius:3px;}
+
+.smartMall_mbox1{width: 100%; background-color:#f5f5f5;}
+.smartMall_mbox1 .content{width:1200px; margin: 0 auto; padding:0 20px 30px; text-align: center;}
+.smartMall_mbox1 .b_tit1{font-size:35px; padding-top: 100px;}
+.smartMall_mbox1 .b_tit2{font-size:20px; padding-top: 5px; color:#777;}
+.smartMall_mbox1 .b_tit2 span{color:#555;}
+.smartMall_mbox1 ul{margin:30px auto; display: inline-block;}
+/* .smartMall_mbox1 ul.mbox_type_01{width:1120px;}
+.smartMall_mbox1 ul.mbox_type_01 li{float:left; width:230px; height: 230px; margin: 25px; padding-top:140px;}
+.smartMall_mbox1 ul.mbox_type_01 li:nth-of-type(1){background: url(/images/untact/untact_box_icon4.jpg) no-repeat 0 0;}
+.smartMall_mbox1 ul.mbox_type_01 li:nth-of-type(2){background: url(/images/untact/untact_box_icon1.jpg) no-repeat 0 0;}
+.smartMall_mbox1 ul.mbox_type_01 li:nth-of-type(3){background: url(/images/untact/untact_box_icon2.jpg) no-repeat 0 0;}
+.smartMall_mbox1 ul.mbox_type_01 li:nth-of-type(4){background: url(/images/untact/untact_box_icon3.jpg) no-repeat 0 0;} */
+
+/* .smartMall_mbox1 ul.mbox_type_02 li dl{float:left; width:180px; height: auto; padding:12px 10px 30px 30px; background-color:#f2f2f2; letter-spacing:0.3px; clip-path:polygon(12% 0, 100% 0%, 100% 100%, 12% 100%, 12% 12%, 1% 5%, 12% 5%); border-radius:20px;}
+.smartMall_mbox1 ul.mbox_type_02 li dt{font-size:22px; font-weight: 600; margin-bottom: 10px;}
+.smartMall_mbox1 ul.mbox_type_02 li dt span::before{padding:0 8px; opacity:0.5;}
+.smartMall_mbox1 ul.mbox_type_02 li dd{text-align:left; font-size:16px; color: #333;} */
+
+.smartMall_mbox2{width: 100%; background-color:#fff; border-bottom: 80px solid #f9f0ff; padding-bottom:100px; display: inline-block;}
+.smartMall_mbox2 .content{width:1200px; padding:0 20px; text-align: center;}
+.smartMall_mbox2 .b_tit1{clear: both; font-size:35px; padding-top:80px;}
+.smartMall_mbox2 .b_tit2{font-size:18px; padding-top: 15px; opacity: 0.5;}
+.smartMall_mbox2 .b_tit3{font-size:30px; padding-top:30px;}
+.smartMall_mbox2 .b_tit3 p{width:380px; float:left; display:inline-block; border-radius:30px; margin:5px 20px 30px 200px; padding:12px; background:#8264ff88;}
+.smartMall_mbox2 .b_tit3 p img{width:100%;}
+.smartMall_mbox2 .b_tit3 span{position:sticky; margin:0 15px; color:#392689}
+.smartMall_mbox2 .b_tit3 span:before{content: ''; position: absolute;	top: 50%; left: 50%;transform: translate(-50%,10%); display: inline-block; width: 105%; height: 45%; background:#8264ff88; z-index: -1;}
+.smartMall_mbox2 .b_tit4{padding-top:5px; font-size:20px; opacity: 0.9;}
+
+.smartMall_mbox2 ul.untact_text{float:left; width:400px; margin-top:30px;}
+.smartMall_mbox2 ul.untact_text li{float:left; width:100%; line-height:55px; font-size:22px; text-align: left;}
+.smartMall_mbox2 ul.untact_icon{clear:both; width:1160px; margin:15px auto;}
+.smartMall_mbox2 ul.untact_icon li{float:left; display: inline-block; border-radius: 100px; width:140px; height:140px; margin:12px; padding-top:140px;}
+/* .smartMall_mbox2 ul.untact_icon li:nth-of-type(1){background:#fff url(/images/untact/untact_icon1.jpg) no-repeat 45px 32px; padding-top:90px;}
+.smartMall_mbox2 ul.untact_icon li:nth-of-type(2){background:#fff url(/images/untact/untact_icon2.jpg) no-repeat 45px 32px; padding-top:90px;}
+.smartMall_mbox2 ul.untact_icon li:nth-of-type(3){background:#fff url(/images/untact/untact_icon3.jpg) no-repeat 45px 32px; padding-top:90px;}
+.smartMall_mbox2 ul.untact_icon li:nth-of-type(4){background:#fff url(/images/untact/untact_icon4.jpg) no-repeat 45px 32px; padding-top:90px;}
+.smartMall_mbox2 ul.untact_icon li:nth-of-type(5){background:#fff url(/images/untact/untact_icon5.jpg) no-repeat 45px 32px; padding-top:90px;}
+.smartMall_mbox2 ul.untact_icon li:nth-of-type(6){background:#fff url(/images/untact/untact_icon6.jpg) no-repeat 45px 32px; padding-top:90px;}
+.smartMall_mbox2 ul.untact_icon li:nth-of-type(7){background:#fff url(/images/untact/untact_icon7.jpg) no-repeat 45px 32px; padding-top:90px;}
+.smartMall_mbox2 ul.untact_icon li:nth-of-type(8){background:#fff url(/images/untact/untact_icon8.jpg) no-repeat 45px 32px; padding-top:90px;}
+.smartMall_mbox2 ul.untact_icon li:nth-of-type(9){background:#fff url(/images/untact/untact_icon9.jpg) no-repeat 45px 32px; padding-top:90px;}
+.smartMall_mbox2 ul.untact_icon li:nth-of-type(10){background:#fff url(/images/untact/untact_icon10.jpg) no-repeat 45px 32px; padding-top:90px;}
+.smartMall_mbox2 ul.untact_icon li:nth-of-type(11){background:#fff url(/images/untact/untact_icon11.jpg) no-repeat 45px 32px; padding-top:90px;}
+.smartMall_mbox2 ul.untact_icon li:nth-of-type(12){background:#fff url(/images/untact/untact_icon12.jpg) no-repeat 45px 32px; padding-top:90px;}
+.smartMall_mbox2 ul.untact_icon li:nth-of-type(13){background:#fff url(/images/untact/untact_icon13.jpg) no-repeat 45px 32px; padding-top:90px;} */
+
+.smartMall_mbox3{width: 100%; padding-bottom:80px; background-color:#fff;  display: inline-block;}
+.smartMall_mbox3 .content{width:1200px; padding:0 20px; text-align: center; position:relative;}
+.smartMall_mbox3 .b_tit1{font-size:35px; padding-top:80px; line-height:140%;}
+.smartMall_mbox3 .b_tit1 span{position:sticky; font-weight:bold;}
+.smartMall_mbox3 img{margin-top:30px;}
+.smartMall_mbox3 table{width:960px; margin:30px auto 15px; font-size:16px; border-collapse:collapse; border:1px solid #eee;}
+.smartMall_mbox3 table th{height:60px; font-weight:normal; background-color:#f5f5f5; border:1px solid #ddd;}
+.smartMall_mbox3 table th.c2{ font-size:18px;}
+.smartMall_mbox3 table th.c2 span{line-height:20px; margin-left:3px; padding:3px 8px 5px; border-radius:5px; font-size:20px; color:#fff; font-style:normal; letter-spacing:0px; display:inline-block; background-color:#da281c;}
+.smartMall_mbox3 table th b{font-size:18px;}
+.smartMall_mbox3 table td b{font-size:26px; font-weight:700;}
+.smartMall_mbox3 table td{height:70px; line-height:30px; padding:20px 0; color:#222; border:1px solid #ddd; letter-spacing:-0.5px;}
+.smartMall_mbox3 table td:first-child{font-size:16px; color:#494949; font-weight:normal; background-color:#f5f5f5;}
+.smartMall_mbox3 table tr.c_price em.p1{font-size:22px; font-weight:600; color:#5014d6;}
+.smartMall_mbox3 table tr.c_price em.p2{font-size:22.5px; font-weight:600; color:#da281c;}
+.smartMall_mbox3 table ul.fullCare_text li{float:left; width:35%; line-height:35px; text-align:left; margin-left:40px; padding-left:22px; background:#fff url(/images/untact/untact_check_01.jpg) no-repeat 0 10px; background-size:16px}
+.smartMall_mbox3 .untact_price_notice{font-size:16px; color:#999; letter-spacing:0px;}
+.smartMall_mbox3 figure.img_01{margin:10px 0 30px;}
+.smartMall_mbox3 figure.img_01 img{width:1000px; margin-left:25px;}
+.smartMall_mbox3 .notice_txt_01{position: absolute; top:640px; right:-40px;}
+
+.smartMall_mbox4{width: 100%; height:700px; background-color:#bf46e3; color:#fff;}
+.smartMall_mbox4 .content{width:1200px; padding:0 20px; text-align: center;}
+.smartMall_mbox4 .b_tit1{font-size:35px; padding-top:100px; line-height:110%;}
+.smartMall_mbox4 .smartMall_info{width:770px; background-color: #fff; padding:50px 50px 20px 50px; margin-top:30px; display: inline-block; border-radius: 5px;}
+.smartMall_mbox4 .smartMall_info dl{width:100%; display: inline-block; margin-bottom:20px;}
+.smartMall_mbox4 .smartMall_info dl dt{width:60px; float:left; font-size:17px; color:#8910ad; border-top:solid 1px #8910ad;}
+.smartMall_mbox4 .smartMall_info dl dd{width:calc(100% - 80px); float:left; margin-left:20px; color:#404040;}
+.smartMall_mbox4 .smartMall_info dl dd p:nth-of-type(1){font-size:18px; text-align: left;}
+.smartMall_mbox4 .smartMall_info dl dd p:nth-of-type(2){font-size:13px; opacity: 0.5; text-align: left;}
+.smartMall_mbox4 .smartMall_info dl dd p em{font-weight:bold; color:#8910ad;}
+
+.smartMall_mbox5{width:100%; padding-bottom:60px; background-color:#f5f5f5;}
+.smartMall_mbox5 .content{width:1200px; padding:0 20px; text-align: center;}
+.smartMall_mbox5 .b_tit1{width:770px; margin:0 auto; font-size:35px; padding-top:100px; line-height:110%; border-bottom:1px solid #ccc; text-align:left;}
+.smartMall_mbox5 p{text-align: center; width: 100%; padding:20px 0;}
+.smartMall_mbox5 .smartMall_form{width:770px; background-color: #fff; padding:50px 50px 30px 50px; margin-top:30px; display: inline-block; border-radius: 5px;}
+.smartMall_mbox5 .smartMall_form ul{}
+.smartMall_mbox5 .smartMall_form ul li{width:50%; margin-bottom:20px; float:left; text-align: left;}
+.smartMall_mbox5 .smartMall_form ul li span{width:70px; float:left; display:inline-block; font-size:14px;}
+.smartMall_mbox5 .smartMall_form ul li input{width:calc(90% - 80px); float:left; margin-left:10px;}
+.smartMall_mbox5 .smartMall_form ul li select{width:calc(90% - 80px); float:left; margin-left:10px;}
+.smartMall_mbox5 .smartMall_form ul li:last-child textarea{margin-top:5px;}
+.smartMall_mbox5 .smartMall_form p{padding:5px 0;}
+/* .smartMall_mbox5 .smartMall_form ul li:nth-child(7) span,
+.smartMall_mbox5 .smartMall_form ul li:nth-child(8) span{padding-right:5px; text-align:right;} */
+.smartMall_mbox5 button{background-color:#1e2633; color:#fff; margin-top:20px; padding:10px 30px; border-radius: 30px; font-size:20px;}
+.smartMall_mbox5 button:hover{background-color:#8910ad;}
+.smartMall_mbox5 .content {position:relative;}
+.smartMall_mbox5 .content > button{position:absolute; top:125px; right:75px; background-image: linear-gradient(to right, #bc67d4 0%, #2a1bad 100%); color:#fff; padding:10px 20px; border-radius: 5px; font-size:14px;}
+.smartMall_mbox5 .content > button:hover{background-image:none; background-color:#2a1bad;}
+
+.voucher_mbox5 .voucher_form ul .choice_add,
+.smartMall_mbox5 .smartMall_form ul .choice_add{width:100%;}
+.voucher_mbox5 .voucher_form ul .choice_add div,
+.smartMall_mbox5 .smartMall_form ul .choice_add div{font-size:15px;}
+/* .smartMall_mbox5 .smartMall_form ul .choice_add input{vertical-align: bottom;} */
+.voucher_mbox5 .voucher_form ul .choice_add label,
+.smartMall_mbox5 .smartMall_form ul .choice_add label{margin-right:10px; padding-left:35px;}
+.voucher_mbox5 .voucher_form ul .choice_add input + label:before,
+.smartMall_mbox5 .smartMall_form ul .choice_add input + label:before{
+    content: "";
+    display: inline-block;
+    border: 1px solid #dedede;
+    width: 18px;
+    height: 18px;
+    margin-right: 7px;
+    margin-bottom: -3px;
+    top:2px;
+    left:10px;
+}
+/* .smartMall_mbox5 .smartMall_form ul .choice_add input[type="checkbox"] {
+    content:'✔';
+    background-color:#fff;
+} */
+.voucher_mbox5 .voucher_form ul .choice_add a,
+.smartMall_mbox5 .smartMall_form ul .choice_add a{margin-left:10px; padding:4px 15px; font-size:14px; background-color:#5014d6; color:#fff; border-radius:4px;}
+.voucher_mbox5 .voucher_form ul .choice_add a{background-color:#8910ad;}
+
+/* .voucher_mbox5 .voucher_form ul .choice_add { color:#8e29bb;}
+.voucher_mbox5 .voucher_form ul .choice_add a {background-color:#8e29bb;} */
+
+/* 중점기술 */
+.smartMall_mbox6{width:100%; padding-bottom:100px;}
+.smartMall_mbox6 .content{width:1200px; text-align: center;}
+.smartMall_mbox6 .b_tit1{font-size:35px; padding-top:80px; line-height:110%;}
+.smartMall_mbox6 figure img{width:65%; margin:40px 0 20px; border-radius:20px;}
+
+.grant_notice{width:100%; margin-top:30px; letter-spacing:-0.02em; text-align: center;}
+.grant_notice a{padding:8px 40px; font-size:20px; background-color:#aaa; color:#fff; border-radius:4px;}
+.grant_notice a.btn_recomend{background-color:#2e368b; border-radius:5px; margin-right:10px;}
+.grant_notice a.btn_recomend::after{position:absolute; top:118px; left:360px;}
+.grant_bot{width:100%; letter-spacing:-0.02em; font-family:'Montserrat'; font-weight:600; background-color: #1e2633; padding:33px 0; color:#454a52; text-align: center;}
+
+/* 수요업체 수정// 바우처 스마트상점 공통 */
+ul.mbox_type_02{width:100%; margin-top:60px; padding:0 10px; display: flex; flex-wrap: wrap; justify-content: space-between; background-color:#f5f5f5; border-radius:30px;}
+ul.mbox_type_02 li{float:left; width:380px; min-height:230px; margin:10px 0; padding:5px 5px 15px;}
+ul.mbox_type_02 li p{float:left;}
+ul.mbox_type_02 li p img{width:180px; border-radius:5px;}
+ul.mbox_type_02 li dl{float: left; width: 180px; margin:20px 0 0 10px; height: auto; padding: 20px 15px 20px; background-color: #fff; letter-spacing: 0.3px; border-radius: 40px; box-shadow: 0px 0px 5px 1px rgb(130 130 130 / 20%);}
+ul.mbox_type_02 li dt{margin:-18px 0 15px;}
+ul.mbox_type_02 li dt span{padding:3px 25px; background-color:#fea4a3; font-size:16px; font-weight:400; color:#fff; border-radius:  0 0 15px 15px; text-shadow:0 0 1px 1px #333; text-shadow: 0 0 5px #66666699;}
+ul.mbox_type_02 li dd{text-align:left; line-height:1.6; font-size:15px; color: #333; letter-spacing:0px;}
+
+ul.mbox_type_02 li .clippy_wrap{filter: drop-shadow(0px 6px 5px rgb(130 130 130 / 10%));}
+ul.mbox_type_02 li .clippy_wrap p.clippy {width: 40px; height: 40px; margin-left: 50px; margin-top:-5px; clip-path: polygon(100% 0, 20% 0, 0 80%); background: #fff;}
+ul.mbox_type_02 li:nth-child(2) dt span{background-color:#872b14cc;}
+ul.mbox_type_02 li:nth-child(3) dt span{background-color:#b2b3bc;}
+ul.mbox_type_02 li:nth-child(4) dt span{background-color:#202021;}
+ul.mbox_type_02 li:nth-child(5) dt span{background-color:#1f0084aa;}
+ul.mbox_type_02 li:nth-child(6) dt span{background-color:#2ab2d7aa;}
+
+ul.mbox_type_02 li:nth-child(1) .halfLine:before{background:#fea4a333}
+ul.mbox_type_02 li:nth-child(2) .halfLine:before{background:#872b1422;}
+ul.mbox_type_02 li:nth-child(3) .halfLine:before{background:#b2b3bc55;}
+ul.mbox_type_02 li:nth-child(4) .halfLine:before{background:#20202122;}
+ul.mbox_type_02 li:nth-child(5) .halfLine:before{background:#1f008422;}
+ul.mbox_type_02 li:nth-child(6) .halfLine:before{background:#2ab2d722;}
+
+/* 프로세스// 바우처 스마트상점 공통 */
+.process_wrap{width:100%; padding-bottom:80px; background-color:#fff;  display: inline-block;}
+.process_wrap .content{width:1150px; padding:0; text-align: center; position:relative;}
+.process_wrap .b_tit1{font-size:35px; padding-top: 100px;}
+.process_wrap .b_tit2{font-size:20px; padding-top: 5px; color:#777;}
+.process_wrap .b_tit2 span{color:#555;}
+
+.process_wrap div.process{position: relative; width:1150px; height:525px; margin:15px auto 0; background:url(/images/untact/untact_process_bg2.jpg) no-repeat; font-size:18px; padding-top:90px;}
+.process_wrap div.process p {position: absolute; top:214px; left:64px; width:180px; height:100px;}
+.process_wrap div.process ul{float:left; width:100%; padding-left:231px;}
+.process_wrap div.process ul:first-of-type li:nth-child(2){margin-top:-5px;}
+.process_wrap div.process ul:last-of-type{margin-top:81px;}
+.process_wrap div.process li{float:left; width:144px; height:120px; margin:0 29px; display: flex; align-items: center; justify-content: center; flex-direction: column;}
+.process_wrap div.process li:nth-child(1){cursor: pointer;}
+.process_wrap div.process li:nth-child(4){margin-right:0;}
+.process_wrap div.process li .halfLine{margin-bottom:5px;}
+.process_wrap div.process .notice_txt_03{position: absolute; top:374px; left:346px;}
+.process_wrap div.process .notice_txt_04{position: absolute; top:173px; right:0px;}
+
+
+
+/* 모바일때만 보이는 것 */
+.grant_wrap .tab_notice_05{display:none;}
+
+/* 스마트상점제외 */
+/* .grant_wrap .process_m{display:none;} */
+.grant_wrap .process_m{display:;}
+
+/* 모바일 접속시 */
+@media (max-width:480px) {
+    .grant_wrap {min-width:100%; height:100%; display:block;}
+    .grant_wrap span.tag_br{display:block; margin-left:0;}
+    .grant_wrap span.tag_mL8{margin-left:8px;}
+    /* .grant_wrap .btn_apply{position:fixed; bottom:30px; right:calc(50% - 55px);} */
+    .grant_wrap .grant_top{width:100%; position: absolute; top:0; left:0; right:0; z-index: 1; display:flex; flex-direction: column;}
+    .grant_wrap .grant_logo{margin:15px 0 0 3.5vw; width:100%; height:auto; float:left; text-align:left; position: relative;}
+    .grant_wrap .grant_logo img{width:25%;}
+    .grant_wrap .grant_logo img.tab_notice_05{position:absolute; top:-8px; left:32%; width:50%; display: block;}
+
+
+    .grant_wrap .grant_top .grant_tap{
+        float: left;
+        width: 100%;
+        margin: 15px 0;
+    }
+    .grant_wrap .grant_top .grant_tap p{
+        float: left;
+        line-height:0.9;
+        font-size:1.5rem;
+        border-radius:0 !important;
+    }
+    .grant_wrap .grant_top .grant_tap p:hover,
+    .grant_wrap .grant_top .grant_tap p.on{color:rgba(255, 255, 255, 1);}
+    .grant_wrap .grant_top .grant_tap p span{
+        font-size:70%;
+        opacity: 0.6;
+        letter-spacing: 0.1px;
+    }
+    .grant_wrap .grant_top .grant_tap .tab01{
+        width:55%;
+        padding:1.7vh 3.5vw 1.7vh 0;
+    }
+    .grant_wrap .grant_top .grant_tap .tab02{
+        width:55%;
+        margin-left:-10%;
+        padding:1.7vh 0 1.7vh 3.5vw;
+    }
+    .grant_wrap .grant_top .grant_tap .tab_icon_01,
+    .grant_wrap .grant_top .grant_tap .tab_icon_02{position:absolute; top:17px; left:calc(50% - 13px);}
+    .grant_wrap .grant_top .grant_tap .tab_icon_01 img,
+    .grant_wrap .grant_top .grant_tap .tab_icon_02 img{width:26px;}
+
+    .grant_wrap .grant_visual{height:auto; padding:0 3vw 30px; letter-spacing: -0.05em;  background-image:none; display:block;}
+    .grant_wrap .grant_visual>div{width:100%; text-align: center;}
+    .grant_wrap .voucher_visual{background:#7452fe;}
+    .grant_wrap .smartMall_visual{background:#bf46e3;}
+
+    .grant_wrap .grant_visual .tst1{letter-spacing: -0.05em; font-size:1.8rem; line-height:1.2;}
+    .grant_wrap .grant_visual .tst1 span{}
+    .grant_wrap .grant_visual .tst2{font-size:1.1rem; opacity: 0.5; margin-top:10px;}
+    .grant_wrap .grant_visual .tst3{flex-direction: row-reverse;}
+    .grant_wrap .voucher_visual .tst3{justify-content: center;}
+    .grant_wrap .grant_visual .tst3 a {font-size: 22px; padding: 10px 40px; border-radius:10px 10px 0 10px;}
+    .grant_wrap .grant_visual .img_ing{top:-75px; left:-10px; width:145px;}
+
+    .grant_wrap .voucher_visual .tst1{margin-top:200px;}
+    .grant_wrap .smartMall_visual .tst1{margin-top:160px;}
+    .grant_wrap .smartMall_visual .tst4 {top:187px; left:-10px; right: 170px; font-size: 15px;}
+
+    .grant_wrap .content{width:100%; padding:0;}
+    .grant_wrap .content .b_tit1{width:100%; padding-top:40px; font-size: 22px; line-height: 1.3; margin-bottom:5px;}
+    .grant_wrap .content .grant_info{width:100%; padding:20px 12px; margin-top:20px; border-radius:10px;}
+    .grant_wrap .content .grant_info dl{margin-bottom:0;}
+    .grant_wrap .content .grant_info dt{width:50px; font-size: 14px; text-align: left; border-top:0; border-bottom: solid 1px #5014d6;}
+    .grant_wrap .content .grant_info dl dd {width:calc(100% - 60px); margin-left: 10px; margin-bottom:10px; letter-spacing:-1px;}
+    .grant_wrap .content .grant_info dl dd p:nth-of-type(1) {font-size: 16px; line-height: 1.4;}
+
+    .grant_wrap .process_wrap {padding-bottom: 20px; border-bottom: 40px solid #f0f5ff;}
+    .grant_wrap .b_tit2{font-size:16px;}
+    .grant_wrap .process_wrap .process{display: none;}
+    .grant_wrap .process_wrap .process_m{display: block; margin-top:20px;}
+    .grant_wrap .process_wrap .process_m img{width:100%;}
+
+    .grant_wrap .grant_mbox3 {padding-bottom: 50px;}
+    .grant_wrap .grant_mbox3 .img_01 img{width:98%; margin:20px 0 0;}
+
+    .grant_wrap .untact_price{width:98%; padding:0; font-size:14px; margin-top:20px;}
+    .grant_wrap .untact_price th span {font-size: 15px; margin-left:4px; padding:0px 3px 1px; border-radius: 3px;}
+    .grant_wrap .untact_price span,
+    .grant_wrap .untact_price td{font-size:13px;}
+    .grant_wrap .untact_price td.c1,
+    .grant_wrap .untact_price td.c2{font-size:18px;}
+    .grant_wrap .untact_price_notice {font-size: 11px; letter-spacing:-1px;}
+
+    .grant_wrap .grant_mbox2 .b_tit2{opacity: 0.7;}
+
+    .grant_wrap .voucher_mbox2 {padding-bottom: 20px; border-bottom: 40px solid #f0f5ff;}
+    .grant_wrap .voucher_mbox2 ul.use_genie {margin: 10px auto 0;}
+    .grant_wrap .voucher_mbox2 ul.use_genie li { margin: 10px 0;}
+    .grant_wrap .voucher_mbox2 .b_tit1 b {display: inline-block;}
+    .grant_wrap .voucher_mbox2 .b_tit2 {width:90%; margin:10px auto 0;}
+    .grant_wrap .voucher_mbox2 img {width:100%;}
+
+    .grant_wrap .smartMall_mbox2 {padding-bottom: 50px; border-bottom: 40px solid #f0f5ff;}
+    .grant_wrap .smartMall_mbox2 .b_tit1:first-child{font-size:24px;}
+    .grant_wrap .smartMall_mbox2 .b_tit2 {opacity: 0.7;}
+    .grant_wrap .smartMall_mbox2 .b_tit3 p{display: none;}
+    .grant_wrap .smartMall_mbox2 .b_tit4 {font-size:17px; font-weight: 600;}
+    .grant_wrap .smartMall_mbox2 ul.untact_text {width:84%; margin: 5px 0 10px 7%; padding:15px 20px; background:#f5f5f5; border-radius:15px;}
+    .grant_wrap .smartMall_mbox2 ul.untact_text li{float: left; line-height: 2; font-size: 16px;}
+    .grant_wrap .smartMall_mbox2 ul.untact_text li span{margin-top:-10px; font-size: 20px; opacity:0.7;}
+
+    .grant_wrap .smartMall_mbox3 table.untact_price tr.care_type th{font-size:13px;}
+    .grant_wrap .smartMall_mbox3 table.untact_price tr.care_type th:nth-of-type(1){width:15% !important;}
+    .grant_wrap .smartMall_mbox3 table.untact_price tr.care_type th:nth-of-type(2){width:16% !important;}
+    .grant_wrap .smartMall_mbox3 table.untact_price tr.care_type th:nth-of-type(3){width:22% !important;}
+    .grant_wrap .smartMall_mbox3 table.untact_price tr.care_type th:nth-of-type(4){width:22.5% !important;}
+    .grant_wrap .smartMall_mbox3 table.untact_price tr.care_type th:nth-of-type(5){width:22.5% !important;}
+    .grant_wrap .smartMall_mbox3 table.untact_price th.c2 span{padding:0px 6px 1px; font-size:15px;}
+    .grant_wrap .smartMall_mbox3 table.untact_price td,
+    .grant_wrap .smartMall_mbox3 table.untact_price td:first-child {font-size:12px;}
+    .grant_wrap .smartMall_mbox3 table.untact_price li{width:100%; margin-left:35px;}
+    .grant_wrap .smartMall_mbox3 table.untact_price td b {font-size:20px;}
+    .grant_wrap .smartMall_mbox3 table.untact_price td small {font-size:13px; display: block;}
+    .grant_wrap .smartMall_mbox3 table.untact_price .c2{font-size:12px;}
+    .grant_wrap .smartMall_mbox3 table.untact_price .c2 b,
+    .grant_wrap .smartMall_mbox3 table.untact_price .p1{font-size:13px;}
+    .grant_wrap .smartMall_mbox3 table.untact_price .p2{font-size:14px;}
+    .grant_wrap .smartMall_mbox3 table.untact_price .fullCare_text li{font-size:14px;}
+
+    .grant_wrap .grant_mbox3 .untact_price_notice{font-size:13px;}
+    .grant_wrap .grant_mbox4{height:auto; padding-bottom:15px;}
+    .grant_wrap .grant_mbox4 .b_tit1 b{display: block; font-size: 25px;}
+
+    .grant_wrap .voucher_mbox4 ul.apply_date .tag_br{margin:3px 0 7px; font-size:90%; opacity:0.6;}
+    .grant_wrap .voucher_mbox4 ul.apply_date li{width:100%; text-align: left; font-size: 18px; flex-wrap: wrap;}
+    .grant_wrap .voucher_mbox4 ul.apply_date li em{margin-top: 2px;}
+    .grant_wrap .voucher_mbox4 .grant_info dl dd p.apply_date_txt {font-size:13px; opacity: 0.5; text-align: left; margin-top:2px;}
+
+    .grant_wrap .grant_mbox5 {padding-bottom: 30px;}
+    .grant_wrap .grant_mbox5 {padding-bottom: 30px;}
+    .grant_wrap .grant_mbox5 .b_tit1 {width: 100%; border-bottom: 0; text-align: center;}
+    .grant_wrap .grant_mbox5 .grant_form ul li {width: 100%;}
+    .grant_wrap .grant_mbox5 .grant_form ul li:last-child {margin-bottom:0;}
+    .grant_wrap .grant_mbox5 .grant_form ul li input,
+    .grant_wrap .grant_mbox5 .grant_form ul li select{width: calc(100flex-wrap: wrap;% - 80px);}
+    .grant_wrap .grant_mbox5 .choice_add>div{width: calc(100% - 80px); float: left;}
+    .grant_wrap .grant_mbox5 .choice_add>div label {margin-right: 0px;}
+
+    .grant_wrap .voucher_mbox5 .choice_add>div a {display: inline-block; margin:5px 0 0 132px;}
+    .grant_wrap .smartMall_mbox5 .choice_add>div a {display: inline-block; margin:5px 0 0 10px;}
+
+    .grant_wrap .smartMall_mbox6 {padding-bottom:60px;}
+    .grant_wrap .smartMall_mbox6 b{display: block;}
+    .grant_wrap .smartMall_mbox6 figure img{width:98%;}
+    .grant_wrap .smartMall_mbox6 .grant_notice{margin-top:0px;}
+    .grant_wrap .smartMall_mbox6 .grant_notice a {padding: 6px 15px; font-size: 15px;}
+    .grant_wrap .smartMall_mbox6 .grant_notice .btn_recomend{margin-right:3px;}
+
+    .grant_wrap .grant_form {width:100%; padding:20px 15px; margin-top:15px; border-radius:10px;}
+
+    button.grant_apply_btn {margin-top:0px; padding: 15px 25px; border-radius:40px; font-size: 16px;}
+
+
+    /* 모바일 접속시 안보이게 */
+    .grant_wrap .btn_apply,
+    .grant_wrap .grant_top .grant_btn,
+    .grant_wrap .grant_top .tab_notice_01,
+    .grant_wrap .grant_top .tab_notice_02,
+    .grant_wrap .grant_top .tab_notice_03,
+    .grant_wrap .grant_top .tab_notice_04,
+
+    .grant_wrap .notice_txt_01,
+    .grant_wrap .notice_txt_02,
+
+    /* .grant_wrap .process_wrap, */
+    .grant_wrap .smartMall_mbox1{
+        display:none !important;
+    }
+
+}
+/* //모바일 접속시 */
+
+
+
+.voucher_mbox5 button{background-color:#1e2633; color:#fff; margin-top:20px; padding:10px 30px; border-radius: 30px; font-size:20px;}
+.voucher_mbox5 button:hover{background-color:#2a1bad;}

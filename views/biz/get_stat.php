@@ -1,0 +1,2 @@
+<?php header("Content-Type: application/json"); ?>
+{"stats_weekly": [{"cnt_fail_total": 1, "cnt_succ_total": 60, "time": "2017-11-06"}, {"cnt_fail_total": 1, "cnt_succ_total": 48, "time": "2017-11-07"}, {"cnt_fail_total": 16, "cnt_succ_total": 333, "time": "2017-11-08"}, {"cnt_fail_total": 34, "cnt_succ_total": 311, "time": "2017-11-10"}], "stats_today": [{"cnt_succ_kakao_ft": 0, "cnt_succ_sms": 0, "cnt_succ_kakao_at": 41}], "tmpl_info": [{"rej_cnt": 0, "apr_cnt": 45, "req_cnt": 1}]}

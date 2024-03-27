@@ -1,0 +1,102 @@
+@charset "utf-8";
+
+/* @import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900|Noto+Sans+KR:100,300,400,500,700,900&subset=korean');
+@font-face {
+    font-family:'GmarketSansLight';
+    src:url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+    font-weight:normal;
+    font-style:normal;
+}
+@font-face {
+    font-family:'GmarketSansMedium';
+    src:url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight:normal;
+    font-style:normal;
+}
+@font-face {
+    font-family:'GmarketSansBold';
+    src:url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-weight:normal;
+    font-style:normal;
+} */
+@font-face {
+    font-family:'Cafe24Ohsquare';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/Cafe24Ohsquare.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 코너타이틀 텍스트 입력되는 부분(커스텀 타이틀) */
+.wl_lbox .move_list_typeA li .move_img,
+.pre_box_wrap .pre_tit.tit_custom{position:relative; width:100%; background-repeat:no-repeat; background-size:100%;}
+.wl_lbox .move_list_typeA li .move_img div,
+.pre_box_wrap .pre_tit.tit_custom div{position:absolute; bottom:0; width:100%; height:100%; padding:15px 10px 0; display:grid; align-items:center; overflow:hidden;}
+.wl_lbox .move_list_typeA li .move_img div span,
+.pre_box_wrap .pre_tit.tit_custom div span{font-family:'Cafe24Ohsquare'; letter-spacing:-2px !important;}
+
+
+/* 코너 타이틀 선택 */
+.tit_sel_corner_tit{padding-top:0px;}
+.tit_sel_corner_tit .use_choice{width:222px;}
+.sel_corner_tit .tit_img_menu li span:nth-of-type(1),
+#sel_corner_tit1 .tit_img_menu li span:nth-of-type(2){padding-top:9px}
+#sel_corner_tit1 .templet_img_box{height:39px;}
+#sel_corner_tit2 .tit_box2 li{margin-right:40px;}
+#sel_corner_tit2 .tit_box2 li:last-child{margin-right:0px;}
+#sel_corner_tit2 .tit_box2 li:nth-child(2) option span{width:40px; height:40px; display:inline-block;}
+#sel_corner_tit2 li:nth-of-type(1) input{width:140px;}
+#sel_corner_tit2 li span:nth-of-type(1){padding:5px 10px 0 0; display: inline-block;vertical-align: top;}
+#sel_corner_tit2 ul.sel_color_CT{margin:5px 0 0;  display: inline-block;}
+#sel_corner_tit2 ul.sel_color_CT li{width:20px; height:20px; margin-right:4px; padding:0; border:1px solid #ccc; cursor:pointer; display:inline-block;}
+
+.tit_custom_plus_menu {width: 100%;display: inline-block;margin-top: 10px; }
+.tit_custom_plus_menu li{width: 100%; display: inline-block;}
+.tit_custom_plus_menu > li:nth-child(1){padding-bottom: 10px}
+.tit_custom_plus_menu > li:nth-child(2){border-top: dotted 1px #ddd; padding: 15px 0 10px; }
+.tit_custom_plus_menu > li input{width: 112px;margin-right: 5px;float: left;}
+.tit_custom_plus_menu li:nth-child(2) input:nth-of-type(1){width:210px;}
+.tit_custom_plus_menu li:nth-child(2) input:nth-of-type(2){margin-left:20px;}
+.tit_custom_plus_menu span{width: 80px;float: left;display: inline-block; margin-top: 0px;padding: 5px 15px 0 0;display: inline-block;vertical-align: top;}
+.tit_custom_plus_menu li span:nth-of-type(1) i{font-size: 1.5em;vertical-align: middle;}
+.tit_custom_plus_menu .sel_color_CT{float: left; width: 250px; margin-bottom: 5px; margin-top: 8px;}
+.tit_custom_plus_menu .sel_color_CT.CT_bg{ width: 560px;float: left; margin-right: 5px; margin-bottom: 10px;}
+.tit_custom_plus_menu .sel_color_CT li{width: 20px; height: 20px; float: left; margin-right: 2px; margin-bottom: 2px;border: 1px solid #ddd}
+.counter_minus.button,
+.counter_plus.button{width: 34px;height: 34px;text-align: center;margin: 0;margin-right: 10px;padding: 5px 7px;border: 1px solid #bbb;font-weight: bold}
+.counter_minus.button{margin-right: 5px;}
+.counter_plus.button{margin-right: 10px;}
+.counter_minus.button:hover,
+.counter_plus.button:hover{background-color: #eee}
+
+
+
+/* 텍스트 1단 리스트 */
+.wl_txt_goods{width:100%; border:solid 1px #ccc; display: inline-block; position: relative; margin-top:10px; padding:50px; border-radius:10px; background-color: #fff;}
+.wl_txt_goods:last-child{border-bottom:none;}
+.wl_txt_goods .txt_goods_list{width:100%; margin-bottom:15px;}
+.wl_txt_goods .txt_goods_list li{width:100%; margin-bottom:5px; display:inline-block; position: relative;}
+.wl_txt_goods .txt_goods_list li .txt_name{width:36%; float:left;}
+.wl_txt_goods .txt_goods_list li .txt_option{width:22%; float:left; margin-left:1%;}
+.wl_txt_goods .txt_goods_list li .txt_price1{width:12%; float:left; margin-left:1%; text-align: right;}
+.wl_txt_goods .txt_goods_list li .txt_price2{width:12%; float:left; margin-left:1%; text-align: right;}
+.wl_txt_goods .txt_goods_list li .txt_btn{width:4%; float:left; margin-left:1%; text-align: center;}
+.wl_txt_goods .txt_goods_list li .txt_soldout{width:4.1%; float:left; margin-left:0.9%;; text-align: center;}
+.wl_txt_goods .txt_goods_list li .txt_order_sel{width:4.8%; float:left; margin-left:0.4%; text-align:center; position:relative;}
+.wl_txt_goods .txt_goods_list section li {display: flex;}
+.wl_txt_goods .txt_goods_list section li .txt_order_sel_t{margin-left:0.4%;}
+.wl_txt_goods .txt_goods_list li .txt_order_sel .checkbox_container{position:absolute; top:15px; left:4px; font-weight:bold;}
+.wl_txt_goods .txt_goods_list li .txt_order_sel .checkmark{right: 18px; width:30px; height:30px; border-radius: 0;}
+.wl_txt_goods .txt_goods_list li .txt_order_sel .checkmark:after{left:12px; top:8px;}
+.wl_txt_goods .txt_goods_list li .soldout_box_t {position: relative; float:left; top:0px; left:0px; right:0; margin-left: 1%; display: flex;}
+.wl_txt_goods .txt_goods_list li .soldout_box_t .checkmark{top:0px; left:0px;}
+
+
+/* 하단 바 */
+.write_leaflets_btn{width:880px; margin-left:315px; border-radius:10px 10px 0 0; position: fixed; bottom:0; left:0; text-align:center; padding:30px 0; background-color: #b2b8c3; display: inline-block; z-index: 10000; display: flex; justify-content: center;}
+.write_leaflets_btn button{margin-right:2px;}
+.write_leaflets_btn button:hover{color:#fff; cursor: pointer; background-color:#11b3ff;}
+.write_leaflets_btn .pop_btn_save{width:150px; height:54px; letter-spacing: -0.1em; text-align:center; box-sizing: border-box; font-size:15px; color:#404040; background-color:#fff; border-radius: 10px 0 0 10px;}
+.write_leaflets_btn .pop_btn_send{width:140px; height:54px; letter-spacing: -0.1em; text-align:center; box-sizing: border-box; font-size:15px; color:#404040;  background-color:#fff;}
+.write_leaflets_btn .pop_btn_cancel{width:150px; height:54px; margin-right:25px; letter-spacing: -0.1em; text-align:center; box-sizing: border-box; font-size:15px; color:#404040; background-color:#fff; border-radius: 0 10px 10px 0;}
+.write_leaflets_btn .btn_top{position: absolute; top:20px; right:30px; cursor: pointer;}
+.write_leaflets_btn .btn_bot{position: absolute; bottom:20px; right:30px; cursor: pointer;}

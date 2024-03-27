@@ -1,0 +1,191 @@
+/**
+	login skin css
+*/
+.login_container{width:100%;}
+
+.access{margin: 0 auto;}
+.loginform li {display: block;margin: 0px; clear: both; margin: 15px;}
+.loginform li>span {float: left;width: 25%;text-align: right;padding-right: 20px;margin-top: 5px;color: #000;font-weight: bold;}
+
+.login_wrap {
+	width: 600px;
+	background: #fff;
+	box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+	margin: 40px auto 30px;
+	padding: 25px;
+}
+.login_wrap .logo {
+	display: block;
+	text-align: center;
+	margin: 50px 0;
+}
+.login_wrap .logo_txt {
+	font-size: 1rem;
+	letter-spacing: 6px;
+	margin-top: 5px;
+	font-weight: 700;
+	color: #000;
+	opacity: 0.5;
+}
+.login_field {
+	width: 100%;
+	padding: 0 50px 30px 50px;
+	margin: 25px 0;
+}
+.login_field input {
+	width: 100%;
+	display: block;
+	margin-bottom: 7px;
+	padding: 3px 15px;
+	border-radius: 3px;
+	height: 38px;
+}
+.autologin {
+	display: block;
+	text-align: left;
+}
+.autologin input[id=autologin] {
+    display: none;
+}
+.autologin input[id=autologin] + label {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    font-size: 12px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+.autologin input[id=autologin] + label:before {
+    content: "";
+    display: inline-block;
+    border: 1px solid #dedede;
+    width: 18px;
+    height: 18px;
+    margin-right: 7px;
+    margin-bottom: -3px;
+}
+.autologin input[id=autologin]:checked + label:before {
+    font-family: 'Material Icons';
+    content: '\e5ca';
+    color: "#5559f5";
+    display: inline-block;
+    font-size: 15px;
+    top: 0;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    border: 1px solid transparent;
+    text-align: center;
+}
+.divider {
+    overflow: hidden;
+    text-align: center;
+    margin: 20px 0;
+    font-size: 12px;
+}
+.divider:before, .divider:after {
+    background-color: #e6e6e6;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+}
+.divider:before {
+    right: 1em;
+    margin-left: -50%;
+}
+.divider:after {
+    left: 1em;
+    margin-right: -50%;
+}
+.btn_login {
+	display: block;
+	width: 100%;
+    background: #281aac;
+    padding: 15px;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+.join_kakao {
+	background: #fae100;
+	padding: 15px 20px;
+	font-size: 15px;
+	border-radius: 30px;
+}
+.join_kakao:before {
+	content: '';
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	background: url(/dhn/images/icon/icon_kakao_bg.png)no-repeat center center;
+	background-size: 100%;
+	vertical-align: middle;
+	margin-right: 10px;
+	cursor: pointer;
+}
+.join_link {
+	text-align: center;
+	font-size: 14px;
+	margin-top: 30px;
+}
+.join_link a:first-of-type:after {
+	content: '';
+	display: inline-block;
+	width: 1px;
+	height: 18px;
+	background: #494949;
+	vertical-align: middle;
+	margin: 0 25px;
+
+}
+.autologinalert {
+	font-size: 12px;
+	padding: 15px;
+	background: #fafafa;
+	border: 1px solid #dedede;
+	margin-bottom: 10px;
+}
+
+
+@media screen and (max-width: 768px) {
+	.login_wrap {
+		width:100%;
+		box-shadow: none;
+		background: transparent;
+		margin: 0 auto;
+		padding: 15px;
+	}
+	.login_field {
+		padding: 0;
+		margin: 0;
+	}
+	.login_wrap .right {
+		display: none;
+	}
+	.join_kakao {
+	padding: 7px 20px ;
+	font-size: 12px;
+	}
+	.login_btxt{text-align: center; width:100%; font-size:11px !important;}
+    .nicedocu{display: none;}
+}
+
+.login_btxt{text-align: center; width:100%; font-size:18px;}
+.login_btxt p{margin-bottom: 10px;}
+.login_btxt p a{
+	border: solid 1px #ddd;
+	padding:5px 10px;
+	background-color: #fff;
+  font-size: 14px;
+}
+.login_btxt p span{
+	color:#f00;
+}
+.bg_black{position: absolute; top:-150px; width:100%; height:174%; background-color: #000; opacity: 0.5;}
+.dormancy{position: absolute; top:150px; left:calc(50% - 250px); border:solid 3px #404040;}
+.dormancy button{position: absolute; top:0; right:0; padding:0 5px 0 8px; font-size:25px; background-color: #404040; color:#fff;}

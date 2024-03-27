@@ -1,0 +1,497 @@
+
+/* credit */
+.credit{
+	padding: 20px 0;
+}
+.credit .textblue{
+	color:#348fe2;
+}
+.credit .credit_tit{font-size: 16px; font-weight:bold;
+
+}
+.credit_form{
+	margin: 20px 0;
+}
+.credit_info{
+	clear:both;
+	display:block;
+	height:30px;
+	color: #626262;
+}
+.modal-body .credit{
+	padding: 0 !important;
+
+}
+.credit .credit_method{
+	border: 5px solid #e9e9e9; padding: 20px 10px; text-align:center; margin-bottom: 20px;
+}
+.credit .credit_button{
+	margin-bottom: 20px; text-align:center;
+}
+.small{
+	padding-top: 9px;
+	display: inline-block;
+	padding-left: 15px;
+}
+.amount{
+	padding-top: 7px;
+	display: inline-block;
+}
+.bank-info {display:none;}
+
+.money_box{width:100%; display: block; margin: 15px 0;}
+.deposit_money{width:190px; float:left;font-size:20px !important;}
+.money_w{display: inline-block; margin-left:10px; font-size: 20px;}
+
+
+/* The Modal (background) */
+
+.btn_myModal{position: absolute; top:300px; right:75px; font-size:15px; background-image: linear-gradient(to right, #bc67d4 0%, #2a1bad 100%); color:#fff; padding:10px 20px; border-radius:30px;}
+
+.dh_modal{
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 10000; /* Sit on top */
+  padding-top:100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.dh_modal .modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding:50px;
+  border: 1px solid #888;
+  width:500px;
+  line-height:80%;
+}
+
+.dh_modal .modal-content .modal-tit{width:100%; font-size:20px !important; border-bottom:solid 1px #ddd; padding-bottom:20px; font-weight: bold; text-align: left;}
+.dh_modal .modal-content .modal-con{padding:15px 0; font-size:15px; line-height:150%; text-align: left;}
+.dh_modal .modal-content .modal-con .fcolor_red{color:#f00;}
+.dh_modal .modal-content .modal-con .fcolor_blue{color:#47b5e5;}
+.dh_modal .modal-content .modal-con .fsize_up{font-size: 20px;}
+.dh_modal .modal-content .modal-con .post_link{border-radius: 5px; padding:5px 15px; background-color: #f1f1f1; border:solid 1px #ddd; margin:10px 0;}
+.dh_modal .modal-content .modal-con p{text-align: center; margin-top:20px;}
+/* The Close Button */
+.dh_close {
+  z-index:10000;
+  color: #aaaaaa;
+  top:45px;
+  right:50px;
+  font-size:40px;
+  font-weight: bold;
+  position:absolute;
+}
+.dh_close:hover,
+.dh_close:focus{
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.bank_content{width:100%; margin-top:-20px;}
+.bank_num{font-size: 20px; padding-bottom:20px; border-bottom:dotted 1px #ddd;}
+.bank_num span{font-size:30px; color:#2c1cad;}
+.bank_info1{padding:20px 0 0 0; font-size: 20px; width:100%; display: inline-block;}
+.bank_info2{padding:10px 0 20px 30px; font-size: 15px; width:100%; display: inline-block;}
+.bank_info1 span, .bank_info2 .material-icons{font-size:25px; color:#ff0090;}
+.bank_img{width:100%; display: inline-block; margin-left:10px; text-align: center;}
+.bank_img .bank_img_box img{width:100%; border:solid 1px #ddd;}
+.bank_img .bank_img_box{width:450px; float:left; margin:0 10px;}
+.bank_img .bank_img_box .bank1_img, .bank_img .bank_img_box .bank2_img{width:100%;}
+.bank_img .bank_img_box .bank1_name{width:100%; background-color:#4c9df8; color:#fff; text-align: center; font-size:15px; margin:10px 0;}
+.bank_img .bank_img_box .bank2_name{width:100%; background-color:#19a647; color:#fff; text-align: center; font-size:15px; margin:10px 0;}
+.bank_img .bank_img_box .bank3_name{width:100%; background-color:#cf2740; color:#fff; text-align: center; font-size:15px; margin:10px 0;}
+
+.mg_l10{margin-left:10px;}
+
+.table_list01 thead tr{
+	height:45px;
+	background:#fff;
+	font-size:16px;
+}
+.table_list01 table{
+  border-top:2px solid #404040; width:100%;
+	border-bottom:1px solid #DDD;
+	border-left:none !important;
+	border-right:none !important;
+	margin-top:20px;
+}
+.table_list01 th{
+	background-color: #fff;
+	border-right:1px solid #DDD;
+	border-left:none !important;
+	font-size:15px;
+	background: #f8f9fd;
+}
+.table_list01 td {
+	border-top:1px solid #DDD;
+	border-right:1px solid #DDD;
+	border-left:none !important;
+	padding:15px 0;
+	font-size:15px;
+  text-align: center;
+}
+.table_list01 th:nth-last-child(1){border-right:none !important;}
+.table_list01 td:nth-last-child(1){border-right:none !important;}
+.table_list01 .al_right{
+    text-align: right;
+		padding-right:20px;
+		font-size:18px;
+}
+.table_list01 .al_right i{float:left; padding:7px 0 0 20px;}
+.wallet_al{border:solid 2px #281aac; color:#281aac; min-width:105px; text-align: center; display: inline-block; padding:5px 10px; border-radius: 30px; margin:0 5px; font-size: 13px;}
+.wallet_sm{border:solid 2px #be68d5; color:#be68d5; min-width:105px; text-align: center; display: inline-block; padding:5px 10px; border-radius: 30px; margin:0 5px; font-size: 13px;}
+.wallet_rc{border:solid 2px #de8037; color:#de8037; min-width:105px; text-align: center; display: inline-block; padding:5px 10px; border-radius: 30px; margin:0 5px; font-size: 13px;}
+.wallet_rf{border:solid 2px #ffdf2b; min-width:105px; text-align: center; display: inline-block; background-color:#ffdf2b; padding:5px 10px; border-radius: 30px; margin:0 5px; font-size: 13px;}
+.wallet_ac{border:solid 2px #11b3ff; min-width:105px; text-align: center; display: inline-block; background-color:#11b3ff; color:#fff; padding:5px 10px; border-radius: 30px; margin:0 5px; font-size: 13px;}
+.wallet_mn{border:solid 2px #ff9a00; min-width:105px; text-align: center; display: inline-block; background-color:#ff9a00; color:#fff; padding:5px 10px; border-radius: 30px; margin:0 5px; font-size: 13px;}
+
+.wallet_pl{margin:0 5px; vertical-align: middle; }
+.wallet_mi{margin:0 5px; vertical-align: middle; }
+.wallet_pl i, .wallet_mi i{font-size: 20px;}
+.wallet .num{font-size: 20px;}
+.wallet{text-align: left !important; padding-left:20px !important;}
+
+.mg_r10{margin-right:10px;}
+.mg_t5{margin-top:5px;}
+
+.service_point li{font-size:16px; width:730px; margin-bottom:10px; border: solid 1px #d3d8e1; background-color: #f8f9fd;border-radius: 5px; padding:5px 10px; line-height: 150%;}
+.service_point li span{color:#f00;}
+.point_info_tit{font-size:18px;}
+.point_info{margin-top:20px}
+.point_info li{padding-bottom:10px; display:block; font-size:15px;}
+.point_re1{width:730px; padding:15px 0; display: inline-block; border-bottom: solid 1px #404040; font-size:20px;}
+.point_re2 .al_right{float:right;}
+.point_re1 .fr span{font-size:25px;}
+.point_re2{width:730px; padding:15px 0; border-bottom: solid 2px #404040; font-size:20px;}
+.point_re2 .fr{font-size:25px;}
+.point_info_tit span{color: #ff0090;}
+
+.service_box{width:1000px; height:1480px; margin-bottom:30px; background:#fff url('/images/service_bg_20221109.jpg') no-repeat top center; background-size: 100%;}
+.service_box ul{padding:577px 0 0 150px;}
+.service_box li{font-size:20px; margin-bottom:67px;}
+.service_box li span{color:#f00;}
+.service_box li img{margin:-3px 5px 0 5px;}
+.service_box li input{}
+.service_box .point_re01{margin:-20px 125px 0 125px; font-size:20px; color:#fff;}
+.service_box .point_re01 .fr{float:right; font-size:25px;}
+.service_box .point_re02{margin:40px 125px 0 125px; font-size:20px; color:#fff;}
+.service_box .point_re02 .fr{float:right; font-size:25px;}
+
+/* The container */
+.service_box li .r_container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.service_box li .r_container input {
+  position: absolute;
+  opacity: 0;
+  width:100%;
+  height:100%;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  cursor: pointer;
+  z-index: 2;
+}
+
+/* Create a custom radio button */
+.service_box li .checkmark {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* On mouse-over, add a grey background color */
+.service_box li .r_container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.service_box li .r_container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.service_box li .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.service_box li .r_container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.service_box li .r_container .checkmark:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+
+/* 2021-12-31 윤재박 -지니 충전이벤트 분리관련 */
+.service_box2{width:1000px; height:1480px; margin-bottom:30px; background:#fff url('/images/service_bg_20220805_tg.jpg') no-repeat top center; background-size: 100%;}
+.service_box2 ul{padding:577px 0 0 150px;}
+.service_box2 li{font-size:20px; margin-bottom:67px;}
+.service_box2 li span{color:#f00;}
+.service_box2 li img{margin:-3px 5px 0 5px;}
+.service_box2 li input{}
+.service_box2 .point_re01{margin:-20px 125px 0 125px; font-size:20px; color:#fff;}
+.service_box2 .point_re01 .fr{float:right; font-size:25px;}
+.service_box2 .point_re02{margin:40px 125px 0 125px; font-size:20px; color:#fff;}
+.service_box2 .point_re02 .fr{float:right; font-size:25px;}
+
+/* The container */
+.service_box2 li .r_container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.service_box2 li .r_container input {
+  position: absolute;
+  opacity: 0;
+  width:100%;
+  height:100%;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  cursor: pointer;
+  z-index: 2;
+}
+
+/* Create a custom radio button */
+.service_box2 li .checkmark {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* On mouse-over, add a grey background color */
+.service_box2 li .r_container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.service_box2 li .r_container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.service_box2 li .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.service_box2 li .r_container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.service_box2 li .r_container .checkmark:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+
+.btn_myModal3{padding:8px 15px; vertical-align: middle; background-color:#404040; color:#fff; display:inline-block; cursor:pointer;}
+
+/* Modal Content */
+.dh_modal .modal-content3 {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding:50px;
+  border: 1px solid #888;
+  width:1000px;
+  line-height:80%;
+}
+
+.modal-content3 .modal-tit{width:100%; font-size: 20px; border-bottom:solid 1px #ddd; padding-bottom:20px; text-align: left;}
+.modal-content3 .search_input{width:100%; text-align: center; margin-bottom:20px; padding:20px 0; border-bottom:solid 1px #ddd;}
+.btn_st_sm{height:34px; line-height: 34px;border:solid 1px #ddd; padding: 0 20px; background-color: #fff; display: inline-block; vertical-align: top;}
+
+.cus_fixed{position:sticky; top:0; width:100%; background-color: #f8f9fd; border-top: 1px solid #d3d8e1;  border-bottom: 1px solid #d3d8e1; display: inline-block; padding:10px 0;}
+.cus_fixed span{float:left; width:calc(50% - 50px); font-size: 15px;}
+.cus_fixed span:last-child{width:100px; padding-right:20px;}
+.cus_search_result dd{width:100%; height:450px; overflow-y:scroll;}
+.cus_search_result ul{width:100%; border-bottom: 1px solid #d3d8e1; display: inline-block; padding:5px 0;}
+.cus_search_result ul li{float:left; width:calc(50% - 50px); text-align:left; padding-left:10px; line-height:250%; border-right: 1px solid #d3d8e1;}
+.cus_search_result ul li:last-child{border-right:none; width:100px; text-align:center;}
+
+.charge_box{width: 100%; height: 200px;}
+.charge{ font-size: 25px; color: white; border: 1px solid white; padding: 7px 57px 7px 57px; border-radius: 10px; position: relative;left:745px;}
+.charge:hover{ transition: 0.5s; background-color: white; color: #161616}
+
+
+/* 추석맞이 상생 이벤트 */
+.eve_230830 {
+    --eve_img_width:950px;
+    position: relative;
+ }
+.eve_230830 .service_box {width:var(--eve_img_width); height:auto; margin-bottom:0; padding-top:340px; background:#fff url('/images/eve_230830_1_bg.gif') no-repeat top center;}
+.eve_230830 .service_box ul {padding: 15px 160px 0;}
+/* .eve_230830 .service_box ul {margin-top:30px; padding: 10px 160px 0;} */
+.eve_230830 .service_box li {
+    font-size: 20px;
+    width: 100%;
+    line-height: 2.5;
+    margin:0 0 10px 0;
+    padding:0 0 0 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    display: inline-block;
+    border: 1px solid #dbd5d1;
+}
+.eve_230830 .service_box li:hover {border: 1px solid #a79184;}
+.eve_230830 .service_box li .r_container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 2px;
+}
+.eve_230830 .service_box li .checkmark {top:15px;}
+.eve_230830 .service_box strong {color:#543517; font-weight: 400;}
+.eve_230830 .service_box strong + span {font-weight: 600;}
+.eve_230830 .service_box #total_p {margin-left:20px;}
+.eve_230830 .service_box #total_calv,
+.eve_230830 .service_box li span {color: #da281c; font-weight: 600;}
+.eve_230830 .service_box li em {margin:0 0 0 8px; padding:0px 5px 3px; font-style: normal; color:#fff; font-weight: 400; background-color:#da281c; border-radius: 6px;}
+.eve_230830 .point_re01,
+.eve_230830 .point_re02 {margin:0px 162px; line-height: 64px; border-bottom:1px dotted #af9d91; color:#333;}
+.eve_230830 .point_re02 {margin-bottom:-45px;}
+
+.eve_230830 .charge_notice {position: relative; width:var(--eve_img_width); min-height: 150px; padding:40px 70px 40px; line-height: 1.5; font-size:15px; color:#999; background-color: #222; margin-bottom:20px;}
+.eve_230830 .charge_notice h6 {width: 500px; padding-left:5px; font-size:18px; margin-bottom:10px;}
+.eve_230830 .charge_notice h6::before {content: '* '; margin-left:-15px;}
+
+.eve_230830 .charge {position: absolute; top: 40px; left:auto; right: 70px; width:210px; border: 1px solid #da281c;}
+.eve_230830 .call_num {position: absolute; bottom: 50px; right: 70px; width:230px; line-height: 1.2; text-align: right; font-size:30px; color:#ccc;}
+.eve_230830 .call_num dt {font-size:20px;}
+.eve_230830 .call_num dd {font-size:40px; font-weight: 800; color:#fff;}
+
+.eve_230830 .service_box3 {width:var(--eve_img_width);}
+.eve_230830 .service_box3 a{width: 258px; height: 44px; display: block; position: absolute; left: 492px; bottom: 185px}
+
+
+
+/* 고객 감사 이벤트_231121 */
+.eve_231116 {
+    --eve_img_width:950px;
+    position: relative;
+}
+.eve_231116 .service_box {width:var(--eve_img_width); height:auto; margin-bottom:0; padding-top:350px; background:#f20074 url('/images/event/eve_231116_top.jpg') no-repeat top center; border-radius: 5px 5px 0 0 ;}
+.eve_231116 .service_box ul {
+    margin: 0px 120px 20px;
+    padding: 23px 25px 13px;
+    background: #ffca00cc;
+    border-radius: 25px;
+    box-shadow: 1px 0px 13px 6px rgb(171 25 84 / 35%);
+}
+/* .eve_231116 .service_box ul {margin-top:30px; padding: 10px 160px 0;} */
+.eve_231116 .service_box li {
+    font-size: 20px;
+    width: 100%;
+    line-height: 2.5;
+    margin:0 0 10px 0;
+    padding:0 0 0 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    display: inline-block;
+    border: 1px solid #dbd5d1;
+}
+.eve_231116 .service_box li:hover {border: 1px solid #a79184; color:#f20074 ;}
+.eve_231116 .service_box li .r_container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 2px;
+}
+.eve_231116 .service_box li .checkmark {top:16px;}
+.eve_231116 .service_box strong {color:#ffc418;; font-weight: 600;}
+.eve_231116 .service_box strong + span {font-weight: 600;}
+.eve_231116 .service_box #total_p {margin-left:20px; font-size: 24px;}
+.eve_231116 .service_box #total_eve {font-size: 28px;  font-weight: 600; }
+.eve_231116 .service_box #total_calv,
+.eve_231116 .service_box li span {color: #333; font-weight: 600;}
+.eve_231116 .service_box li em {margin:0 0 0 8px; padding:0px 5px 3px; font-style: normal; color:#fff; font-weight: 400; background-color:#da281c; border-radius: 6px;}
+
+.eve_231116 .point_re01,
+.eve_231116 .point_re02 {margin:0px 128px; line-height: 64px; border-bottom:1px dotted #af9d91; color:#fff;}
+.eve_231116 .point_re02 #total_calv {color:#fff; font-size: 40px;}
+.eve_231116 .charge_box {width: 100%;  height: 50px;}
+
+.eve_231116 .charge_notice {position: relative; width:var(--eve_img_width); min-height: 150px; padding:40px 70px 40px; line-height: 1.5; font-size:15px; color:#999; background-color: #222; margin-bottom:20px; border-radius: 0 0 5px 5px;}
+.eve_231116 .charge_notice h6 {width: 500px; font-size:18px; margin-bottom:10px;}
+/* .eve_231116 .charge_notice h6::before {content: '* '; margin-left:-15px;} */
+
+.eve_231116 .charge_btn_wrap {position: absolute; top: 48px; right: 60px; text-align: right;}
+.eve_231116 .btn_charge {
+    font-size: 30px;
+    color: #222;
+    font-weight: 600;
+    padding: 8px 55px 10px;
+    border-radius: 10px;
+    background-color: #ffd600;
+}
+.eve_231116 .btn_charge:hover{transition: 0.1s; background-color: black; color: #fff}
+
+.eve_231116 .call_num {width:; line-height: 1.2; margin-top:30px; text-align: right; color:#ccc;}
+.eve_231116 .call_num dt {font-size:30px;}
+.eve_231116 .call_num dd {
+    line-height: 1;
+    font-size: 55px;
+    font-weight: 600;
+    color:#fff;
+}
+
+.eve_231116 .service_box3 {width:var(--eve_img_width);}
+.eve_231116 .service_box3 a{width: 258px; height: 44px; display: block; position: absolute; left: 492px; bottom: 185px}

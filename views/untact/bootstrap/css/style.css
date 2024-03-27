@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+.btn_del{background-color: #fff; margin-left:10px; border: solid 1px #ddd; padding:3px 6px; border-radius: 3px;}
+.comment_all{border-bottom: 1px solid #e9ebf0; color:#404040; font-size: 15px; padding:0 0 20px 0; margin: 0;}
+.comment_all span{color:#f00;}
+.comment_view_box_inner{border-bottom:solid 1px #e9ebf0; padding:20px 0; width: 100%; display: inline-block;}
+.comment_view_box_inner span:nth-of-type(1){width:calc(100% - 380px); float:left; padding-right: 10px; margin-right:5px;}
+.comment_view_box_inner span:nth-of-type(2){width:120px; float:left; border-left:solid 1px #e9ebf0; padding-left: 10px; margin-right:5px;}
+.comment_view_box_inner span:nth-of-type(3){width:200px; float:left; border-left:solid 1px #e9ebf0; border-right:solid 1px #e9ebf0; padding:0 10px;}
+.comment_view_box_inner a{float:left;}
+.comment_write_box_inner{margin-top:20px; display: inline-block; width:100%;}
+.comment_write_button_area{margin:15px 0 0 28px;}
+.comment_write_box_inner textarea{margin:10px 0 0 28px; width:95%;}
+.table_list th, .table_list td{padding:10px 15px !important;}
+.al_left{text-align:left !important;}
+
+
+/* 지니 충전 이벤트페이지 */
+.deposit_event_wrap{
+    /* text-align: center; */
+}
+.deposit_event_wrap .eve_231116 .inner_tit{
+    width: var(--eve_img_width);
+    margin:50px auto 15px;
+}
+.deposit_event_wrap .eve_231116 .service_box{
+    margin:0 auto;
+    border-radius: 15px 15px 0 0;
+}
+.deposit_event_wrap .eve_231116 .charge_notice{
+    margin:0 auto 30px;
+    border-radius: 0 0 15px 15px;
+}
+.deposit_event_wrap .eve_231116 .charge_notice .charge_btn_wrap .btn_charge{
+    padding: 12px 50px 14px;
+    /* font-size:24px; */
+}

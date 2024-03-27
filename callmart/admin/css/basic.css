@@ -1,0 +1,136 @@
+/*
+Cascading Style Sheet Name: common.css
+Author: KIM MIN SOO
+
+Colors:
+	basic yellow 	: #ffdc00
+	screen yellow 	: #FAE100
+	dark yellow 	: #FFCC00 
+Fonts:
+	font-family: 'Spoqa Han Sans', 'NanumSquare', 'Kakao', 'sans-serif';
+	font-family: 'Font Awesome\ 5 Free','Material Icons';
+	thin light regular bold
+*/
+
+@charset "utf-8";
+@import url('https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css');
+@import url('//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css');
+@import url('http://meta-kage.kakaocdn.net/dn/osa/blog/assets/fonts/Kakao.css');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+          outline: none;
+}
+::selection {
+    background:#FAE100;
+    color: #fff;
+    text-shadow: none;
+}
+::-moz-selection {
+    background:#FAE100;
+    color: #FFF;
+    text-shadow: none;
+}
+::-webkit-selection {
+    background:#FAE100;
+    color: #FFF;
+    text-shadow: none;
+}
+/* 초기화 */
+*{margin:0; padding:0;border:0 }
+html {
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+}
+html, body {
+  font-family: 'NanumSquare', 'Spoqa Han Sans', 'Kakao', sans-serif;
+  font-size: 13px;
+  color: #666;
+  height: 100%;
+}
+html, h1, h2, h3, h4, h5, h6, form, fieldset, img {margin:0;padding:0;border:0}
+
+a {
+	color: inherit;
+    text-decoration: none;
+}
+a:hover {
+	color: inherit;
+	text-decoration: none;
+}
+a:link {
+	color: inherit;
+	text-decoration: none;
+}
+ul, ol, li {
+    list-style: none;
+}
+img {
+	vertical-align: middle;
+}
+*:focus {
+    outline: none;
+}
+input, select {
+    vertical-align: middle;
+    background: #fff;
+    border-radius: none !important;
+    border: 1px solid #dedede;
+    outline: none;
+}
+input:focus {
+    box-shadow: none !important;
+    border: 1px solid #dedede !important;
+}
+textarea[readonly] {
+    background-color: #fff;
+    cursor: default;
+}
+select {
+  background:#fff url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='50px' height='50px'><polyline points='46.139,15.518 25.166,36.49 4.193,15.519'/></svg>");
+  background-repeat:no-repeat;
+  background-position: right 10px top 12px;
+  background-size: 12px 12px;
+  padding:0 35px 0 10px;
+  font-size:13px;
+  font-weight: 400;
+  color:#000;
+  border:1px solid #dddfe3;
+  border-radius:0;
+  -webkit-appearance: none;
+  outline:0;
+}
+/* 체크박스 */
+input[type="checkbox"] { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip:rect(0,0,0,0); border: 0; }
+input[type="checkbox"] + label { display: inline-block; position: relative; padding-left: 24px; margin-right: 20px; cursor: pointer; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; }
+input[type="checkbox"] + label:before { content: ''; position: absolute; left: 0px; top: 0px; width: 18px; height: 18px; text-align: center; background: #fff; border: 1px solid #e4e4e4;}
+input[type="checkbox"]:checked + label:before { content: '\e876'; font-family: 'Material Icons'; font-size: 13px; font-weight: bold; line-height: 18px; color: #000; background: #ffdf2b; }
+
+/* 라디오 버튼 */
+input[type="radio"] {position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip:rect(0,0,0,0); border: 0; }
+input[type="radio"] + label { display: inline-block; position: relative; padding-left: 24px; margin-right: 20px; line-height: 34px; cursor: pointer; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none;}
+input[type="radio"] + label:before { content: ''; position: absolute; left: 0px; top: 7px; width: 18px; height: 18px; text-align: center; background: #fff; border: 1px solid #e4e4e4; border-radius: 100%;}
+input[type="radio"]:checked + label:before { background: #fff; }
+input[type="radio"]:checked + label:after { content: '\e876'; font-family: 'Material Icons'; font-size: 13px; line-height: 20px; text-align: center; font-weight: bold; position: absolute; top: 7px; left: 0px; width: 20px; height: 20px; background: #ffdf2b; border-radius: 100%; }
+
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}
+.tc {
+	text-align: center;
+}
+.tl {
+	text-align: left;
+}
+.tr {
+	text-align: right;
+}
+.clearfix {
+	clear: both;
+}

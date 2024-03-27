@@ -1,0 +1,140 @@
+@charset "utf-8";
+
+.wl_rbox{font-family: 'Spoqa Han Sans';}
+.wl_r_preview .pop_list_wrap{width:100%; display:flex; flex-wrap:wrap; background-color: #fff; line-height:1.2;}
+.wl_r_preview .design_badge{position:absolute; top:5px; width:70px; z-index:10000;}
+.wl_r_preview .design_badge img{width:100%;}
+.wl_r_preview .sale_badge{position:absolute; top:0; width:63px; height:79px; padding-top:41px; font-size:25px; text-align: center; color:#fff;  z-index:10000; background-image: url(/dhn/images/sale_badge_bg.jpg); background-size: 100%;}
+.wl_r_preview .sale_badge span{font-size:0.6em;}
+.wl_r_preview .templet_img_in3{background-repeat: no-repeat !important; background-position-x: 50% !important; background-position-y: 50% !important; background-size:contain !important; z-index:1000; position: relative; display: inline-block; overflow: hidden;}
+.wl_r_preview .name,
+.wl_r_preview .pop_name{position:relative; z-index: 1000;}
+.wl_r_preview .name span:first-child,
+.wl_r_preview .pop_name span:first-child{font-weight:600;}
+.wl_r_preview .name span:nth-child(2),
+.wl_r_preview .pop_name span:nth-child(2){word-break:keep-all !important;}
+.wl_r_preview .pop_price{position:relative; z-index:1000; line-height:1.1;}
+.wl_r_preview .price1{text-decoration:line-through; opacity:0.6;}
+.wl_r_preview .price2{font-weight:600; color:#cf0000; position: relative; z-index: 1000;}
+.wl_r_preview .pop_option{display:inline-block; background-color: #ffdf2b; color:#000; border-radius:10px;}
+
+.wl_r_preview .pre_box2{width:96%; margin:320px 2% 1.5%; display: inline-block; z-index: 101; position: relative;}
+.wl_r_preview .pre_box2 dl{width:100%; padding:0; border-radius:5px; margin-bottom:5px; clear: left; display: inline-block; background-color: #fff; position: relative;}
+.wl_r_preview .pre_box2 dl:last-child{margin-bottom:0px;}
+.wl_r_preview .pre_box2 dl:nth-child(2n+1) dt{width:165px; float: left;}
+.wl_r_preview .pre_box2 dl:nth-child(2n+2) dt{width:165px; float: right;}
+.wl_r_preview .pre_box2 dl dt{position: relative;}
+.wl_r_preview .pre_box2 dl dt img{width:100%; border-radius: 5px;}
+.wl_r_preview .pre_box2 dl:nth-child(2n+1) dt .design_badge{left:5px;}
+.wl_r_preview .pre_box2 dl:nth-child(2n+2) dt .design_badge{right:5px;}
+.wl_r_preview .pre_box2 dl:first-child dt .sale_badge{top:0 !important;}
+.wl_r_preview .pre_box2 dl:nth-child(2n+1) dt .sale_badge{left:10px;}
+.wl_r_preview .pre_box2 dl:nth-child(2n+2) dt .sale_badge{right:10px;}
+.wl_r_preview .pre_box2 dl dt .templet_img_in3{min-width:165px; min-height:165px;}
+.wl_r_preview .pre_box2 dl:nth-child(2n+1) dt .templet_img_in3{border-radius: 5px 0 0 5px;}
+.wl_r_preview .pre_box2 dl:nth-child(2n+2) dt .templet_img_in3{border-radius:0 5px 0 0; float:right;}
+.wl_r_preview .pre_box2 dl:nth-child(2n+1) dd{width:calc(100% - 165px); float: left; padding-left:5px;}
+.wl_r_preview .pre_box2 dl:nth-child(2n+2) dd{width:calc(100% - 165px); float: right; padding-right:5px;}
+.wl_r_preview .pre_box2 dl dd ul{width:92%; margin:15px 4%;}
+.wl_r_preview .pre_box2 dl dd ul li{line-height:1;}
+.wl_r_preview .pre_box2 dl:nth-child(2n+2) dd ul li{text-align: right;}
+.wl_r_preview .pre_box2 dl dd ul .name{font-size:22px; margin-top:5px;}
+.wl_r_preview .pre_box2 dl dd ul .price1{font-size:22px;}
+.wl_r_preview .pre_box2 dl dd ul .price2{font-size:50px;}
+.wl_r_preview .pre_box2 dl dd ul .pop_option{font-size: 15px; max-width:95%; margin-top:8px; padding:4px 8px 5px;}
+
+.wl_r_preview .pre_box3 .pop_list_wrap{padding:5px 0 25px 0; margin-bottom:0px; overflow: hidden;}
+/* 스마트전단 1단 */
+.pop_list00{width:100%; min-height:170px; float:left; position:relative; text-align:left; margin:0; padding:10px; border-bottom:1px dotted #ddd;}
+.pop_list00:first-child{margin-top:5px;}
+.pop_list00:last-child{border-bottom:0;}
+.pop_list00 > div:nth-last-child(-n+3){position:relative; z-index:9; text-align:right;}
+.pop_list00 > div:nth-last-child(2){margin:8px 0 5px 0; padding:0 5px 0 125px; }
+.pop_list00 .design_badge{width:60px; top:0; left:0px;}
+.pop_list00 .sale_badge{top:5px; left:5px; width:55px; height:69px; padding-top:35px;}
+.pop_list00 .templet_img_in3{position:absolute; z-index:1; top:5px; left:5px; min-width:220px; height:94%; max-height:230px; background-size:auto 100%;}
+.pop_list00 .pop_name{font-size:24px; width:100%; padding:0 5px 30px 125px; bottom:0; text-align:right; display:inline-block;}
+.pop_list00 .pop_price{width:100%; padding:0 5px 0 125px; text-align:right; display:inline-block;}
+.pop_list00 .pop_price .price1{font-size:20px; width:100%; padding:10px 2px 0 0; display:inline-block;}
+.pop_list00 .pop_price .price2{font-size:42px; margin-top:-8px; display:inline-block;}
+.pop_list00 .pop_option{font-size:13px; padding:3px 10px 3px; opacity:0.8;}
+
+/* 스마트전단 2단 */
+.pop_list01{width:50%; height:; float:left; position:relative; text-align:center; padding:8px 5px 10px; border-bottom:1px dotted #ddd;}
+.pop_list01:nth-child(odd){border-right:1px dotted #ddd;}
+.pop_list01:nth-last-child(-n+2){border-bottom:0}
+.pop_list01:nth-child(even){border-bottom:1px dotted #ddd;}
+.pop_list01:last-child{border-bottom:0}
+.pop_list01 .design_badge{width:60px; top:0; left:5px;}
+.pop_list01 .sale_badge{left:5px; width:55px; height:69px; padding-top:35px; font-size:23px;}
+.pop_list01 .templet_img_in3{min-width:155px; min-height:155px;}
+.pop_list01 .pop_name{font-size:18px; margin-top:5px; line-height:1;}
+.pop_list01 .pop_price{}
+.pop_list01 .pop_price .price1{font-size:20px;}
+.pop_list01 .pop_price .price2{font-size:42px;}
+.pop_list01 .pop_option{font-size:12px; margin:3px 0; padding:1px 8px 2px;}
+
+/* 스마트전단 텍스트 1단 */
+.wl_r_preview .pre_box4 .pop_list_wrap{padding:10px 0 0px; background-color:#d9d9d9;}
+.pop_list02{width:96%; margin:0 2% 8px; background-color:#fff; display: inline-block; padding:8px 10px 10px; box-sizing:border-box; border-radius:5px; line-height:25px;}
+.pop_list02 .name{font-size:18px; width:60%; float:left;}
+.pop_list02 .price1{font-size:14px; width:40%; float:right; text-align:right;}
+.pop_list02 .price2{font-size:25px; width:40%; float:right; text-align:right;}
+
+/* 스마트전단 3단 */
+.pop_list03{width:33.3%; height:; padding:5px 3px 5px; float:left; position:relative; text-align:center; border-right:1px dotted #ddd; border-bottom:1px dotted #ddd;}
+.pop_list03:nth-child(3n){border-right:0}
+.pop_list03:nth-last-child(-n+3){border-bottom:0}
+.pop_list03:nth-child(3n+2){border-bottom:1px dotted #ddd;}
+.pop_list03:nth-last-child(-n+2){border-bottom:0}
+.pop_list03:nth-child(3n+3){border-bottom:1px dotted #ddd;}
+.pop_list03:last-child{border-bottom:0}
+.pop_list03 .templet_img_in3{min-width:115px; min-height:115px;}
+.pop_list03 .pop_name{font-size:16px; margin-top:5px; line-height:1;}
+.pop_list03 .pop_price{}
+.pop_list03 .pop_price .price1{font-size:16px;}
+.pop_list03 .pop_price .price2{font-size:32px;}
+
+/* 스마트전단 4단 */
+.pop_list04{width:25%; height:; float:left; position:relative; text-align:center;}
+.pop_list04 .templet_img_in3{min-width:98px; min-height:98px;}
+.pop_list04 .pop_name{font-size:14px; margin-top:5px; line-height:1; padding:0 3px 5px;}
+.pop_list04 .pop_price{padding:0 3px;}
+.pop_list04 .pop_price .price1{font-size:15px;}
+.pop_list04 .pop_price .price2{font-size:26px;}
+
+.wl_r_preview .icon_add_cart{width:100%; height: 100%; z-index:10000; cursor: pointer; position: absolute; top:0; left: 0; right:0;  text-indent:-1000px; background: url(/images/icon_add_cart3.png) no-repeat; opacity:0.9;}
+.wl_r_preview .pre_box2 dl:nth-child(2n+1) .icon_add_cart{background-position:97% 90%; background-size:10%;}
+.wl_r_preview .pre_box2 dl:nth-child(2n+2) .icon_add_cart{background-position:97% 90%; background-size:10%;}
+.pop_list00 .icon_add_cart{background-position:95% 94%; background-size:10%;}
+.pop_list01 .icon_add_cart{background-position:90% 45%; background-size:18%;}
+.pop_list03 .icon_add_cart{background-position:90% 38%; background-size:28%;}
+.pop_list04 .icon_add_cart{background-position:93% 35%; background-size:35%;}
+
+.pop_list02.cartplus{margin-bottom:10px; position: relative;}
+.pop_list02.cartplus_t{width:88%; margin:0 2% 2% 2%; position:relative;}
+.pop_list02 .icon_add_cart{width:109%; height: 100%;  background: url(/images/icon_add_cart5.png) no-repeat; background-position:center right; background-size:8%; float: left; top:0; right:-10%;}
+
+.wl_r_preview .soldout:after {
+    content: "품절";
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,0.7);
+}
+.pop_list02.soldout::after{border-radius:5px;}
+
+.pop_list00 .pop_name{
+    --stroke-color: #ffffff;
+    --stroke-width: 2px;
+   text-shadow: var(--stroke-width) 0 0 var(--stroke-color), calc(var(--stroke-width) * -1) 0 0 var(--stroke-color), 0 var(--stroke-width) 0 var(--stroke-color), 0 calc(var(--stroke-width) * -1) 0 var(--stroke-color); text-shadow: calc(var(--stroke-width) * 1) calc(var(--stroke-width) * 0) 0 var(--stroke-color), calc(var(--stroke-width) * 0.9239) calc(var(--stroke-width) * 0.3827) 0 var(--stroke-color), calc(var(--stroke-width) * 0.7071) calc(var(--stroke-width) * 0.7071) 0 var(--stroke-color), calc(var(--stroke-width) * 0.3827) calc(var(--stroke-width) * 0.9239) 0 var(--stroke-color), calc(var(--stroke-width) * 0) calc(var(--stroke-width) * 1) 0 var(--stroke-color), calc(var(--stroke-width) * -0.3827) calc(var(--stroke-width) * 0.9239) 0 var(--stroke-color), calc(var(--stroke-width) * -0.7071) calc(var(--stroke-width) * 0.7071) 0 var(--stroke-color), calc(var(--stroke-width) * -0.9239) calc(var(--stroke-width) * 0.3827) 0 var(--stroke-color), calc(var(--stroke-width) * -1) calc(var(--stroke-width) * 0) 0 var(--stroke-color), calc(var(--stroke-width) * -0.9239) calc(var(--stroke-width) * -0.3827) 0 var(--stroke-color), calc(var(--stroke-width) * -0.7071) calc(var(--stroke-width) * -0.7071) 0 var(--stroke-color), calc(var(--stroke-width) * -0.3827) calc(var(--stroke-width) * -0.9239) 0 var(--stroke-color), calc(var(--stroke-width) * 0) calc(var(--stroke-width) * -1) 0 var(--stroke-color), calc(var(--stroke-width) * 0.3827) calc(var(--stroke-width) * -0.9239) 0 var(--stroke-color), calc(var(--stroke-width) * 0.7071) calc(var(--stroke-width) * -0.7071) 0 var(--stroke-color), calc(var(--stroke-width) * 0.9239) calc(var(--stroke-width) * -0.3827) 0 var(--stroke-color);
+}

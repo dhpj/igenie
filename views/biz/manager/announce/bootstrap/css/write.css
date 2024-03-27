@@ -1,0 +1,115 @@
+#an_target_select_btn {
+  margin: 1em 0;
+}
+#an_dropdown_container {
+  position: relative;
+  top: -1em;
+}
+#an_dropdown {
+  position: absolute;
+  width: 200px;
+  height: 400px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  overflow-y: auto;
+  z-index: 1;
+}
+#an_search {
+  width: calc(100% - 1em);
+  margin: 0.5em;
+}
+.an_dd_chunk_header {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+  height: 3em;
+  line-height: unset;
+  padding: 0;
+}
+.an_dd_chunk_header:hover {
+  filter: brightness(90%);
+}
+.an_dd_chunk_title {
+  flex-grow: 1;
+  font-size: 1.1rem;
+}
+.checkbox_container {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  font-size: unset;
+  margin: 0.5em;
+}
+.checkbox_container .checkmark {
+  position: relative;
+  display: inline-block;
+  top: 0;
+  left: 0;
+}
+.an_dd_toggle_btn_container {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin: 0;
+}
+.an_dd_toggle_btn ~ span {
+  position: absolute;
+  right: 0;
+  width: 20px;
+  height: 20px;
+}
+.an_dd_toggle_btn ~ span:after {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transition-duration: 125ms;
+  transform: translateY(5px) rotate(45deg);
+}
+.an_dd_toggle_btn:checked ~ span:after {
+  transform: translateY(5px) rotate(225deg);
+}
+.an_dd_mem_list {
+  width: 100%;
+}
+
+.an_dd_mem {
+  width: calc(100% - 0.5em);
+  margin-left: 0.5em;
+  line-height: 1;
+}
+.an_dd_mem_checkbox_container {
+  display: flex;
+  align-items: center;
+  width: calc(100% - 0.5em);
+}
+.an_dd_mem_checkbox_container .checkmark {
+  margin: 0.25em;
+}
+.an_dd_mem_username {
+  flex-grow: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.an_area {
+  display: inline-block;
+}
+.an_title_area {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.an_title_area span {
+  position: absolute;
+  left: -2.5em;
+}
+.an_title_area input {
+  flex-grow: 1;
+}

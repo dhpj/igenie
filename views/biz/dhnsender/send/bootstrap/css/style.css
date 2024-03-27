@@ -1,0 +1,201 @@
+/* The Modal (background) */
+.btn_myModal{padding:10px 15px; background-color:#f00; color:#fff; float:right; display:inline-block; margin:10px 20px 0 0; cursor:pointer;}
+
+.dh_modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 10000; /* Sit on top */
+  padding-top:100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.dh_modal .modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding:50px;
+  border: 1px solid #888;
+  width:970px;
+  height:750px;
+}
+
+.modal-content .modal-tit{width:100%; font-size: 20px; border-bottom:solid 1px #ddd; padding-bottom:20px;}
+.modal-content ul{margin-top:30px;}
+.modal-content ul li{width:200px; height:230px; float:left; margin:0 20px 20px 0;}
+.modal-content ul li:nth-last-child(4n+1){margin-right:0 !important;}
+.modal-content ul li img{width:200px;}
+.modal-content ul li .tem_img{width:100%; height:180px; overflow: hidden;}
+.modal-content ul li .tem_text{width:100%; margin-top: 10px;}
+.modal-content ul li .tem_text span{width:50%; float:left; font-size:15px; text-transform: uppercase; padding:4px 0; background-color: #f1f1f1; text-align:center;}
+.modal-content ul li .tem_text button{width:50%; float:right; letter-spacing: -0.1em; padding:5px; background-color: #404040; color: #fff;}
+
+.modal-content2 {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding:50px;
+  border: 1px solid #888;
+  width:470px;
+  height:750px;
+}
+.modal-content2 .modal-tit{width:100%; font-size: 20px; padding-bottom:20px;}
+.modal-content2 .modal-img{width:100%; height:600px; overflow-y: scroll;}
+
+/* The Close Button */
+.dh_close {
+  z-index:10000;
+  color: #aaaaaa;
+  top:30px;
+  right:50px;
+  font-size:40px;
+  font-weight: bold;
+  position:absolute;
+}
+
+.dh_close:hover,
+.dh_close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.tem_tit{}
+.tem_btn1{}
+.tem_btn2{}
+
+
+
+/* 메세지발송_개인화메세지_231102 */
+.md_personal_v1{
+    --img_size:120px;
+    padding:60px 0px 0px;
+}
+.md_personal_v1 .modal-tit {
+    font-size: 30px;
+}
+.md_personal_v1 .sel_type {
+    margin-left:20px;
+}
+.md_personal_v1 .modal-content {
+    background: #fff;
+    width: 900px;
+    height: 750px;
+}
+.md_personal_v1 .modal-content ul {
+    margin:0;
+}
+.md_personal_v1 .modal-content ul li {
+    width: auto;
+    height: auto;
+    margin: 10px;
+}
+
+.modal-content .md_personal_v1_list {
+
+}
+.modal-content .md_personal_v1_list ul {
+    width:100%;
+    height:490px;
+    margin:25px auto 10px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 1%;
+}
+.modal-content .md_personal_v1_list ul li {
+    width:19%;
+    min-height: 236px;
+    margin:0 0 10px;
+    padding:5px 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border:1px solid #eee;
+    border-radius: 4px;
+    background: #fefefe;
+}
+.modal-content .md_personal_v1_list ul li:hover {
+    border:1px solid #326EDC;
+    cursor: pointer;
+}
+.modal-content .md_personal_v1_list ul li .list_tit {
+    width: var(--img_size);
+    height: 20px;
+    margin:5px auto;
+    font-weight: 600;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.modal-content .md_personal_v1_list ul li p {
+    width: var(--img_size);
+    height: var(--img_size);
+    display: flex;
+    align-items: flex-start;
+    /* background-color: #fcfcfc; */
+    /* border:1px solid #f3f3f3; */
+}
+.modal-content .md_personal_v1_list ul li img {
+    width:100%;
+    max-height: 100%;
+    margin:0 auto;
+}
+.modal-content .md_personal_v1_list ul li .list_text {
+    width: var(--img_size);
+    min-height: 35px;
+    margin:5px auto;
+    font-size:11.5px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+.modal-content .md_personal_v1_list ul li button.btn {
+    width:var(--img_size);
+    padding:3px 2px;
+    font-size:11px;
+    background-color: #f5f5f5;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.modal-content .md_personal_v1_list ul li .btn_wrap {
+    width: var(--img_size);
+    display: flex;
+    gap: 4px;
+}
+
+/* 메세지발송_개인화메세지_231115 */
+.personal_msg .btn_myModal {margin:0;}
+.personal_msg .add_file_view_tit {margin:5px 0 0px;}
+.personal_msg .add_file_view {
+    position: relative;
+    width:100%;
+    margin:3px 0 0 0;
+    padding:10px;
+    border:1px solid #dbdde2;
+    border-radius: 2px;
+    display: flex;
+    align-items:center;
+}
+.personal_msg .add_file_view dt {
+    width:70px;
+    height:70px;
+    margin-right:15px;
+    border:1px solid #eee;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+}
+.personal_msg .add_file_view dt img{width:100%; max-height:70px;}
+.personal_msg .add_file_view dd {width:calc(100% - 80px);}
+.personal_msg .add_file_view dd span {display:block; color:#999;}

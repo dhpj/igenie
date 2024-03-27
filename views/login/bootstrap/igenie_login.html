@@ -1,0 +1,33 @@
+<script>
+	var form = document.createElement("form");
+	document.body.appendChild(form);
+	form.setAttribute("method", "post");
+	form.setAttribute("action", "http://igenie.co.kr/login/igenie_loginapi"); //로그인 URL (변경불가)
+	form.setAttribute("accept-charset", "utf-8");
+
+	var obj = document.createElement("input");
+	obj.setAttribute("type", "hidden");
+	obj.setAttribute("name", "site_url");
+	obj.setAttribute("value", "http://www.test.com"); //접속 사이트 URL (변경하시면 됩니다.)
+	form.appendChild(obj);
+
+	obj = document.createElement("input");
+	obj.setAttribute("type", "hidden");
+	obj.setAttribute("name", "userid");
+	obj.setAttribute("value", "test2"); //지니 연동 ID (지니 > 파트너 관리 > 계정수정 > 파트너 상세보기 : 확인가능)
+	form.appendChild(obj);
+
+	obj = document.createElement("input");
+	obj.setAttribute("type", "hidden");
+	obj.setAttribute("name", "site_key");
+	obj.setAttribute("value", "VtbG5tloZo+WmJ9jUZqSqZdpZI8="); //지니 연동 Key (지니 > 파트너 관리 > 계정수정 > 파트너 상세보기 : 확인가능)
+	form.appendChild(obj);
+
+	obj = document.createElement("input");
+	obj.setAttribute("type", "hidden");
+	obj.setAttribute("name", "url_after_login");
+	obj.setAttribute("value", "/home"); //다음페이지 URL (변경불가)
+	form.appendChild(obj);
+
+	form.submit();
+</script>

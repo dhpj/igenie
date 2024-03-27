@@ -1,0 +1,27 @@
+.happycall_wrap{width: 100%;height: 2000px;position: absolute;top:0;left:0;background-color: #00000073;;z-index: 100000}
+.modal_white_box{width: 900px; height: 600px;border: 1px solid #ddd;background-color: #fff;position: fixed;top: 20%;left:30%; ;z-index: 1000000;border-radius: 25px;}
+.modal_white_box{padding: 25px;overflow: hidden;}
+.modal_textarea input{margin-bottom: 10px}
+.modal_white_box textarea{height: 100px}
+.modal_white_box button{float: right;padding: 8px 20px;margin-top: 5px;background-color: #fff;border: 1px solid #ddd}
+.modal_list{height: 100%;float: left;position: relative;padding: 10px 3px;border-top: 1px solid #7d7d7d;margin: 0 5px;}
+.modal_list_box{;height: 330px;margin-top: 50px;overflow: auto;}
+.modal_list_box button{padding: 5px 12px;margin-top: 0px;float: none;}
+.modal_close{float: right;position: absolute;top: 7px;right: 30px;padding: 0 !important;border:0px !important}
+.modal_textarea{display: flex;}
+.modal_textarea label{padding: 5px}
+.modal_textarea input{margin-right: 10px;}
+.modal_textarea select{margin-right: 3px}
+.modal_list_box table th{padding: 5px 11px;}
+.modal_list_box table td:last-child{padding: 6px 15px !important }
+.modal_textarea .margin_select{margin-right: 10px;}
+.modal_list_name{padding:5px 5px}
+/* .modal_list_name{width: 250px;display: inline-block;font-size: 15px;font-weight: bold;}
+.modal_list_date{width: 250px !important;color: #ababab}
+.modal_list_text{margin-top: 5px;width: 100% !important;display: block;}
+.modal_list_btn{position: absolute;top: 10px;right: 10px} */
+.search_box select{margin-right: 10px;}
+td button{padding: 0px 5px}
+.search_box button{width: 80px;height: 35px; border: 1px solid #ddd;background-color: #fff;position: relative;top: 1px;}
+.table_list table td button{padding: 5px 12px;background-color: #fff;border: 1px solid #ddd}
+.search_box .happycall_btn1{float: right;margin-left: 5px}

@@ -1,0 +1,357 @@
+@charset "UTF-8";
+.action25 {
+    animation-name: action25;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+}
+
+@-webkit-keyframes action25 {
+    0% {
+        transform: rotate(315deg);
+    }
+    100% {
+        transform: rotate(-45deg);
+    }
+}
+@font-face {
+    font-family: 'MBC1961GulimM';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/MBC1961GulimM.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MBC1961M';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/MBC1961M.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'yg-jalnan';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Cafe24Ohsquare';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/Cafe24Ohsquare.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Cafe24Ohsquareair';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202@1.0/Cafe24Ohsquareair.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.smart_back {
+    position: relative;
+    left: 50%;
+    /* top: 180px; */
+    width: 340px;
+    height: 340px;
+    margin-top : 45px;
+    /* padding: 10px; */
+    /* border-radius: 260px; */
+    /* background-color: black; */
+    transform: translatex(-50%);
+}
+
+.smart_back > .cover {
+    position: absolute;
+    top: 114px;
+    left: 41px;
+    z-index: 2;
+}
+
+.smart_back > .pin {
+    position: absolute;
+    left: 50%;
+    top: -20px;
+    border-top: 50px solid #ed5275;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-radius: 20px;
+    transform: translatex(-50%);
+    z-index: 1;
+}
+
+.smart_back > .wheel {
+    position: relative;
+    width: 340px;
+    height: 340px;
+    background-color: white;
+    border-radius: 210px;
+    overflow: hidden;
+    transform-origin: center center;
+}
+
+
+.smart_back > .reward {
+    position: absolute;
+    width: 340px;
+    height: 340px;
+    background-color: white;
+    border-radius: 210px;
+    overflow: hidden;
+    transform-origin: center center;
+    z-index: 3;
+}
+
+.smart_back > .wheel > div {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 170px;
+    height: 170px;
+    border-left: 1px dotted #999;
+    transform-origin: left bottom;
+    box-sizing: border-box;
+}
+
+.smart_back > .wheel > div > div {
+    position: absolute;
+}
+
+.action {
+    animation-name: action;
+    animation-duration: 0.3s;
+    animation-direction: normal;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes action {
+    0% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+
+.btn-box {
+    position: absolute;
+    top: 560px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.btn-box > .txt {
+    font-size: 14px;
+}
+
+.btn-box > .txt > span {
+    font-weight: bold;
+    color: #ab1234;
+}
+
+.btn-box > .num-box {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    width: 100px;
+    height: 30px;
+    transform: translatex(-50%);
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.btn-box > .num-box::-webkit-outer-spin-button,
+.btn-box > .num-box::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.set-btn {
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    width: 100px;
+    height: 30px;
+    transform: translatex(-50%);
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.start-btn,
+.stop-btn,
+.btn-cover {
+    position: absolute;
+    top: 110px;
+    left: 50%;
+    width: 100px;
+    height: 30px;
+    transform: translatex(-50%);
+    box-sizing: border-box;
+    display: none;
+    cursor: pointer;
+}
+
+.btn-cover {
+    background: rgba(0, 0, 0, 0.5);
+    /* z-index: 1; */
+    cursor: not-allowed;
+}
+
+@-webkit-keyframes updown {
+    0% {
+        margin-left: 120px;
+    }
+    50% {
+        margin-left: 110px;
+    }
+    100% {
+        margin-left: 120px;
+    }
+}
+
+/* 이벤트 미리보기 */
+.eveview_wrap {width: 100%; max-width:403px; margin:0 auto; text-align: center; overflow-x: hidden; background-color: #222;}
+/* .eveview_wrap {width: 403px; margin:0 auto; text-align: center; overflow-x: hidden;} */
+.eveview_wrap ul{padding: 0;}
+.eveview_wrap li{list-style: none;}
+.eveview_wrap .eve_title h2{word-break: keep-all; line-height: 1.1;}
+.eveview_wrap .eve_title h3{font-family: 'Noto Sans KR', 'Spoqa Han Sans', 'kakao', sans-serif; font-weight: 400;}
+.eveview_wrap .halfLine {position: sticky; display: inline-block;}
+.eveview_wrap .halfLine:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 105%;
+    height: 45%;
+    transform: translate(-50%,10%);
+    display: inline-block;
+    background: rgba(150, 150, 150, .2);
+    z-index: -1;
+}
+
+/* 글자 흰 테두리 */
+.eveview_wrap .text_stroke{
+    --stroke-color:#ffffff;
+    --stroke-width:2px;
+    text-shadow:var(--stroke-width) 0 0 var(--stroke-color), calc(var(--stroke-width) * -1) 0 0 var(--stroke-color), 0 var(--stroke-width) 0 var(--stroke-color), 0 calc(var(--stroke-width) * -1) 0 var(--stroke-color); text-shadow:calc(var(--stroke-width) * 1) calc(var(--stroke-width) * 0) 0 var(--stroke-color), calc(var(--stroke-width) * 0.9239) calc(var(--stroke-width) * 0.3827) 0 var(--stroke-color), calc(var(--stroke-width) * 0.7071) calc(var(--stroke-width) * 0.7071) 0 var(--stroke-color), calc(var(--stroke-width) * 0.3827) calc(var(--stroke-width) * 0.9239) 0 var(--stroke-color), calc(var(--stroke-width) * 0) calc(var(--stroke-width) * 1) 0 var(--stroke-color), calc(var(--stroke-width) * -0.3827) calc(var(--stroke-width) * 0.9239) 0 var(--stroke-color), calc(var(--stroke-width) * -0.7071) calc(var(--stroke-width) * 0.7071) 0 var(--stroke-color), calc(var(--stroke-width) * -0.9239) calc(var(--stroke-width) * 0.3827) 0 var(--stroke-color), calc(var(--stroke-width) * -1) calc(var(--stroke-width) * 0) 0 var(--stroke-color), calc(var(--stroke-width) * -0.9239) calc(var(--stroke-width) * -0.3827) 0 var(--stroke-color), calc(var(--stroke-width) * -0.7071) calc(var(--stroke-width) * -0.7071) 0 var(--stroke-color), calc(var(--stroke-width) * -0.3827) calc(var(--stroke-width) * -0.9239) 0 var(--stroke-color), calc(var(--stroke-width) * 0) calc(var(--stroke-width) * -1) 0 var(--stroke-color), calc(var(--stroke-width) * 0.3827) calc(var(--stroke-width) * -0.9239) 0 var(--stroke-color), calc(var(--stroke-width) * 0.7071) calc(var(--stroke-width) * -0.7071) 0 var(--stroke-color), calc(var(--stroke-width) * 0.9239) calc(var(--stroke-width) * -0.3827) 0 var(--stroke-color);
+}
+/* 하단 이벤트 관련공지 */
+:root {
+  --n2p_dtWidth: 56px;
+}
+.eve_notice2{position: relative; margin-top:-52px; padding: 20px 15px 20px; text-align: left; color: #fff; background-color: #393939; z-index: 2}
+.eve_notice2 hr {margin:4px 0 20px; border:0px; height:1px; background: rgba(100,100,100,.3); display: block;}
+
+.eve_notice2 .notice2_point {display: flex; flex-wrap: wrap;}
+.eve_notice2 .notice2_point dt{float:left; width:var(--n2p_dtWidth); line-height: 16px; opacity: 0.6; font-weight: 400; text-align: justify;}
+.eve_notice2 .notice2_point dt:after{content: ""; display: inline-block; width: 100%;}
+.eve_notice2 .notice2_point dd{float:left; width:calc(100% - var(--n2p_dtWidth)); line-height: 15px; font-size: 16px; letter-spacing: -0.5px;}
+.eve_notice2 .notice2_point dd::before{content: ':'; margin:0 6px; opacity: 0.6;}
+
+.eve_notice2 .notice2_detail{font-size:11px;}
+.eve_notice2 .notice2_detail h5{margin:25px 0 7px; opacity: 0.7; font-size: 13px;}
+.eve_notice2 .notice2_detail li{line-height:18px; margin-left:13px; list-style: disc; opacity: 0.4;}
+/* .eve_notice2 .notice2_detail li::before{content: '-'; margin-right:5px;} */
+.eve_notice2 .notice2_detail li::marker{font-size:6px; font-family:math; padding:0; }
+.eve_notice2 .notice2_detail li span{color:#f9e54e;}
+
+
+/* 룰렛 roulette_wrap */
+.roulette_wrap .eve_container{position: relative; width: 100%; padding: 30px 0 101px; }
+
+.roulette_wrap .smart_back > .cover img{width:45%; cursor: pointer;}
+.roulette_wrap .w_pin {position: absolute; left: 43.5%; top: -34px; z-index: 1;}
+.roulette_wrap .w_reward{}
+.roulette_wrap .w_reward .reward_goods{height:128px; text-align: center; line-height: 1.3; position: relative;}
+.roulette_wrap .w_reward .reward_goods .text_stroke{--stroke-width:1px;}
+.roulette_wrap .w_reward .reward_goods .text_stroke span:first-child{line-height:1; word-break: break-word;}
+.roulette_wrap .w_reward .reward_goods img{text-align: center; clip-path: polygon(0 0, 100% 0, 100% 50%, 71% 100%, 29% 100%, 0 50%);position: absolute; bottom: 0; left: 20px; z-index: -1;}
+.roulette_wrap .reward_pop{position: absolute; bottom:-70px; left:50%; transform: translatex(-50%);  width:403px; z-index:4;}
+.roulette_wrap .reward_pop img{width:100%;}
+.roulette_wrap .reward_pop input.btn_detail{position: absolute; bottom:100px; left:calc(50% - 68px); height: auto; padding: 10px 20px; font-size: 15px; color: #fff; border: solid 1px #333; border-radius: 50px; background-color: #404040; cursor: pointer; box-shadow: 0px 0px 5px 0px #77777766; border-bottom:5px solid #333;}
+
+.roulette_wrap .reward{height: 100%; padding:45px 52px 0; display: flex; flex-direction: column; align-items: center;}
+.roulette_wrap .reward dt{width:auto; font-size:28px; margin-bottom:3px; line-height: 1;}
+.roulette_wrap .reward dt.halfLine:before {padding:0 30px;}
+.roulette_wrap .reward dd#rw_detail{--stroke-width:1px; font-size:20px; min-height: 12px;}
+.roulette_wrap .reward dd#reward_img{max-height: 190px; margin:-20px 0 20px 0; position: relative; z-index: -1; overflow:hidden;}
+.roulette_wrap .reward dd#reward_img img{max-width: 85%;}
+
+
+.reward_wrap {width:100%; height:560px; margin-bottom: -30px; padding:5px 20px 0; background: center top/380px no-repeat url("/images/eveview/reward_bg_01.png");}
+.reward_wrap .reward_item{height:340px; margin:0; display: flex; justify-content: flex-end; flex-direction: column; position: relative;}
+.reward_wrap .rw_title{font-size:28px; z-index: 1; letter-spacing:-1px}
+.reward_wrap .rw_title img{width:18px;  margin-top:-4px;}
+.reward_wrap .rw_detail{font-size:18px; z-index: 1;}
+.reward_wrap .rw_dDay{font-size:16px; margin-top:8px; font-weight:600; color:#ffa700; z-index: 1;}
+.reward_wrap .rw_img {width:100%; position: absolute; top: 10px; z-index: 0; max-height: 255px; overflow: hidden;}
+.reward_wrap .rw_img img{width:75%;}
+.reward_wrap .barcode_box {margin-top:40px; text-align: center;}
+.reward_wrap .barcode_box #barcode_div{margin:0 auto;}
+.reward_wrap .btn_barcode {width:80%; height: auto; margin-top:10px; padding:10px 0; font-size:18px; color:#333; background:#f9e54e; border:none; border-radius: 5px;}
+
+.reward_wrap.no_barcode {height:453px; background: center top/380px no-repeat url("/images/eveview/reward_bg_02.png");}
+.reward_wrap.no_barcode .btn_barcode {margin-top:40px;}
+
+/* 참여완료 */
+.eveview_wrap #pre_pop{
+    position: absolute;
+    bottom: -70px;
+    left: 50%;
+    width: 400px;
+    height:451px;
+    padding:0 0 30px;
+    transform: translatex(-50%);
+    background: center top/400px no-repeat url("/images/eveview/pre_pop_bg.png");
+    overflow: hidden;
+    z-index: 4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.eveview_wrap #pre_pop img{width:225px;}
+.eveview_wrap #pre_pop #reward_btn2{height:auto; margin:-10px 0 0 3px; padding: 10px 20px; font-size: 15px; color: #fff; border: solid 1px #333; border-radius: 50px; background-color: #404040; cursor: pointer; box-shadow: 0px 0px 5px 0px #77777766; border-bottom:5px solid #333;}
+.eveview_wrap .eve_end{height: 100%;
+    padding: 20px 20px 25px;
+    font-size: 26px;
+    font-family: inherit;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;}
+
+.eveview_wrap .eve_end{
+    height: 100%;
+    padding: 20px;
+    font-size: 35px;
+    font-family: inherit;
+    color: #ffffff88;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.eveview_wrap .eve_end em{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    color: #fff;
+}
+
+/* 룰렛타입 A */
+.roulette_A{background: center bottom/403px no-repeat url("/images/eveview/roulette_bg_01.jpg");}
+.roulette_A .eve_title{padding:0 20px; font-size:18px; font-family: 'Cafe24Ohsquare'; color:#fff; letter-spacing: 0;}
+.roulette_A .eve_title h3{min-width:70%; line-height: 1.2; padding:6px 20px 4px; color:#fff; font-size:20px; background-color:#06145faa; border-radius:20px; box-shadow: 0px 0px 10px 1px #ffffff11; display:inline-block;}
+.roulette_A .eve_title h2{margin:20px 0 10px; font-family: 'Cafe24Ohsquare'; font-size:45px; text-shadow: 1px 1px 7px #0000009c;}
+.roulette_A .eve_title .eve_notice{opacity:0.5;}
+.roulette_A .eve_title .eve_date{margin:10px 0; font-size:18px; font-weight: 600; color:#ffff00; display: inline-block; position: relative;}
+
+/* 룰렛타입 B */
+.roulette_B{background: center bottom/403px no-repeat url("/images/eveview/roulette_bg_02.jpg");}
+.roulette_B .eve_title{padding:0 20px; font-size:18px;  font-family: 'MBC1961GulimM'; color:#fff; }
+.roulette_B .eve_title h3{min-width:70%; line-height: 1.2; padding:6px 20px 4px; color:#fff; font-size:20px; font-weight: 400; background-color:#0138b9cc; border-radius:20px; box-shadow: 0px 0px 10px 1px #ffffff11; display:inline-block;}
+.roulette_B .eve_title h2{margin:20px 0 10px; font-family: 'MBC1961GulimM'; font-size:48px; font-weight: 400; color:#0030a3; text-shadow: 0px 4px 0px #fff;}
+/* .roulette_B .eve_title h2:after{text-decoration: underline wavy #ffffff99 2px; text-underline-position: under;} */
+.roulette_B .eve_title .eve_notice{color: #1f7dba; opacity:1;}
+.roulette_B .eve_title .eve_date{margin:10px 0; padding:3px 20px 1px; font-size:16px; color:#fff; background-color:#ff7f28; border-radius:20px; box-shadow: 0px 0px 10px 1px #ffffff11; display: inline-block;}

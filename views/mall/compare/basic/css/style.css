@@ -1,0 +1,170 @@
+@charset "utf-8";
+/* 웹폰트 */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900|Noto+Sans+KR:100,300,400,500,700,900&subset=korean');
+* {
+  -webkit-text-size-adjust: none;
+}
+
+footer{display: none;}
+
+/*content*/
+.wrap_compare{width:100%; padding:50px; position: relative;}
+.s_tit{width:1200px; margin:50px auto; text-align:left; font-size:35px;}
+
+.list_leaflets{width:100%; float:left; display: inline-block;}
+.list_leaflets ul{border-top:solid 2px #404040;}
+.list_leaflets ul li{width:100%; display: inline-block; border-bottom:solid 1px #ccc; padding:0;}
+.list_leaflets ul li .ll_date{width:90px; float:left; text-align:left; border-right:dotted 1px #ccc; padding:15px 0 15px 20px; box-sizing: border-box;}
+.list_leaflets ul li .ll_date .date_d{font-size:40px; width:100%; line-height:100%;}
+.list_leaflets ul li .ll_date .date_ym{font-size:12px; width:100%; display:block; line-height:100%; }
+.list_leaflets ul li .ll_title{width:480px; float:left; padding:15px 0 15px 20px; box-sizing: border-box;}
+.list_leaflets ul li .ll_title .title_t{font-size:20px;}
+.list_leaflets ul li .ll_title .title_b{font-size:15px; opacity: 0.6;}
+.list_leaflets ul li .ll_btn1{width:105px; float:left; padding:15px 0 15px 20px; box-sizing: border-box; border-left:dotted 1px #ccc;}
+.list_leaflets ul li .ll_btn2{width:105px; float:left; padding:15px 0 15px 15px; box-sizing: border-box; border-left:dotted 1px #ccc;}
+.list_leaflets ul li .ll_btn1 button, .list_leaflets ul li .ll_btn2 button{border-radius:5px; letter-spacing: -0.1em;}
+.list_leaflets ul li .ll_btn1 .view{background-color:#fde200; color:#404040; padding:15px 10px; border:solid 1px #404040; box-sizing: border-box;}
+.list_leaflets ul li .ll_btn2 .copy{background-color:#fff; color:#404040; padding:15px 15px; border:solid 1px #404040; box-sizing: border-box;}
+.list_leaflets ul li .ll_btn1 .view:hover, .list_leaflets ul li .ll_btn1 .send1:hover, .list_leaflets ul li .ll_btn1 .send2:hover, .list_leaflets ul li .ll_btn2 .copy:hover, .list_leaflets ul li .ll_btn2 .del:hover{background-color:#404040; color:#fff;}
+.list_leaflets ul li .ll_btn2 .insert:hover{background-color:#404040; color:#fff;}
+
+.write_leaflets{width:1200px; margin:0 auto;}
+.write_leaflets .wl_lbox{width:780px; float:left; box-sizing: border-box; position: relative;}
+.btn_imgtem button{position: absolute; top:-5px; right:-20px; background-color:#404040; color:#fff; padding:5px 10px;}
+.wl_tit{width:100%;}
+.wl_date{width:100%;}
+.write_leaflets .wl_rbox{width:370px; float:left; margin-left:50px; box-sizing: border-box;}
+.wl_rbox_tit{text-align: center; opacity: 0.5; margin-bottom:10px; width:350px;}
+.wl_r_preview{width:370px; height:700px; overflow-y: scroll; position: relative;}
+.wl_r_preview_bg{position:absolute; top:64px; left:0; z-index: 100;}
+.wl_r_preview_bg img{width:350px;}
+.pre_box_wrap{z-index: 1000; position: relative; width:350px;}
+.wl_r_preview .pre_box1{width:100%; background-color:#373535; text-align: center; line-height: 1;}
+.wl_r_preview .pre_box1 .pre_tit{color:#fff; font-size: 25px; padding-top:10px;}
+.wl_r_preview .pre_box1 .pre_date{color:#ffec00; font-size: 18px; padding:5px 0 10px 0;}
+.wl_r_preview .pre_box2{width:90%; margin:295px 5% 5% 5%; background-color: #fff; display: inline-block; border-radius: 5px;}
+.wl_r_preview .pre_box2 dl{width:100%; clear: left; display: inline-block; border-bottom:dotted 1px #ddd;}
+.wl_r_preview .pre_box2 dl:last-child{border:none !important;}
+.wl_r_preview .pre_box2 dl:nth-child(2n+1) dt{width:55%; float: left;}
+.wl_r_preview .pre_box2 dl:nth-child(2n+2) dt{width:55%; float: right;}
+.wl_r_preview .pre_box2 dl dt img{width:100%; border-radius: 5px;}
+.wl_r_preview .pre_box2 dl:nth-child(2n+1) dd{width:45%; float: left;}
+.wl_r_preview .pre_box2 dl:nth-child(2n+2) dd{width:45%; float: right;}
+.wl_r_preview .pre_box2 dl dd ul{margin:35px 0 0 0;}
+.wl_r_preview .pre_box2 dl dd ul li{line-height:1;}
+.wl_r_preview .pre_box2 dl:nth-child(2n+2) dd ul li{text-align: right;}
+.wl_r_preview .pre_box2 dl dd ul .price1{font-size: 20px; text-decoration:line-through; opacity: 0.5;}
+.wl_r_preview .pre_box2 dl dd ul .price2{font-size: 30px; color:#f00; font-weight: bold;}
+.wl_r_preview .pre_box2 dl dd ul .name{font-size: 20px; margin-top:10px;}
+.wl_r_preview .pre_box3{width:100%;}
+.wl_r_preview .pre_box3 .pre_tit img{width:100%;}
+.wl_r_preview .pre_box3 .pop_list_wrap{width:100%; display: inline-block; padding:5px 0 25px 0; background-color: #fff;}
+
+.pop_list01{width:50%; float: left; position: relative; text-align: center;}
+.pop_good_img{position: absolute; top:0; left:0; z-index:100;}
+.pop_good_img img{width:90%;}
+.pop_name{z-index: 1000; position: relative; margin-top:145px; font-size:18px;font-weight: bold;}
+.pop_price{z-index: 1000; position: relative; line-height: 1;}
+.pop_price .price1{font-size:15px; text-decoration:line-through; opacity: 0.5;}
+.pop_price .price2{font-size:25px; color:#f00; font-weight: bold;}
+.wl_r_preview .pre_box4{width:100%; display: inline-block;}
+.wl_r_preview .pre_box4 .pre_tit img{width:100%;}
+.wl_r_preview .pre_box4 .pop_list_wrap{width:100%; display: inline-block; padding:15px 0; background-color:#d9d9d9;}
+.pop_list02{width:90%; margin:0 5%; background-color: #fff; display: inline-block; padding:5px; box-sizing: border-box; border-radius: 5px;}
+.pop_list02 .name{width:50%; float: left; font-weight: bold;}
+.pop_list02 .price1{width:25%; float: left; text-align: right; opacity: 0.5; text-decoration:line-through;}
+.pop_list02 .price2{width:25%; float: left; text-align: right; color:#f00; font-weight: bold;}
+
+.write_leaflets .int{width:100%;height: 40px;margin-bottom:10px;border-top:none;border-left:none;border-right:none;border-bottom:solid 1px #ccc;font-size: 15px;padding:0; box-sizing: border-box; background-color:#f2f2f2; font-family:'Spoqa Han Sans', 'kakao', sans-serif;}
+.write_leaflets .int140{width:140px;height:30px;border:solid 1px #ccc;font-size: 15px;padding:10px; box-sizing: border-box; background-color:#fff; font-family:'Spoqa Han Sans', 'kakao', sans-serif;}
+.write_leaflets .int130{width:130px;height:30px;border:solid 1px #ccc;font-size: 15px;padding:10px; box-sizing: border-box; background-color:#fff; font-family:'Spoqa Han Sans', 'kakao', sans-serif;}
+.write_leaflets .int120{width:120px;height:30px;border:solid 1px #ccc;font-size: 15px;padding:10px; box-sizing: border-box; background-color:#fff; font-family:'Spoqa Han Sans', 'kakao', sans-serif;}
+.write_leaflets .int100_l{width:100%;height:30px;border:solid 1px #ccc;font-size: 15px;padding:10px; box-sizing: border-box; background-color:#fff; font-family:'Spoqa Han Sans', 'kakao', sans-serif; text-align: left;}
+.write_leaflets .int100_r{width:100%;height:30px;border:solid 1px #ccc;font-size: 15px;padding:10px; box-sizing: border-box; background-color:#fff; font-family:'Spoqa Han Sans', 'kakao', sans-serif; text-align: right;}
+
+.wl_main_goods{width:100%; border-bottom:solid 1px #ccc; position: relative;}
+.wl_main_goods .tit_box{width:100%; display: inline-block; padding-top:15px;}
+.wl_main_goods .tit{width:300px; float: left;  font-size:15px;}
+.wl_main_goods .tit span{font-weight: bold; font-family:'Montserrat';}
+.wl_main_goods dl{width:100%; margin-top:15px; padding-bottom:50px; display: inline-block; position:relative;}
+.wl_main_goods dl dt{width:152px; float: left;}
+.wl_main_goods dl dd{width:250px; float: left;}
+.wl_main_goods dl dd span{width:70px; padding-left:20px; font-size:15px; display: inline-block;}
+.wl_main_goods dl dd ul li{padding:0; margin: 0 0 10px 0;}
+
+.wl_main_goods .add_goods button{position: absolute; bottom:30px; right:0; background-color:#cf0000; color:#fff; padding:5px 10px; border-radius:5px; font-family:'Spoqa Han Sans', 'kakao', sans-serif;}
+
+/*페이징*/
+.pagination {text-align:center; margin-top: 50px; position: relative; clear: left;}
+.pagination .swiper-pagination-bullets {text-align: center; margin-top: 55px; }
+.pagination .screen-reader-text {display:none;}
+.pagination .page-numbers {display:inline-block; width:52px; height:52px; vertical-align:top; line-height:52px; border-radius: 100%; text-align:center; margin:0 3px; font-size: 20px; font-weight: 500; letter-spacing: -0.25px; cursor:pointer; }
+.pagination .page-numbers.current, .pagination .page-numbers:hover {background: #ccc; color: #fff;}
+.pagination .page-numbers.prev, .pagination .page-numbers.next {background: url(/dhn/images/leaflets/pagination.png)no-repeat center; background-size: 11px 20px;}
+.pagination .page-numbers.prev { transform: rotate(180deg); }
+
+/* The Modal (background) */
+.btn_myModal{padding:10px 15px; background-color:#f00; color:#fff; float:right; display:inline-block; margin:10px 20px 0 0; cursor:pointer;}
+
+.dh_modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 10000; /* Sit on top */
+  padding-top:100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding:50px;
+  border: 1px solid #888;
+  width:970px;
+  height:750px;
+}
+
+.modal-content .modal-tit{width:100%; font-size: 20px; border-bottom:solid 1px #ddd; padding-bottom:20px;}
+.modal-content ul{margin-top:30px;}
+.modal-content ul li{width:200px; height:230px; float:left; margin:0 20px 20px 0;}
+.modal-content ul li:nth-last-child(4n+1){margin-right:0 !important;}
+.modal-content ul li img{width:200px;}
+.modal-content ul li .tem_img{width:100%; height:180px; overflow: hidden;}
+.modal-content ul li .tem_text{width:100%; text-align: center; margin-top: 10px;}
+
+.modal-content2 {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding:50px;
+  border: 1px solid #888;
+  width:470px;
+  height:750px;
+}
+.modal-content2 .modal-tit{width:100%; font-size: 20px; padding-bottom:20px;}
+.modal-content2 .modal-img{width:100%; height:600px; overflow-y: scroll;}
+
+/* The Close Button */
+.dh_close {
+  z-index:10000;
+  color: #aaaaaa;
+  top:30px;
+  right:50px;
+  font-size:40px;
+  font-weight: bold;
+  position:absolute;
+}
+
+.dh_close:hover,
+.dh_close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}

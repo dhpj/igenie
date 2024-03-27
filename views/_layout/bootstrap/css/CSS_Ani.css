@@ -1,0 +1,55 @@
+
+/* 스마트전단 애니 */
+.logo2.animate__tada {animation-iteration-count : 2;}
+.pre_box2 dl.animate__fadeInLeft:nth-child(even) {animation-name: fadeInRight; animation-delay: 0.2s;}
+.pre_box2 dl dd.animate__flipInX {animation-delay: 0.5s;}
+
+
+
+/* 스마트홈 애니 */
+.wrap_smart .animate__pulse{
+    animation-timing-function: ease-in;
+    animation-duration: 500ms;
+}
+.wrap_smart .animate__pulse:nth-child(2){animation-delay: 0.2s;}
+.wrap_smart .animate__pulse:nth-child(3){animation-delay: 0.4s;}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.5, 0.5);
+        opacity: 0;
+    }
+    85% {
+        transform: scale3d(1.1,1.1,1.1);
+        opacity: 1;
+        animation-timing-function: ease;
+    }
+    to {
+        transform: scaleX(1);
+        opacity: 1;
+    }
+}
+
+/* 배경 샤라랑 */
+.shiny-btn1 {
+    position: relative;
+    overflow: hidden;
+}
+.shiny-btn1:before {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    top: -180px;
+    left: 0;
+    width: 30px;
+    height: 100%;
+    background-color: #fff;
+    animation: shiny-btn1 3s ease-in-out infinite;
+    z-index: 10;
+}
+@-webkit-keyframes shiny-btn1 {
+    0% { -webkit-transform: scale(0) rotate(45deg); opacity: 0; }
+    80% { -webkit-transform: scale(0) rotate(45deg); opacity: 0.5; }
+    81% { -webkit-transform: scale(4) rotate(45deg); opacity: 1; }
+    100% { -webkit-transform: scale(50) rotate(45deg); opacity: 0; }
+}

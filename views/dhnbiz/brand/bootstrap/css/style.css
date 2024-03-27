@@ -1,0 +1,109 @@
+.btn_tem1_on{letter-spacing:-0.1em; border-radius:3px; padding:3px 0; width:100px; margin-top:5px; background-color: #ffdf2b; border:solid 1px #404040;}
+.btn_tem1_off{letter-spacing:-0.1em; border-radius:3px; padding:3px 0; width:100px; margin-top:5px; background-color: #f1f1f1; border:solid 1px #ddd;}
+
+.btn_tem2_on{letter-spacing:-0.1em; border-radius:3px; padding:3px 0; width:100px; margin-top:5px; background-color: #ffdf2b; border:solid 1px #404040;}
+.btn_tem2_off{letter-spacing:-0.1em; border-radius:3px; padding:3px 0; width:100px; margin-top:5px; background-color: #f1f1f1; border:solid 1px #ddd;}
+
+.btn_tem3_on{letter-spacing:-0.1em; border-radius:3px; padding:3px 0; width:100px; margin-top:5px; background-color: #ffdf2b; border:solid 1px #404040;}
+.btn_tem3_off{letter-spacing:-0.1em; border-radius:3px; padding:3px 0; width:100px; margin-top:5px; background-color: #f1f1f1; border:solid 1px #ddd;}
+
+.tem_btn1 {
+  width:100%;
+  display: inline-block;
+  border: solid 1px #ddd;
+  background-color: #fff;
+  padding: 5px 0;
+  font-size: 11px;
+  margin-top: 5px;
+  border-radius: 3px;
+}
+
+.list_al_left li{text-align: left; margin-top: 5px;}
+
+.tab_st1{width:calc(100% - 150px); margin:0 0 20px 0; padding:30px 0 0 0;}
+.tab_st1 .tablinks{font-size:15px; background-color:#fff; padding:10px 30px; margin-right:5px; border:solid 1px #ddd; border-radius: 30px;}
+.tab_st1 .tablinks.active{background-color:#404040; color:#fff; border:solid 1px #404040;}
+.tab_st1 button:hover{background-color:#404040; color:#fff; border:solid 1px #404040;}
+
+/* 라디오버튼 */
+.radio_con {
+  position: relative;
+  padding-left:20px;
+  margin-right:10px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.radio_con input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top:3px;
+  left: 0;
+  height:16px;
+  width:16px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+.radio_con:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.radio_con input:checked ~ .checkmark {
+  background-color: #da281c;
+}
+
+.radio_con .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.radio_con input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.radio_con .checkmark:after {
+ 	top: 4px;
+	left: 4px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+
+.tem_cate_list li{float:left;}
+
+.tag_write{width:100%;}
+.tag_write li{width:100%; display: inline-block; border-bottom: dotted 1px #ddd; padding:15px 0;}
+.tag_write li .tit{width:10%; float:left; font-weight:700;}
+.tag_write li .text{width:90%; float:left;}
+.tag_write .tag_box{float:left; cursor: pointer; width:calc(25% - 30px); margin-bottom:10px; background-color: #f1f1f1; padding:10px; margin-right:10px;}
+.tag_write .tag_box input{height:30px; border:solid 1px #ddd; padding:0 10px; width:125px; box-sizing: border-box; vertical-align: middle;}
+.tag_write .tag_box button{width:30px; height:30px; border:solid 1px #ddd; background-color:#fff; vertical-align: middle;}
+
+.btn_tagadd{height:34px; padding:0 20px; background-color: #fff; border:solid 1px #404040; vertical-align: middle;}
+.tem_cate_info{width:100%; display: inline-block;}
+.tem_cate_info li{float:left; border:solid 2px #ddd; padding:3px 5px; border-radius: 3px; margin-right:5px; font-size:12px;}
+
+.talk_box{width:250px; max-height:520px; overflow-y: auto;}
+.talk_info{width:100%; text-align:left; margin-top:10px; color:#f00; font-size:15px; }
+.talk_box_top{background-color: #ffdf2b; color:#404040; font-size:20px; padding:10px 0;}
+.talk_box_con{text-align: left; padding:15px;background-color: #fff;}
+.talk_box_con img{margin-bottom:15px;}
+.talk_box_btn{padding:0 15px 15px 15px;}
+.talk_box_btn p{background-color:#f1f1f1; border-radius:5px; padding:10px 0;}
+.talk_box_btn p:nth-child(2), .modal-content .al_talk_box .talk_box_btn p:nth-child(3){margin-top:5px;}
+
+.al_left{text-align: left;}
+
+.template_imgtype{border:solid 2px #ddd; border-radius:3px; padding:3px 5px; margin-bottom:7px; display: inline-block;}
+.template_txttype{border:solid 2px #ddd; border-radius:3px; padding:3px 5px; margin-bottom:7px; display: inline-block;}

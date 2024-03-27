@@ -1,0 +1,51 @@
+/**
+ * Owl Carousel v2.2.1
+ * Copyright 2013-2017 David Deutsch
+ * Licensed under  ()
+ */
+/*
+ * 	Default theme - Owl Carousel CSS File
+ */
+.owl-theme .owl-nav{text-align:center;-webkit-tap-highlight-color:transparent}
+.owl-theme .owl-nav [class*=owl-]{display:inline-block;margin:5px;padding:4px 7px;border-radius:3px;background:#D6D6D6;font-size:14px;color:#FFF;cursor:pointer}
+.owl-theme .owl-nav [class*=owl-]:hover{background:#869791;color:#FFF;text-decoration:none}
+.owl-theme .owl-nav .disabled{opacity:0.5;cursor:default}
+.owl-theme .owl-nav.disabled + .owl-dots{margin-top:10px}
+.owl-theme .owl-dots{padding-top:20px;text-align:center;-webkit-tap-highlight-color:transparent}
+.owl-theme .owl-dots .owl-dot{display:inline-block;*display:inline;zoom:1}
+.owl-theme .owl-dots .owl-dot span{display:block;width:14px;height:14px;margin:0 3px;border-radius:14px;background:#e5e5e5;-webkit-backface-visibility:visible;transition:opacity 200ms ease}
+.owl-theme .owl-dots .owl-dot.active span,.owl-theme .owl-dots .owl-dot:hover span{background:#000}
+
+#bovimg .owl-nav{display:block;position:absolute;top:0;left:0;z-index:2;width:100%;height:100%;margin:0;padding:0}
+#bovimg .owl-nav .owl-prev{display:block;position:absolute;z-index:2;width:50%;height:100%;margin:0;padding:20% 0 0 0;border-radius:0;background:none;font-family:'Courier New';color:rgba(0,0,0,.3);cursor:pointer;text-align:left}
+#bovimg .owl-nav .owl-prev:before{display:inline-block;width:5%;height:1px;margin-right:10px;background-color:rgba(0,0,0,.1);vertical-align:middle;content:""}
+#bovimg .owl-nav .owl-next{display:block;position:absolute;z-index:2;right:0;width:50%;height:100%;margin:0;padding:20% 0 0 0;border-radius:0;background:none;font-family:'Courier New';color:rgba(0,0,0,.3);cursor:pointer;text-align:right}
+#bovimg .owl-nav .owl-next:after{display:inline-block;width:5%;height:1px;margin-left:10px;background-color:rgba(0,0,0,.1);vertical-align:middle;content:""}
+#bovimg .owl-prev:focus,#bovimg .owl-prev:hover,#bovimg .owl-next:focus,#bovimg .owl-next:hover{color:rgba(0,0,0,1)}
+#bovimg .owl-prev:focus:before,#bovimg .owl-prev:hover:before,#bovimg .owl-next:focus:after,#bovimg .owl-next:hover:after{background-color:rgba(0,0,0,1)}
+
+#bovimg .owl-dots{display:block;position:absolute;z-index:3;width:100%;text-align:center}
+
+#bovimg .owl-item{display:block;height:100%;margin:0;padding:0;text-align:center}
+#bovimg .item{display:block;height:100%;margin:0;padding:0}
+#bovimg .view_image{display:block;height:100%;text-align:center;margin:0}
+#bovimg .item img{display:inline-block;max-width:100%;width:auto;margin:0;padding:0}
+
+.owl-bovimg-nav{clear:both;position:absolute;right:0;z-index:5;margin:-65px 0 0;padding:0;text-align:right}
+.owl-bovimg-nav-btn{overflow:hidden;display:inline-block;width:31px;height:31px;padding:0;background-image:url(owl_nav.png);background-repeat:no-repeat;font-size:0;line-height:1;text-indent:-99999px;text-align:left;cursor:pointer;-webkit-transition:all .35s ease;-moz-transition:all .35s ease;transition:all .35s ease}
+.owl-bovimg-nav-btn:focus,.owl-bovimg-nav-btn:hover{background-color:#f7f7f7}
+.owl-bovimg-prev{background-position:0 0}
+.owl-bovimg-next{background-position:-31px 0}
+.owl-bovimg-stop{display:none;background-position:-62px 0}
+.owl-bovimg-play{display:none;background-position:-93px 0}
+.owl-bovimg-stop.on{display:inline-block}
+.owl-bovimg-play.on{display:inline-block}
+
+#bo_v_list{margin-bottom:100px}
+#bo_v_list .bovlst{padding:0 30px}
+#bo_v_list .item img{display:inline-block;max-width:100%;width:100%;height:auto !important;margin:0 0 15px;padding:0}
+#bo_v_list .bovlst_subject{font-size:12px;letter-spacing:.05em;color:#898989}
+#bo_v_list .owl-nav{display:block;width:100%;margin:0;padding:0}
+#bo_v_list .owl-prev{overflow:hidden;display:block;position:absolute;z-index:2;left:0;top:39%;width:15px;height:25px;margin:0;padding:0;border-radius:0;background:url(owl_nav.png) no-repeat 0 -40px;background-color:rgba(255,255,255,0);text-indent:-99999px;cursor:pointer}
+#bo_v_list .owl-next{overflow:hidden;display:block;position:absolute;z-index:2;right:0;top:39%;width:15px;height:25px;margin:0;padding:0;border-radius:0;background:url(owl_nav.png) no-repeat -30px -40px;background-color:rgba(255,255,255,0);text-indent:-99999px;cursor:pointer}
+#bovimg .owl-prev:focus,#bovimg .owl-prev:hover,#bovimg .owl-next:focus,#bovimg .owl-next:hover{}

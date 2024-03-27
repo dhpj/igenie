@@ -1,0 +1,31 @@
+.salesman_box{width:calc(100% - 50px); display: inline-block; margin:25px;}
+.salesman_box .w50{width:45%; float: left; border: 1px solid #f1f1f1; background-color: #fff; border-radius: 5px; padding:15px 0; box-sizing: border-box;}
+.salesman_box .w50_l30{width:calc(55% - 25px); float: left; border: 1px solid #f1f1f1; margin-left:25px; background-color: #fff; border-radius: 5px; padding:15px 0; box-sizing: border-box;}
+.salesman_box .wb_header{width:100%; font-size:16px; border-bottom: 1px solid #e2e6ee; padding:0 25px 15px 25px;}
+.salesman_box .wb_header select{height:34px;}
+.salesman_box .wb_body{width:100%; padding:15px 25px 0 25px;}
+.salesman_box .w100{width:100%;border: 1px solid #f1f1f1; background-color: #fff; border-radius: 5px; padding:15px 0; box-sizing: border-box;}
+
+@media (max-width:1800px) {
+.salesman_box .w50{width:100%;}
+.salesman_box .w50_l30{width:100%; margin:25px 0 0 0;}
+}
+
+.manager_list{display: inline-block; margin:0;}
+.manager_list li{float:left; width:190px; position: relative; vertical-align: middle; padding:5px; margin:0 10px 10px 0; background-color: #f1f1f1;}
+.manager_list li input{width:100px; border: 1px solid #dedede;}
+.manager_list li .manager_insert{width:36px; height: 34px; text-align: center; box-sizing: border-box; border: 1px solid #dedede; background-color: #fff;}
+.manager_list li .manager_del{width:36px; height: 34px; text-align: center; box-sizing: border-box; border: 1px solid #dedede; background-color: #fff;}
+
+.wb_list dl{width:100%; display: inline-block; margin: 0; padding:15px 0; border-bottom:1px dotted #e2e6ee;}
+.wb_list dl:nth-last-child(1){border-bottom:none;}
+.wb_list dl:nth-of-type(1){padding-top:0;}
+.wb_list dl dt{width:100px; float: left; font-weight: normal; line-height:250%;}
+.wb_list dl dd{width:calc(100% - 100px); float: left; line-height:250%;}
+.wb_list dl dd input{height:34px;}
+.wb_list dl dd select{height:34px;}
+
+.ip_w80{width:80px; height:34px;}
+.ip_w100{width:100px;}
+.ip_w105{width:105px;}
+.ip_w190{width:190px;}

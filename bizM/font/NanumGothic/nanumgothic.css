@@ -1,0 +1,38 @@
+/*
+ * Nanum Barun Gothic Web Fonts
+ * https://github.com/hiun/NanumGothic
+ * Copyright (c) 2010, NAVER Corporation (http://www.nhncorp.com)
+ */
+
+@font-face {
+	font-family: 'NanumGothic';
+	font-style: normal;
+	font-weight: 400;
+	src: url(./NanumGothicR.eot);
+	src: local("※"),
+	url(./NanumGothicR.eot?#iefix) format('embedded-opentype'),
+	url(./NanumGothicR.woff2) format('woff2'),
+	url(./NanumGothicR.woff) format('woff'),
+src: url(./NanumGothicR.ttf) format('truetype');
+}
+@font-face {
+	font-family: 'NanumGothic';
+	font-style: normal;
+	font-weight: 700;
+	src: url(./NanumGothicB.eot);
+	src: url(./NanumGothicB.eot?#iefix) format('embedded-opentype'),
+	url(./NanumGothicB.woff2) format('woff2'),
+	url(./NanumGothicB.woff) format('woff'),
+	src: url(./NanumGothicB.ttf) format('truetype');
+}
+@font-face {
+	font-family: 'NanumGothic';
+	font-style: normal;
+	font-weight: 800;
+	src: url(./NanumGothicEB.eot);
+	src: local("※"),
+	url(./NanumGothicEB.eot?#iefix) format('embedded-opentype'),
+	url(./NanumGothicEB.woff2) format('woff2'),
+	url(./NanumGothicEB.woff) format('woff'),
+	src: url(./NanumGothicEB.ttf) format('truetype');
+}

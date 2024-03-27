@@ -1,0 +1,211 @@
+.main_contents {
+	padding: 25px;
+	max-width: 1400px;
+	margin: 0 auto;
+}
+.main_card_list {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 auto;
+}
+.main_card_list .card {
+	position: relative;
+	min-height: 150px;
+	background: #fff;
+    box-shadow: 0 0 3px 1px rgba(51, 51, 51, 0.1);
+}
+.main_card_list .card h3 {
+	position: relative;
+	font-size: 16px;
+	color: #000;
+	padding: 15px;
+}
+.main_card_list .card .value {
+	position: absolute;
+	bottom: 25px;
+	left: 15px;
+	font-size: 48px;
+	font-weight: 100;
+	line-height: 1;
+}
+.main_card_list.row2 > .card {
+	width: 49%;
+	margin: 0 2% 2% 0;
+	transition: all 1s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.main_card_list.row2 > .card h3 {
+	position: relative;
+	padding: 0 15px;
+	height: 60px;
+	line-height: 60px;
+	border-bottom: 1px solid #dedede;
+}
+.main_card_list.row2 > .card:nth-of-type(2n) {
+	margin-right: 0;
+}
+.main_card_list.row3 > .card {
+	width: 32%;
+	margin: 0 2% 2% 0;
+	transition: all 1s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.main_card_list.row3 > .card:nth-of-type(3n) {
+	margin-right: 0;
+}
+.main_card_list.row4 > .card {
+	width: 23.5%;
+	margin: 0 2% 2% 0;
+}
+.main_card_list.row4 > .card:nth-of-type(4n) {
+	margin-right: 0;
+}
+.main_card_list .card:hover {
+    box-shadow: 0 2px 18px rgba(51, 51, 51, 0.17);
+   transition: all .5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.main_card_list .card .card_row {
+	display: flex;
+	border-bottom: 1px solid #dedede;
+}
+.main_card_list .card .card_row > div {
+	flex: 1;
+	padding: 15px;
+}
+.main_card_list .card .card_row > div:not(:first-child) {
+	border-left: 1px solid #dedede;
+}
+.main_card_list .card .card_row .chart_value {
+	font-size: 24px;
+}
+.main_card_list .card.line_red {
+	border-top: 3px solid #C7001E;
+	background: #fff url(../images/card_bg_02.png)no-repeat right 30px center;
+	background-size: 60px;
+}
+.main_card_list .card.line_green {
+	border-top: 3px solid #82C700;
+	background: #fff url(../images/card_bg_01.png)no-repeat right 30px center;
+	background-size: 60px;
+}
+.main_card_list .card.line_yellow {
+	border-top: 3px solid #F1C40F;
+	background: #fff url(../images/card_bg_04.png)no-repeat right 30px center;
+	background-size: 60px;
+}
+.main_card_list .card.line_blue {
+	border-top: 3px solid #4600C7;
+}
+.main_card_list .card.line_magenta {
+	border-top: 3px solid #00C7A9;
+	background: #fff url(../images/card_bg_03.png)no-repeat right 30px center;
+	background-size: 60px;
+}
+
+.main_card_list .card.half {
+	padding-left: 10%;
+}
+.main_card_list .card.half:before {
+	content: '';
+	display: inline-block;
+	border-left: 1px solid #dedede;
+}
+.main_card_list .card.half .balance {
+
+}
+.card_option {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+		z-index: 100;
+}
+.card_option > ul > li {
+    width: auto;
+    display: block;
+    float: left;
+    color: #999;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 33px;
+    background: #efeff0;
+    border: 1px solid #e3e4e5;
+    margin-left: -1px;
+    margin-top: 0;
+    padding: 0 14px;
+}
+.card_option > ul > li.on {
+    color: #fff;
+    background: #51585c;
+    border-color:#51585c;
+}
+
+
+/* 하이차트 스타일 */
+.highcharts-credits {
+    display: none !important;
+}
+.highcharts-exporting-group {
+	display: none !important;
+}
+.chart_wrap {
+	width: 100%;
+	padding: 15px;
+	height: 380px;
+}
+
+
+
+/* 모바일 */
+@media (max-width:480px) {
+	.pos_none{width:100%; height:430px; background:#fff url(/images/pos_intro_m.jpg)no-repeat bottom center; background-size:80%; padding:50px; box-shadow: 0 0 3px 1px rgba(51, 51, 51, 0.1);}
+	.pos_none p{text-align: center; font-size:12px; margin-top:0; word-break: keep-all;}
+	.pos_none p span{color:#281aac; font-size: 20px;}
+	.mobile_btn{width:100%; display: inline-block; text-align: center; margin-bottom:15px;}
+	.mobile_btn a{width:49%; float:left; border:solid 1px #ddd; background-color: #fff; padding:10px 0;}
+	.mobile_btn .btn_add_home_mo{width:49%; float:left; margin-left:2%; border:solid 1px #ddd; background-color: #fff; padding:10px 0;}
+
+}
+/* 타블렛, 노트북 */
+@media all and (min-width:480px) and (max-width:1200px){
+	.pos_none{width:100%; height:450px; background:#fff url(/images/pos_intro.jpg)no-repeat bottom center; background-size:80%; padding:50px; box-shadow: 0 0 3px 1px rgba(51, 51, 51, 0.1);}
+	.pos_none p{text-align: center; font-size:20px; margin-top:20px; word-break: keep-all;}
+	.pos_none p span{color:#281aac; font-size: 30px;}
+	.mobile_btn{display: none;}
+}
+/* PC */
+@media all and (min-width:1200px){
+	.pos_none{width:100%; height:710px; background:#fff url(/images/pos_intro.jpg)no-repeat bottom center; padding:50px; box-shadow: 0 0 3px 1px rgba(51, 51, 51, 0.1);}
+	.pos_none p{text-align: center; font-size:23px; margin-top:70px; word-break: keep-all;}
+	.pos_none p span{color:#281aac; font-size: 35px;}
+	.mobile_btn{display: none;}
+}
+
+
+/* 추석 이벤트 바로가기버튼 */
+.pop_imgbox .event_link_box{height: 42px;position: absolute;left: 33px;bottom: 128px;display:block;}
+.pop_imgbox .event_link_box a{height: 143px;width: 262px;display: inline-block;}
+.pop_imgbox .event_link_box .event_link1{float: left}
+.pop_imgbox .event_link_box .event_link2{float: left;margin-left: 8px}
+
+/* 지니메인 업체 정보 모달창(해피콜) */
+.happycall_wrap{width: 100%;height: 1653px; position: absolute;top:0;left:0;background-color: #00000073;z-index: 100000}
+.happycall_wrap .modal_white_box{width: 900px; height: 600px;border: 1px solid #ddd;background-color: #fff;position: fixed;top: 20%;left:30%; ;z-index: 1000000;border-radius: 25px;}
+.happycall_wrap .modal_white_box{padding: 25px;overflow: hidden;}
+.happycall_wrap .modal_textarea input{margin-bottom: 10px}
+.happycall_wrap .modal_white_box textarea{height: 100px}
+.happycall_wrap .modal_white_box button{float: right;padding: 8px 20px;margin-top: 5px;background-color: #fff;border: 1px solid #ddd}
+.happycall_wrap .modal_list{height: 100%;float: left;position: relative;padding: 10px 3px;border-top: 1px solid #7d7d7d;margin: 0 5px;}
+.happycall_wrap .modal_list_box{;height: 330px;margin-top: 50px;overflow: auto;}
+.happycall_wrap .modal_list_box button{padding: 5px 12px;margin-top: 0px;float: none;}
+.happycall_wrap .modal_close{float: right;position: absolute;top: 7px;right: 30px;padding: 0 !important;border:0px !important}
+.happycall_wrap .modal_textarea{display: flex;}
+.happycall_wrap .modal_textarea label{padding: 5px}
+.happycall_wrap .modal_textarea input{margin-right: 10px;}
+.happycall_wrap .modal_textarea select{margin-right: 3px}
+.happycall_wrap .modal_list_box table th{padding: 5px 11px;}
+.happycall_wrap .modal_list_box table td:last-child{padding: 6px 15px !important }
+.happycall_wrap .modal_textarea .margin_select{margin-right: 10px;}
+.happycall_wrap .modal_list_name{padding:5px 5px}
+.happycall_wrap .search_box select{margin-right: 10px;}
+.happycall_wrap td button{padding: 0px 5px}
+.happycall_wrap .search_box button{width: 80px;height: 35px; border: 1px solid #ddd;background-color: #fff;position: relative;top: 1px;}
+.happycall_wrap .table_list table td button{padding: 5px 12px;background-color: #fff;border: 1px solid #ddd}
+.happycall_wrap .search_box .happycall_btn1{float: right;margin-left: 5px}

@@ -1,0 +1,83 @@
+#mArticle.voc_wrap {margin:5px 0; padding:25px 75px;}
+
+/* 작성하기 */
+.voc_wrap .white_box li{margin:5px 0;}
+.voc_wrap .white_box li:nth-child(-n+3){display: inline-block; margin-right:30px;}
+.voc_wrap .white_box li:last-child{margin-top:20px;}
+.voc_wrap .white_box li span[data-order="first"] {display: inline-block; width: 63px;}
+.voc_wrap .white_box li span[data-style="content"] {display: block; margin:10px 0;}
+.voc_wrap .white_box li span[data-style="necessary"]::before{
+    content: '*';
+    margin-right:3px;
+    font-size:18px;
+    color:#f50000;
+    vertical-align: middle;
+}
+
+.voc_wrap .white_box li input.voc_tit {width: 754px;}
+.voc_wrap .btn_wrap{margin:20px auto; text-align: center;}
+.voc_wrap .btn_wrap{margin:20px auto; text-align: center;}
+.voc_wrap .uploadFile_wrap input{
+    display: block;
+    vertical-align: middle;
+    background-color: #fff;
+    height: auto;
+    margin:10px 0;
+    padding: 0;
+    border-radius: 0 !important;
+    border: 0;
+    outline: none;
+    font-size: 13px;
+}
+.voc_wrap .uploadFile_wrap #file-upload-button{}
+
+/* 작성된 화면 */
+.voc_wrap.voc_view .white_box {padding: 30px 60px;}
+.voc_wrap.voc_view .white_box li {display: block; padding:10px 0 15px; border-bottom:1px dotted #eee;}
+.voc_wrap.voc_view .white_box li:last-child{margin-top:0px;}
+.voc_wrap.voc_view .white_box li span,
+.voc_wrap.voc_view .white_box li span[data-order="first"] {display: inline-block; width:80px; color:#888;}
+.voc_wrap.voc_view .white_box li span[data-style="content"] {display: block; margin:10px 0;}
+.voc_wrap.voc_view .white_box li span[data-style="necessary"]::before{display: none;}
+.voc_wrap.voc_view .white_box li div {display: inline-block;}
+.voc_wrap.voc_view .white_box li.uploadFile_wrap a {display: inline-block; margin-left:10px; padding:2px 10px; border:1px solid #aaa; background-color: #f5f5f5; border-radius: 3px; font-size: 12px; color: #000;}
+.voc_wrap.voc_view .white_box li.uploadFile_wrap div {color: #5732b9;}
+
+.voc_wrap.voc_view .white_box li:has(> span[data-style="content"]) {display:flex;}
+.voc_wrap.voc_view .white_box li:has(> span[data-style="content"]) div {padding:10px 0;}
+.voc_wrap.voc_view .btn_wrap input {cursor: pointer;}
+
+
+
+/* 리스트 */
+.voc_wrap td .btn {font-size: 12px; cursor: pointer; background-color:#f3f3f3;}
+.voc_wrap .dh_modal {
+    display: none;
+    position: fixed;
+    z-index: 10000;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.voc_wrap .modal-content {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 200px;
+    padding: 40px 50px;
+}
+.voc_wrap .modal-content span{font-size:16px;}
+.voc_wrap .modal-content #check_name{
+    margin:10px 0;
+}
+.voc_wrap .modal-content input[type="button"]{
+    background-color:#f3f3f3;
+    cursor: pointer;
+}

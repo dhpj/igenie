@@ -1,0 +1,93 @@
+/* 모바일 */
+@media (max-width:480px) {
+.dh_modal {top:-50px!important;height:calc(100% + 50px) !important;}
+.dh_modal .modal-content {width:100% !important; height:100% !important; padding:20px !important;}
+.dh_modal .modal-content .search_input{line-height:50% !important;padding:10px !important;}
+.dh_modal .modal-content .search_input select{width:100%;}
+.dh_modal .modal-content .search_input input{width:100%;}
+.dh_modal .modal-content .search_input label{display: none;}
+.cus_search_result ul li{line-height:110% !important;font-size:12px !important;}
+.cus_search_result dd{height:350px !important;}
+.cus_fixed span{font-size:12px !important;}
+.dh_close {top:10px !important; right:10px !important;font-size:30px !important;}
+.dh_modal .modal-content .modal-tit{padding-bottom:10px !important;}
+
+.btn_tr{font-size: 12px; padding: 5px 10px; width:80px; word-break: keep-all; border-radius:5px;}
+.search_box{line-height:50% !important; }
+.search_box input{width:100%;}
+.search_box select{width:100%; margin-top:5px;}
+.row .fl button{font-size: 11px; padding:5px 3px;}
+.row .fr button{font-size: 11px; padding:5px 3px;}
+.page_cen .pagination a{font-size: 11px; width:20px; height:20px; line-height: 20px;}
+.page_cen .pagination li{margin: 0;}
+
+.input_tit{position: relative !important; top:0 !important; margin-bottom:10px;}
+.btn_myModal{width:100%;}
+.input_content .input-width-large{width:100% !important;}
+#auth_mob_td button{width:100%; margin-top:10px;}
+}
+
+/* The Modal (background) */
+.btn_myModal{padding:8px 15px; vertical-align: middle; background-color:#404040; color:#fff; display:inline-block; cursor:pointer;}
+
+.dh_modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 10000; /* Sit on top */
+  padding-top:100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.dh_modal .modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding:50px;
+  border: 1px solid #888;
+  width:970px;
+  height:750px;
+}
+.dh_close {
+  z-index:10000;
+  color: #aaaaaa;
+  top:30px;
+  right:50px;
+  font-size:40px;
+  font-weight: bold;
+  position:absolute;
+}
+
+.dh_close:hover,
+.dh_close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.dh_modal .modal-content .modal-tit{width:100%; font-size: 20px; border-bottom:solid 1px #ddd; padding-bottom:20px; text-align: left;}
+.dh_modal .modal-content .search_input{width:100%; text-align: center; margin-bottom:20px; padding:20px 0; border-bottom:solid 1px #ddd;}
+.btn_st_sm{height:34px; line-height: 34px;border:solid 1px #ddd; padding: 0 20px; background-color: #fff; display: inline-block; vertical-align: top;}
+
+.cus_fixed{position:sticky; top:0; width:100%; background-color: #f8f9fd; border-top: 1px solid #d3d8e1;  border-bottom: 1px solid #d3d8e1; display: inline-block; padding:10px 0;}
+.cus_fixed span{float:left; width:calc(50% - 50px); font-size: 15px;}
+.cus_fixed span:last-child{width:100px; padding-right:20px;}
+.cus_search_result dd{width:100%; height:450px; overflow-y:scroll;}
+.cus_search_result ul{width:100%; border-bottom: 1px solid #d3d8e1; display: inline-block; padding:5px 0;}
+.cus_search_result ul li{float:left; width:calc(50% - 50px); text-align:left; padding-left:10px; line-height:250%; border-right: 1px solid #d3d8e1;}
+.cus_search_result ul li:last-child{border-right:none; width:100px; text-align:center;}
+
+.number_use{background-color: #fff5e5;}
+.number_use td:nth-of-type(1), .number_use td:nth-last-of-type(1){background-color: #fff;}
+
+.sendphnmng_wrap .input_tit {
+    top: 20px;
+}
+.sendphnmng_wrap .btn_myModal {
+    padding: 8px 15px 7px;
+}

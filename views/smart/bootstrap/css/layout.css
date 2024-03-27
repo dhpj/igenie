@@ -1,0 +1,41 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'SANJUGotgam';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2112@1.0/SANJUGotgam.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'PyeongChangPeace-Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/PyeongChangPeace-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+
+.new_leaflets{position: absolute; top:50px; right:10px;}
+.new_leaflets a{font-size:15px; background-image: linear-gradient(to right, #bc67d4 0%, #2a1bad 100%); color:#fff; padding:10px 20px; border-radius:30px;}
+.btn_order{width:100%; margin-top:10px; padding:20px 0; font-size: 20px; background-image: linear-gradient(to right, #bc67d4 0%, #2a1bad 100%); color:#fff;border-radius:5px;}
+.quick_cart{position:fixed; bottom:10px; right:10px; z-index: 10000; background-image: linear-gradient(to right, #bc67d4 0%, #2a1bad 100%); color:#fff; width:60px; height:60px; border-radius:50px;}
+.smart_search_box button{width:11%; height: 34px; vertical-align: middle; border-radius: 5px; background-color: #bc67d4; color:#fff;}
+.smart_search_tit span{color:#bc67d4;}
+.sidenav a:hover {color: #be68d5;}
+.sidenav .closebtn:hover{color:#be68d5;}
+
+.btn_smartevent{font-family: 'SANJUGotgam'; font-size: 14px; font-weight: normal; background-color:#2a1bad; color:#fff; border-radius:30px; text-align: center; padding:10px 0; display:inline-block;}
+.btn_smarteditor{font-family: 'SANJUGotgam'; font-size: 14px; font-weight: normal; background-color:#fff; color:#2a1bad; border:solid 1px #2a1bad; border-radius:30px; text-align: center; padding:10px 0; display:inline-block;}
+.btn_smartcoupon{font-family: 'SANJUGotgam'; font-size: 14px; font-weight: normal; background-color:#fff; color:#2a1bad; border:solid 1px #2a1bad; border-radius:30px; padding:10px 0; text-align: center; display:inline-block;}
+.btn_smartcall{position:absolute; bottom:20px; right:20px; background-color:#bc67d4; color:#fff; border-radius:100%; padding:10px; display:inline-block;}
+
+.nh_btn .btn_smartevent{font-family: 'GmarketSansMedium'; font-size: 15px; padding:0; color:#404040; border-radius: 5px; border: 2px solid transparent;  background-image:linear-gradient(#fff, #fff), linear-gradient(45deg, #005cab 0%, #11a74f 100%); background-origin: border-box; background-clip: content-box, border-box;}
+.nh_btn .btn_smarteditor{font-family: 'GmarketSansMedium'; font-size: 15px;padding:0; color:#404040; border-radius: 5px; border: 2px solid transparent;  background-image:linear-gradient(#fff, #fff), linear-gradient(45deg, #005cab 0%, #11a74f 100%); background-origin: border-box; background-clip: content-box, border-box;}
+.nh_btn .btn_smartcoupon{font-family: 'GmarketSansMedium'; font-size: 15px;padding:0; color:#404040; border-radius: 5px; border: 2px solid transparent;  background-image:linear-gradient(#fff, #fff), linear-gradient(45deg, #005cab 0%, #11a74f 100%); background-origin: border-box; background-clip: content-box, border-box;}
+
+.mart_btn .btn_smartevent{font-family: 'GmarketSansMedium'; font-size: 15px; padding:0; color:#fff; background-color:#f50a0b; border:none;}
+.mart_btn .btn_smarteditor{font-family: 'GmarketSansMedium'; font-size: 15px;padding:0; color:#fff; background-color:#f50a0b; border:none;}
+.mart_btn .btn_smartcoupon{font-family: 'GmarketSansMedium'; font-size: 15px;padding:0; color:#fff; background-color:#f50a0b; border:none;}
+
+.smart_box.shome_nh{font-family: 'GmarketSansMedium';}
+.shome_nh .mart_logo{font-family: 'GmarketSansBold';}
+
+.smart_box.shome_mart{font-family: 'GmarketSansMedium';}
+.shome_mart .mart_logo{font-family: 'PyeongChangPeace-Light';}

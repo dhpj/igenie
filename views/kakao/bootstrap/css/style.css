@@ -1,0 +1,985 @@
+
+/* 개인화메세지 소재만들기 */
+/* 오른쪽 미리보기 위치변경 */
+.kakao em{font-style: normal;}
+.kakao .input_content_wrap { min-height: 80px;}
+
+.kakao .adFlag,
+.material_name {
+    margin:10px -10px;
+    padding: 10px 15px;
+    background: #abc1d122;
+    border-radius: 10px;
+    position: relative;
+}
+.kakao .adFlag label{
+    font-weight: 600;
+}
+.kakao .input_tit {
+    top: 15px;
+}
+
+.kakao .input_tit em{
+    margin-left: -3px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #F51045;
+    vertical-align: middle;
+}
+.kakao .mobile_preview {
+    top: 110px;
+    left: 750px;
+}
+
+
+.kakao .mobile_preview .preview_box_msg {
+    padding: 0px;
+}
+
+.kakao .mobile_preview .preview_box_msg img{width:100%;}
+.kakao .mobile_preview .preview_box_msg .preview_msg_text{margin:10px;}
+.kakao .mobile_preview .preview_box_msg .preview_msg_btn{margin:0px 10px 10px; display: flex; gap: 4px;}
+.kakao .mobile_preview .preview_box_msg .preview_msg_btn .tem_btn{
+    padding: 8px 5px;
+    font-size: 13px;
+    background-color: #f5f5f5;
+    text-wrap: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+/*셀렉트 + 버튼*/
+.kakao .btn_gw {
+    display: inline-block;
+    min-height: 34px;
+    padding: 7px 5px 8px 8px;
+    border:1px solid #ddd;
+    border-radius: 2px;
+    line-height: 20px;
+    color: #333;
+    background: #fff;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+
+.kakao .input_content {
+    display: flex;
+    align-items: center;
+}
+.kakao .input_content button.btn_gw.btn_img i{color:#ffffffaa;}
+.kakao .input_content button.btn_gw.btn_img{
+    background-color: #ffdf2b;
+    border-color: #ffdf2b;
+}
+.kakao .input_content .msg_box {
+    width: 100%;
+    background-color: #fff;
+}
+.kakao .input_content .input_msg {
+    height:150px;
+    padding: 8px 10px 5px;
+    font-family: Helvetica, sans-serif;
+    letter-spacing: 0;
+}
+.kakao .input_content .input_msg::placeholder {
+    /* font-size:12px; */
+}
+.kakao .btn_gw:hover,
+.kakao .link_selected{
+    border-color: rgba(0, 0, 0, .08);
+    background: rgba(0, 0, 0, .08);
+    color:#333;
+}
+.kakao .btn_bg_bk{
+    border-color: #111;
+    background: #333;
+    color:#fff;
+    font-weight: 400 !important;
+}
+.kakao .select_text_item{min-width:248px;}
+
+.kakao .opt_select input{border:0;}
+.kakao .opt_select {
+    position: relative;
+    float: left;
+    /* min-width: 110px; */
+    max-width: 118px;
+    font-size: 13px;
+    color: #333;
+    background: #fff;
+}
+
+.kakao .btn_gw {
+    float: left;
+    min-width: 100px;
+    height: 36px;
+    margin-left: 3px;
+    font-size: 12px;
+    font-weight: 600;
+}
+.kakao .ico_add::before{
+    content: "\f067";
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 600;
+    font-size: 12px;
+    color: #111;
+    display: inline-block;
+    margin-right: 4px;
+    float: left;
+    width: 18px;
+    height: 20px;
+    text-align: center;
+}
+.kakao li .ico_add::before{
+    font-size: 10px;
+    color: #777;
+}
+.kakao .ico_sel::after{
+    content: "\e936";
+    font-family: 'xeicon';
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #555;
+    display: inline-block;
+    margin-left: 2px;
+    float: right;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+}
+
+.kakao .opt_select .btn_gw.link_selected {margin-left:0;}
+
+.kakao .opt_select .layer_opt {
+    position: absolute;
+    left: 3px;
+    top: 40px;
+    z-index: 2;
+    min-width: 123px;
+    /* padding-right: 219px; */
+    border-radius: 4px;
+    background: #fff;
+    display: inline-block;
+    box-sizing: content-box;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .25);
+}
+
+.kakao .opt_select .opt_guide {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 219px;
+    height: 100%;
+    max-height: 400px;
+    line-height: 20px;
+    padding: 15px 16px;
+    font-size: 13px;
+    color: #333;
+    overflow-y: auto;
+    display:none;
+}
+
+.kakao .opt_select .wrap_list {
+    width: 123px;
+    display: block;
+    overflow: hidden;
+}
+.kakao .opt_select .list_option {
+    overflow-x: hidden;
+    overflow-y: auto;
+    max-height: 400px;
+    margin: 0;
+    padding: 10px 0;
+    border-right: 1px solid #ddd;
+}
+.kakao .opt_select .list_option li {
+    position: relative;
+    width: 100%;
+}
+.kakao .opt_select .list_option li:hover{
+    background: rgba(0, 0, 0, .03);
+}
+
+.kakao .opt_select .link_option {
+    height: 34px;
+    line-height: 31px;
+    padding: 0 8px;
+    font-size: 12px;
+    color: #333;
+    font-weight: 700;
+
+    text-align: left;
+    text-overflow: ellipsis;
+    display: block;
+    overflow: hidden;
+    white-space: normal;
+    cursor: pointer;
+}
+
+.kakao .select_coupon .layer_opt {padding:0;}
+
+.kakao .input_content.add_file_view {
+    position: relative;
+    width:calc(100% - 150px);
+    margin:10px 0 0 150px;
+    padding:10px;
+    border:1px solid #dbdde2;
+    border-radius: 2px;
+    display: flex;
+    align-items:center;
+}
+.kakao .input_content.add_file_view:hover{
+    background-color: #f9f9f9;
+}
+.kakao .input_content.add_file_view dt {
+    width:70px;
+    height:70px;
+    margin-right:15px;
+    border:1px solid #eee;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+}
+.kakao .input_content.add_file_view dt img{width:100%; max-height:70px;}
+.kakao .input_content.add_file_view dd {width:calc(100% - 80px);}
+.kakao .input_content.add_file_view dd span {display:block; color:#999;}
+.kakao .input_content.add_file_view dd span:first-child{line-height: 2; font-size:14px; color:#555;}
+.kakao .input_content.add_file_view dd span.add_file_view {position: absolute; top:5px; right:10px; font-size:18px; color:#bbb; cursor:pointer;}
+.kakao .input_content.add_file_view dd span.add_file_view:hover {color:#555;}
+/* .kakao .input_content.add_file_view dd span.add_file_view {position: absolute; top:8px; right:8px; width:18px; height:18px; line-height:18px; font-size:12px; color:#fff; background-color:#bbb; text-align:center; display: inline-block; vertical-align:middle; border-radius: 15px; cursor:pointer;}
+.kakao .input_content.add_file_view dd span.add_file_view:hover {color:#fff; background-color:#ddd;} */
+
+
+.kakao .input_content .smart_btn_box {height:75px;}
+.kakao .input_content .smart_btn_box li {width:100%; line-height:34px; margin-bottom:4px;}
+.kakao .input_content .smart_btn_box li label {width:60px; margin-right:8px;}
+.kakao .input_content .smart_btn_box li label::before{top: 7px;}
+/* .kakao .input_content .smart_btn_box li input[type=text] {width:300px;} */
+
+.kakao .box_checkinp{margin-left:10px}
+
+.kakao .txt_byte{
+    position: relative;
+    margin: 0 8px 5px;
+    padding: 0;
+}
+
+.kakao .bar_left{
+    position: relative;
+    margin-left:5px;
+    padding-left:10px;
+}
+.kakao .bar_left::before{
+    content: '';
+    position: absolute;
+    top:4px;
+    left:0;
+    width:1px;
+    height:12px;
+    background-color: #ccc;
+}
+.kakao .btn_plus{
+    position: relative;
+    width:25px;
+    height:20px;
+    display: inline-block;
+    cursor:pointer;
+}
+.kakao .btn_plus::before{
+    top:10px;
+}
+.kakao .btn_plus::after{
+    content: '\e916';
+    position: absolute;
+    top: 1px;
+    right: 0;
+    font-size: 18px;
+    font-family: 'xeicon';
+    color:#666;
+}
+
+.kakao .add_link_pc{
+    margin-left:150px;
+    padding:10px 15px 10px;
+    background-color: #f5f5f5;
+    flex-wrap: wrap;
+}
+.kakao .add_link_pc .ico_add:before{
+    color:#555;
+    font-size: 10px;
+    line-height: 19px;
+}
+.kakao .add_link_pc .msg_box{
+    margin:5px 0;
+}
+
+.kakao .coupon_selected{
+    justify-content: flex-end;
+}
+
+.kakao .coupon_selected .coupon_selected_num{
+    color:#ff9a00;
+}
+.kakao .coupon_selected button{
+    min-width: 70px;
+    height: 24px;
+    margin-left:10px;
+    padding:3px 10px;
+    text-align: center;
+    display: inline;
+}
+.kakao .coupon_category{
+    flex-wrap: wrap;
+}
+.kakao .select_coupon_category{
+    margin-bottom:8px;
+}
+.kakao .coupon_category .msg_box {
+    position: relative;
+}
+.kakao .coupon_category .input_msg.length50 {
+    height:35px;
+}
+.kakao .coupon_category .input_msg:first-child{
+    padding-right:40px;
+}
+.kakao .coupon_category .input_msg_text {
+    position: absolute;
+    top:8px;
+    right:13px;
+}
+
+.kakao .top_view {
+    margin:10px 0 5px;
+    text-align: center;
+}
+.kakao .top_view .txt_num {
+    overflow: hidden;
+    max-width: 310px;
+    font-size: 11px;
+    color: rgba(25, 25, 25, .6);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    position: relative;
+}
+
+.kakao .top_view .txt_num:after {
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    border-top: 4px solid rgba(25, 25, 25, .6);
+    content: '';
+}
+
+.kakao .txt_append {
+    padding-top: 5px;
+    padding-right: 38px;
+    font-size: 11px;
+    color: rgba(25, 25, 25, .5);
+    text-align: right;
+    /* letter-spacing: 0px; */
+}
+
+.kakao .material_name {margin:20px 0 0;}
+.kakao .material_name label {font-weight: 600;}
+.kakao .material_name input[type=text]{
+    width:70%;
+    margin:0 10px;
+}
+.kakao .material_name .txt_byte{
+    margin:0;
+    display: inline-block;
+}
+
+.kakao .btn_send_cen {
+    width:630px;
+    margin: 30px 0 0px 50px;
+    text-align: center;
+}
+.kakao .btn_send_cen .btn{
+    border-radius: 3px;
+}
+.kakao .btn_send_cen .btn_bk{
+    margin-left:10px;
+    background: #333;
+    color:#fff;
+}
+
+.kakao .reform_view_guide {
+    position: absolute;
+    top: 765px;
+    left: 750px;
+    width: 300px;
+    padding: 8px 15px;
+    border-radius: 20px;
+    border: 1px solid #e8e8e8;
+    background: #fff;
+    box-shadow: 0 0 1px 0px rgba(0, 0, 0, 0.1);
+}
+.kakao .reform_view_guide li{
+    position: relative;
+    margin:8px 0;
+    padding-left: 8px;
+    line-height: 18px;
+    font-size: 12px;
+    color: #666;
+    display: list-item;
+}
+.kakao .reform_view_list li:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '·';
+}
+
+
+
+/* TOOLTIP */
+.kakao [tooltip] i.xi-help-o{margin:0 5px 0 4px; font-size: 19px; color: #bbb; vertical-align: bottom; cursor: pointer;}
+.kakao [tooltip] {position: relative;}
+.kakao [tooltip]::before,
+.kakao [tooltip]::after {
+    text-transform: none; /* opinion 2 */
+    font-size: .9em; /* opinion 3 */
+    line-height: 1.5;
+    user-select: none;
+    pointer-events: none;
+    position: absolute;
+    display: none;
+    opacity: 0;
+}
+.kakao [tooltip]::before {content: ''; border: 5px solid transparent; z-index: 1001;}
+.kakao [tooltip]::after {
+    content: attr(tooltip); /* magic! */
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+    min-width: 280px;
+    padding: 1ch 1.5ch;
+    border-radius: .3ch;
+    box-shadow: 0 1em 2em -.5em rgba(0, 0, 0, 0.35);
+    background: #555;
+    color: #fff;
+    z-index: 1000; /* absurdity 2 */
+}
+
+.kakao [tooltip]:hover::before,
+.kakao [tooltip]:hover::after {display: block;}
+
+.kakao [tooltip='']::before,
+.kakao [tooltip='']::after {display: none !important;}
+
+.kakao [tooltip][flow^="down"]::before {top: 100%; border-top-width: 0; border-bottom-color: #333;}
+.kakao [tooltip][flow^="down"]::after {top: calc(100% + 5px);}
+.kakao [tooltip][flow^="down"]::before,
+.kakao [tooltip][flow^="down"]::after {left: 50%; transform: translate(-50%, .5em);}
+
+/* KEYFRAMES */
+@keyframes tooltips-vert {
+  to {
+    opacity: .9;
+    transform: translate(-50%, 0);
+  }
+}
+
+@keyframes tooltips-horz {
+  to {
+    opacity: .9;
+    transform: translate(0, -50%);
+  }
+}
+
+.kakao [tooltip]:not([flow]):hover::before,
+.kakao [tooltip]:not([flow]):hover::after,
+.kakao [tooltip][flow^="down"]:hover::before,
+.kakao [tooltip][flow^="down"]:hover::after {animation: tooltips-vert 300ms ease-out forwards;}
+
+
+/* 모달창 */
+.kakao_modal {
+    /* display: none; */
+    position: fixed;
+    z-index: 10000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+.kakao_modal .modal-content {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width:960px;
+    margin: auto;
+    padding:30px;
+    z-index: 5;
+}
+#modal1 .modal-content {
+    height:780px;
+}
+.kakao_modal .modal-tit{width:100%; font-size: 20px; border-bottom:solid 1px #ddd; padding:0 0 10px 3px; text-align: left;}
+.kakao_modal .modal_close {
+    top: 18px;
+    right: 28px;
+    padding:0;
+    font-size: 30px;
+    color: #aaaaaa;
+    font-weight: bold;
+    z-index: 9;
+}
+
+.kakao_modal .modal_tab{width:100%; margin:0 0 10px; padding:10px 15px 0; background-color: #f5f5f5; display: block;}
+.kakao_modal .modal_tab:after{
+    content: '';
+    clear:both;
+    display: block;
+}
+.kakao_modal .modal_tab li {width:20%; height:auto; margin:0px 5px -1px; padding:6px 0 14px; font-size:14px; color:#999;}
+.kakao_modal .modal_tab li:hover,
+.kakao_modal .modal_tab li.on {background-color: #fff; padding:10px 0; color:#333; font-weight: 600; border-radius: 5px 5px 0 0;}
+
+.kakao_modal .upload_tip {
+    position: relative;
+    min-height: 41px;
+    line-height: 14px;
+    margin: 10px 0;
+    padding: 12px 15px;
+    font-size: 12px;
+    color: #333;
+    text-align: left;
+    background: #F1F6FF;
+    border: 1px solid rgba(0, 0, 0, .05);
+    border-radius: 2px;
+}
+.kakao_modal .upload_tip .icon_tip::before{
+    content: '\e9aa';
+    margin:-2px 2px 0 0;
+    font-family: 'xeicon';
+    font-size:19px;
+    color:#4472c5;
+    vertical-align: middle;
+}
+.kakao_modal .upload_tip em {font-weight: 600;}
+
+.kakao_modal .upload_info .upload_guide{float:left; position: relative; width: 320px; line-height: 34px; color:#666;}
+.kakao_modal .upload_info .upload_search_box{position: relative; float:right;}
+.kakao_modal .upload_info .upload_file_btn{float:right;}
+.kakao_modal .upload_info .upload_file_btn label{cursor: pointer;}
+.kakao_modal .upload_info::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.kakao_modal .upload_info .upload_search_box .upload_file_name{padding-right:25px;}
+.kakao_modal .upload_info .upload_search_btn{
+    float: inherit;
+    min-width: 40px;
+    height: 34px;
+    margin-left: -1px;
+}
+.kakao_modal .upload_info .btn_search_del{
+    position: absolute;
+}
+.kakao_modal .upload_info .btn_search_del .modal_close{
+    top: 2px;
+    right: 5px;
+    font-size: 20px;
+    color:#ccc;
+    background: none;
+}
+.kakao_modal .upload_info .btn_search_del .modal_close:hover{
+    color:#999;
+}
+.kakao_modal .upload_file_btn{
+    height: 34px;
+    padding:0 10px;
+    font-weight: 700;
+    color: #555;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    display: inline-block;
+}
+
+.kakao_modal .upload_view{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 510px;
+    margin: 10px auto 20px;
+    padding:25px 30px;
+    border: 1px solid #ddd;
+}
+.kakao_modal .upload_view .upload_view_list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    height:422px;
+    margin-bottom:10px;
+    padding-bottom:10px;
+    border-bottom:1px dotted #eee;
+
+}
+.kakao_modal .upload_view .upload_view_list li{
+    float:left;
+    width:164px;
+    margin-bottom:20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.kakao_modal .upload_view .upload_view_list li a{
+    position:relative;
+    width:140px;
+    height:140px;
+    margin-bottom:2px;
+    border:1px solid #e3e3e3;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.kakao_modal .upload_view .upload_view_list li a.on::before{
+    content: '\e876';
+    font-family: 'Material Icons';
+    font-size: 14px;
+    line-height: 20px;
+    color: #fff;
+    position: absolute;
+    top:0;
+    left:0;
+    width:20px;
+    height:20px;
+    background-color: #326EDC;
+}
+.kakao_modal .upload_view .upload_view_list li a.on::after{
+    content: '';
+    position: absolute;
+    top:0;
+    left:0;
+    width:140px;
+    height:140px;
+    border: 2px solid #326EDC;
+}
+.kakao_modal .upload_view .upload_view_list li img{width:100%; max-height:140px;}
+.kakao_modal .upload_view .upload_view_list li video{width:100%;}
+
+.kakao_modal .upload_view .upload_view_list li span{
+    width:140px;
+    height:18px;
+    margin:2px 0 0;
+    font-size: 12px;
+    color:#666;
+    text-align: left;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.kakao_modal .upload_view #m2_tab_detail1 li button{
+    width:60px;
+    height:25px;
+    margin:5px 80px 0 0;
+    font-size: 11px;
+    color:#666;
+    border:1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    display: block;
+}
+/* .kakao_modal .upload_view #m2_tab_detail1 li:after{
+    content: '미리보기';
+    width:60px;
+    height:25px;
+    line-height: 1.9;
+    margin:5px 80px 0 0;
+    font-size: 11px;
+    color:#666;
+    border:1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    display: block;
+} */
+
+.kakao_modal .upload_view .no_upload_video,
+.kakao_modal .upload_view .upload_drop_area{
+    width: 100%;
+    height: 100%;
+    font-size:18px;
+    color:#999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.kakao_modal .upload_view .no_upload_video a {
+    padding:6px 15px;
+    margin-top:20px;
+    font-size:12px;
+    color:#555;
+    border:1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+}
+
+.kakao_modal .guide_register{text-align: left; display: block;}
+.kakao_modal .guide_register > span{cursor: pointer;}
+.kakao_modal .guide_register_hover{
+    position: absolute;
+    top: 35px;
+    left: 30px;
+    display: block;
+    white-space: normal;
+    z-index: 1100;
+    letter-spacing: 0px;
+    text-indent: 0px;
+    word-break: break-word;
+    padding: 10px 14px 15px;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    max-width: 300px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(85, 85, 85);
+    text-align: left;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 10px;
+}
+.kakao_modal .guide_register_hover strong {margin-bottom: 2px; display: block;}
+.kakao_modal .guide_register_hover strong em,
+.kakao_modal .guide_register_hover ul{
+    font-weight: 400;
+    font-size: 12px;
+    color:#999;
+}
+.kakao_modal .guide_register_hover ul:not(:last-of-type){
+    margin-bottom:12px;
+}
+.kakao_modal .modal_btns{
+    /* width:100%; */
+}
+.kakao_modal .modal_btns button.btn_gw{
+    float: none;
+    min-width: 80px;
+    padding: 0;
+    text-align: center;
+    display:inline-block;
+}
+
+
+/* 변수항목추가 */
+.kakao_modal .add_change_item{width: 550px;}
+.kakao_modal .add_change_item .item_choice {padding:30px 25px 30px}
+
+.kakao_modal .item_choice h5 {margin:5px 0 10px; line-height: 20px; text-align: left; font-weight: 400; color:#777;}
+.kakao_modal .item_choice h5 span{font-size: 12px; }
+.kakao_modal .item_choice .select_change_item {position: relative; width: 100%; min-height: 34px;padding: 7px 29px 7px 15px;  font-size: 12px; color:#777; border: 1px solid #ddd; border-radius: 2px; display: inline-block;}
+.kakao_modal .item_choice .select_change_item:last-of-type {margin-top:5px;}
+.kakao_modal .item_choice .select_change_item:hover {border-color: #555;}
+.kakao_modal .item_choice .select_change_item + .select_change_item {margin-bottom: 20px;}
+.kakao_modal .item_choice .change_item_name {width: 100%; height: 36px; line-height: 34px; padding-left:15px; font-size: 13px; text-align: left; border: 1px solid #ddd; display: block;}
+
+/*페이징*/
+.kakao_modal ul[class^="pagination"] {display:inline-block;}
+.kakao_modal ul[class^="pagination"] li {float:left; margin:0 3px;}
+.kakao_modal ul[class^="pagination"] a {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 14px;
+    border-radius:100px;
+    display:inline-block;
+    vertical-align:top;
+    text-align:center;
+    font-weight: 500;
+    letter-spacing: -0.25px;
+    cursor:pointer;
+}
+.kakao_modal ul[class^="pagination"] .active {background: #ccc; color: #fff;border-radius:100px;}
+.kakao_modal ul[class^="pagination"] a:hover {background: #e9e9e9; color: #fff;}
+
+
+/* 로딩 */
+/* .kakao_modal .loading .lo_circle{
+    border: 8px solid orange;
+    border-radius: 50%;
+    border-color: #ddd #ddd #ddd transparent;
+    width: 80px;
+    height: 80px;
+    animation: spinning 1s linear infinite;
+    margin-bottom: 30px;
+}
+.kakao_modal .loading .lo_text{
+
+}
+@keyframes spinning {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+} */
+
+/* 모달창 로딩중 */
+.kakao #id_loading_mask {position: fixed; z-index: 9000; background-color: rgb(0, 0, 0); left: 0px; top: 0px; width: 100%; height:100%; opacity: 0.7;}
+
+
+
+/* 광고그룹만들기 */
+#mArticle.kakao_campaign {padding: 25px 10%;}
+.kakao_campaign .white_box {
+    padding:0;
+}
+.kakao_campaign .reform_group_card {
+    padding:30px 30px;
+    border-bo
+}
+.kakao_campaign .reform_group_card:not(:last-of-type) {
+    border-bottom:1px solid #eee;
+}
+.kakao_campaign .reform_group_card::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+.kakao_campaign .reform_group_card h4.reform_subtit_card {
+    float:left;
+    width:20%;
+    font-size: 16px;
+}
+.kakao_campaign .reform_group_card div.reform_con_card {
+    float:left;
+    width:80%;
+    font-size: 14px;
+}
+.kakao_campaign .reform_group_card .reform_con_card_text {
+    margin:8px 0 12px;
+    /* padding-left:25px; */
+    color:#999;
+}
+.kakao_campaign .reform_group_card .reform_con_card_select {
+    /* margin-left:25px; */
+    color:#333;
+}
+.kakao_campaign .campaign_set .select_channel_item,
+.kakao_campaign .reform_con_card input[type="text"]{
+    width: 90%;
+}
+
+
+/* 광고목표설정 */
+
+.kakao_campaign .campaign_set .reform_con_card_select{
+    position: relative;
+}
+
+.kakao_campaign .campaign_set .channel_select_box{
+    position: absolute;
+    left: 0px;
+    top: 35px;
+    z-index: 2;
+    min-width: 250px;
+    border-radius: 4px;
+    background: #fff;
+    display: inline-block;
+    box-sizing: content-box;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .25);
+}
+.kakao_campaign .campaign_set .reform_con_card .channel_select_list li{
+    padding: 10px;
+
+}
+.kakao_campaign .campaign_set .reform_con_card .channel_select_list li img{
+    width:40px;
+    height:40px;
+    margin-right:10px;
+}
+
+
+
+
+/* 캠페인이름 */
+.kakao_campaign .campaign_name .reform_con_card {
+    position: relative;
+}
+
+
+.kakao_campaign .campaign_name .reform_con_card .num_byte{
+    position: absolute;
+    top:5px;
+    right:11%;
+}
+
+
+
+.kakao_campaign .btn_send_cen {
+    margin: 20px 0 0;
+}
+
+.kakao_campaign .btn_send_cen .btn_bk {
+    margin-left: 0px;
+}
+
+/* 캠페인목록 */
+.campaign_list .white_box .search_box{
+    text-align:right;
+}
+.campaign_list .white_box .search_box .btn.md{
+    background-color: #eee;
+    cursor: pointer;
+}
+.campaign_list .white_box .search_box .btn.md:hover{
+    background-color: #e5e5e5;
+}
+.campaign_list .white_box td .btn {
+    background-color: #fafafa;
+}
+.campaign_list .white_box td .btn:hover {
+    background-color: #efefef;
+}
+.campaign_list .white_box td input.campaign_name {
+    width: 100%;
+}
+
+
+
+/* 토글스위치 */
+.campaign_list .white_box td .form-switch {
+    margin-right:10px;
+    height: 24px;
+}
+.campaign_list .white_box td .form-switch i {
+    width: 55px;
+    height: 28px;
+}
+.campaign_list .white_box td .form-switch i::before {
+    content: "N";
+    font-size: 14px;
+    line-height: 23px;
+    padding-right: 15px;
+}
+.campaign_list .white_box td .form-switch i::after {
+    width: 24px;
+    height: 24px;
+}
+.campaign_list .white_box td .form-switch:active i::after {
+    width: 26px;
+}
+.campaign_list .white_box td .form-switch input:checked + i::before {
+    content: "Y";
+    padding-left: 12px;
+}
+.campaign_list .white_box td .form-switch input:checked + i::after {
+    transform: translate3d(29px, 2px, 0);
+}

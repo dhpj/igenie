@@ -1,0 +1,60 @@
+.an_wrap{width: 100%;height: 1653px; position: absolute;top:0;left:0;background-color: #00000073;z-index: 1000000}
+.an_wrap .modal_white_box {
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+  height: 400px;
+  border: 1px solid #ddd;
+  background-color: white;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  z-index: 1000000;
+  border-radius: 25px;
+  padding: 25px;
+}
+.an_wrap .modal_white_box > main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+	font-size: 1.1rem;
+  overflow-y: auto;
+}
+.an_wrap .modal_white_box .an_close_btn_container {
+  display: flex;
+  justify-content: center;
+}
+
+.an_wrap .modal_close {
+  float: right;
+  right: -30px;
+  width: 1.5em;
+  height: 1.5em;
+  padding: 0;
+  border: 0;
+  background-color: white;
+  transform: translateX(50%);
+}
+
+.an_modal_btn_container {
+  display: flex;
+  justify-content: center;
+}
+.an_confirm_checkbox_container {
+  display: flex;
+  align-items: center;
+  font-size: unset;
+  margin-right: 2em;
+}
+.an_confirm_checkbox_container .checkbox_container {
+  width: auto;
+  margin-right: 0.25em;
+}
+.an_confirm_checkbox_container .checkbox_container .checkmark {
+  position: relative;
+  display: inline-block;
+  top: 0;
+  left: 0;
+}

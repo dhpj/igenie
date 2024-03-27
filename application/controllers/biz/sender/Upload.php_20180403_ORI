@@ -1,0 +1,202 @@
+<?php
+class Upload extends CB_Controller {
+	/**
+	* 모델을 로딩합니다
+	*/
+	protected $models = array('Board', 'Biz');
+
+	/**
+	* 헬퍼를 로딩합니다
+	*/
+	protected $helpers = array('form', 'array');
+
+	function __construct()
+	{
+		parent::__construct();
+
+		/**
+		* 라이브러리를 로딩합니다
+		*/
+		$this->load->library(array('querystring'));
+	}
+
+	public function index()
+	{
+		// ft, at 업로드에서 같이 처리함
+		$upload_type = "ft";
+		$templ_id = $this->input->post('templ_id');
+		$templ_profile = $this->input->post('templ_profile');
+		$templ_code = $this->input->post('templ_code');
+		$tmpl = "";
+		if($templ_profile) {
+			$upload_type = "at";
+			$tmpl = $this->db->query("select * from cb_wt_template where tpl_inspect_status='APR' and tpl_use='Y' and tpl_id=? and tpl_profile_key=? and tpl_code=?", array($templ_id, $templ_profile, $templ_code))->row();
+			/* 알림톡의 경우 템플릿이 없으면 처리하지 않음 */
+			if(!$tmpl) { echo '{"status": "fail", "ft_count": 0, "mms_count": 0, "lms_count": 0, "ft_img_count": 0, "coin": 0, "col_len": 0, "row_len": 0 }'; exit; }
+		}
+
+		/*
+
+btn1:[{"type":"WL","name":"에이치엠피","url_mobile":"http://plus-talk.kakao.com/plus/home/@에이치엠피","url_pc":"22"}]
+btn2:[{"type":"AL","name":"a","scheme_android":"33","scheme_ios":"44"}]
+btn3:[{"type":"BK","name":"b"}]
+btn4:[{"type":"MD","name":"m"}]		
+		*/
+		//{"status": "success", "ft_count": 4, "mms_count": 1, "lms_count": 1, "ft_img_count": 0, "coin": "4640.00", "col_len": 25, "row_len": 6}
+		//업로드된 엑셀 파일을 처리함
+		if(!file_exists($_FILES['file']['tmp_name'])) {
+			header('Content-Type: application/json');
+			echo '{"status": "error", "ft_count": 0, "mms_count": 0, "lms_count": 0, "ft_img_count": 0, "coin": "0", "col_len": 0, "row_len": 0 }';
+			exit;
+		}
+		$mem = $this->Biz_model->get_member($this->member->item('mem_userid'));
+
+		/* 업로드하면 자료 초기화 함 */
+		$this->db->delete("cb_wt_send_cache", array("sc_mem_id"=>$this->member->item('mem_id')));
+
+		$this->load->library("excel");
+		$objPHPExcel = PHPExcel_IOFactory::load($_FILES['file']['tmp_name']);
+		$sheetsCount = $objPHPExcel->getSheetCount();
+		 
+		// 쉬트별로 읽기
+		$ok = 0;
+		$ft_count = 0;			//친구톡숫자??
+		$mms_count = 0;		//MMS갯수(중복포함)
+		$lms_count = 0;		//LMS갯수(중복포함)
+		$sms_count = 0;		//SMS갯수(중복포함)
+		$ft_img_count = 0;	//친구톡 이미지 갯수(중복제거)
+		$coin = $mem->mem_point + $mem->total_deposit;	//포인트+예치금
+		$col_len = 0;			//칼럼갯수
+		$row_len = 0;			//행갯수(전화번호갯수:중복포함)
+		$img_link = array();
+		$data = array();
+		for($i = 0; $i < $sheetsCount; $i++)
+		{
+			$sheetIndex = $objPHPExcel->setActiveSheetIndex($i);
+			$sheet = $objPHPExcel->getActiveSheet();
+			$highestRow = $sheet->getHighestRow();
+			$highestColumn = $sheet->getHighestColumn();
+			
+			for ($row = 1; $row <= $highestRow; $row++)
+			{
+				$rowData = $sheet->rangeToArray('A' . $row . ':' . $highestColumn . $row, NULL, TRUE, FALSE);
+				if($col_len < count($rowData[0])) { $col_len = count($rowData[0]); }	//칼럼수
+				unset($data);
+				$data = array();
+
+				$err = false;
+				$cnt = 0;
+
+				//전화번호가 숫자가 아니면 skip
+				if(!is_numeric(str_replace("-", "", $rowData[0][0]))) {
+					continue;
+				}
+				$row_len++;
+				$data['sc_mem_id'] = $this->member->item('mem_id');
+				$data['sc_tel'] = preg_replace("/[^0-9]*/s", "", $rowData[0][0]);
+				$data['sc_tel'] = ($data['sc_tel'] && substr($data['sc_tel'], 0, 1)=="1" && strlen($data['sc_tel'])<=10) ? "0".$data['sc_tel'] : $data['sc_tel'];
+				$data['sc_datetime'] = cdate('Y-m-d H:i:s');
+				$data['sc_content'] = $rowData[0][1];
+				if($upload_type=="ft") {
+					/* 친구톡의 경우 */
+					//- 내용이 없으면 skip : 2018.03.06 내용이 없으면 발송되지 않고 남아있어 미발송건수 있음 오류 발생
+					if($data['sc_content']!="") { $ft_count++; } else { continue; }
+					$btn_odr = 0;
+					for($b=0;$b<5;$b++) {
+						if($rowData[0][($b*4)+2]!=null && $rowData[0][($b*4)+2]!="") {
+							$btn_odr++;
+							$btn = array();
+							//$btn["ordering"] = $btn_odr;
+							//$btn["linkTypeName"] = $rowData[0][($b*4)+2];
+							$btn["type"] = $this->Biz_model->buttonType[$rowData[0][($b*4)+2]];
+							$btn["name"] = $rowData[0][($b*4)+3];
+							if($btn["type"]=="WL") {
+								$btn["url_mobile"] = $rowData[0][($b*4)+4];
+								$btn["url_pc"] = $rowData[0][($b*4)+5];
+							} else if($btn["type"]=="AL") {
+								$btn["scheme_android"] = $rowData[0][($b*4)+4];
+								$btn["scheme_ios"] = $rowData[0][($b*4)+5];
+							} else {
+								//$btn["link1"] = $rowData[0][($b*4)+4];
+								//$btn["link2"] = $rowData[0][($b*4)+5];
+							}
+							$data['sc_button'.$btn_odr] = json_encode($btn, JSON_UNESCAPED_UNICODE);
+						}
+					}
+					$data['sc_lms_content'] = trim($rowData[0][22]);
+					if($data['sc_lms_content']!="") {
+						$lms_count++;
+						if(mb_strlen($data['sc_lms_content'], 'euc-kr') <= 80) { $sms_count++; }
+					}
+					$data['sc_img_url'] = trim($rowData[0][23]);
+					if($data['sc_img_url']!="") { $mms_count++; }
+					$data['sc_img_link'] = trim($rowData[0][24]);
+					if($data['sc_img_url'] && $data['sc_img_link']) {
+						if(!in_array($data['sc_img_link'], $img_link)) { array_push($img_link, $data['sc_img_link']); $ft_img_count++; }
+					}
+				} else {
+					/* 알림톡의 경우 */
+					$tpl_button = json_decode($tmpl->tpl_button);
+
+					//- 내용이 없으면 skip : 2018.03.06 내용이 없으면 발송되지 않고 남아있어 미발송건수 있음 오류 발생
+					if($data['sc_content']!="") { $ft_count++; } else { continue; }
+					$col = 2;
+					$btn_odr = 1;
+					foreach($tpl_button as $btn) {
+						if($btn->linkType=="DS") {
+							$data['sc_p_com'] = $rowData[0][$col++];
+							$data['sc_p_invoice'] = $rowData[0][$col++];
+							$data['sc_button'.$btn_odr] = str_replace("linkType", "type", json_encode($btn, JSON_UNESCAPED_UNICODE));
+							$btn_odr++;
+							continue;
+						}
+						if($btn->linkType=="WL") {
+							if($btn->linkMo) { $btn->linkMo = $rowData[0][$col++]; } else { unset($btn->linkMo); }
+							if($btn->linkPc) { $btn->linkPc = $rowData[0][$col++]; } else { unset($btn->linkPc); }
+							$data['sc_button'.$btn_odr] = str_replace("linkPc", "url_pc", str_replace("linkMo", "url_mobile", str_replace("linkType", "type", json_encode($btn, JSON_UNESCAPED_UNICODE))));
+							$btn_odr++;
+							continue;
+						}
+						if($btn->linkType=="AL") {
+							if($btn->linkAnd) { $btn->linkAnd = $rowData[0][$col++]; } else { unset($btn->linkAnd); }
+							if($btn->linkIos) { $btn->linkIos = $rowData[0][$col++]; } else { unset($btn->linkIos); }
+							$data['sc_button'.$btn_odr] = str_replace("linkAnd", "scheme_android", str_replace("linkIos", "scheme_ios", str_replace("linkType", "type", json_encode($btn, JSON_UNESCAPED_UNICODE))));
+							$btn_odr++;
+							continue;
+						}
+						if($btn->linkType=="BK") {
+							$btn->name = $rowData[0][$col++];
+							$data['sc_button'.$btn_odr] = str_replace("linkType", "type", json_encode($btn, JSON_UNESCAPED_UNICODE));
+							$btn_odr++;
+							continue;
+						}
+						if($btn->linkType=="MD") {
+							$data['sc_s_code'] = $rowData[0][$col++];
+							$data['sc_button'.$btn_odr] = str_replace("linkType", "type", json_encode($btn, JSON_UNESCAPED_UNICODE));
+							$btn_odr++;
+							continue;
+						}
+					}
+					$data['sc_lms_content'] = $rowData[0][$col++];
+					$data['sc_sms_callback'] = preg_replace("/[^0-9]*/s", "", $rowData[0][$col]);
+					$data['sc_sms_callback'] = ($data['sc_sms_callback'] && substr($data['sc_sms_callback'], 0, 1)=="1" && strlen($data['sc_sms_callback'])<=10) ? "0".$data['sc_sms_callback'] : $data['sc_sms_callback'];
+					$data['sc_template'] = $templ_code;
+					if($data['sc_lms_content']!="") {
+						$lms_count++;
+						if(mb_strlen($data['sc_lms_content'], 'euc-kr') <= 80) { $sms_count++; }
+					}
+				}
+				$this->db->insert("cb_wt_send_cache", $data);
+				if ($this->db->error()['code'] < 1) { $ok++; } else { echo '<pre> :: ';print_r($this->db->error()); }
+			}
+		}
+		header('Content-Type: application/json');
+		if($upload_type=="ft") {
+			//$mms_count = 0; /* mms는 발송하지 않음 */
+			echo '{"status": "success", "ft_count": '.$ft_count.', "mms_count": '.$mms_count.', "lms_count": '.$lms_count.', "sms_count": '.$sms_count.', "ft_img_count": '.$ft_img_count.', "coin": "'.$coin.'", "col_len": '.$col_len.', "row_len": '.$ok.'}';
+		} else {
+			echo '{"status": "success", "at_count": '.$ft_count.', "lms_count": '.$lms_count.', "sms_count": '.$sms_count.', "coin": "'.$coin.'", "col_len": '.$col_len.', "nrow_len": '.$ok.'}';
+		}
+	}
+}
+?>

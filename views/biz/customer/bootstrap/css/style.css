@@ -1,0 +1,154 @@
+/* 모바일 */
+@media (max-width:480px) {
+  .cus_list_l{width:100% !important; margin:0 0 10px 0 !important;}
+  .cus_list_r{width:100% !important; margin:0 !important; overflow-x: scroll;}
+  .search_box input[type="text"]{width:calc(98% - 100px); margin:10px 0 0 0;}
+  .search_box input[type="button"]{width:100%; margin:10px 0 0 0;}
+  .search_box select{width:100px; margin:10px 0 0 0;}
+  .msg_box{width:100%; overflow-x: scroll; position:relative;}
+  .msg_box input[type="text"], .msg_box label{ margin:10px 0 0 0;}
+  .cus_modal-content{width:90% !important; padding:15px !important;}
+  .cus_modal-content #myUL{margin:20px 0 !important;}
+  .search_box .excel{width:100%;}
+}
+.msg_box .send_list{width:100%; display: inline-block;}
+.msg_box .send_list .input-group{max-width:500px; float:left;}
+.msg_box .send_list input[type="text"]{max-width:500px;}
+
+.widget-content{display: inline-block; width:100%;}
+.cus_list_l{width:20%; float:left; display:inline-block;}
+.cus_list_l_box{width:100%; min-height:200px; display:inline-block; border:solid 1px #ddd;}
+.cus_list_r{width:calc(80% - 20px); min-height:200px; float:left; display:inline-block; margin-left:20px;}
+#myUL{margin:20px; font-size:15px;}
+.cus_modal #myUL{max-height:600px; overflow-y: auto;}
+#myUL li{margin:10px 0;}
+#myUL>li>ul{margin-left:20px;}
+#myUL>li>ul li .caret{margin-left:-15px;}
+#myUL li ul ul{margin:5px 0 10px 20px; max-width:420px; background-color: #f1f1f1; padding:5px 10px; border-radius:5px;}
+#myUL li input{width:165px; height:25px;}
+#myUL .caret {
+  cursor: pointer;
+  -webkit-user-select: none; /* Safari 3.1+ */
+  -moz-user-select: none; /* Firefox 2+ */
+  -ms-user-select: none; /* IE 10+ */
+  user-select: none;
+}
+#myUL i{font-size: 20px; vertical-align:middle; color:#404040;}
+#myUL .caret::before {
+  content: "\FF1E";
+  color:#404040;
+  display: inline-block;
+  font-size:15px;
+  font-weight: bold;
+  font-family: 'Roboto';
+}
+.buttonText{width:100%; height:32px; display: inline-block; line-height: 32px;}
+#myUL .caret-down::before {
+  -ms-transform: rotate(90deg); /* IE 9 */
+  -webkit-transform: rotate(90deg); /* Safari */'
+  transform: rotate(90deg);
+}
+
+#myUL .nested {
+  display: none;
+}
+
+#myUL .active {
+  display: block;
+}
+
+.cus_cnt{color:#ff9a00;}
+
+.btn_cus_add{width:100%; font-size:16px; background-color:#ffdf2b; color:#404040; padding:10px 0; border-bottom:solid 1px #ddd; vertical-align:middle; cursor:pointer;}
+.btn_cus_add i{color:#404040 !important;}
+.btn_cus{background-color: #fff; color:#404040; padding:2px 5px; border: solid 1px #404040; vertical-align:middle; cursor:pointer;}
+
+.btn_cus_del{margin-left:5px; background-color: #fff; padding:0 3px 0 0; border: solid 1px #ddd; color:#404040; vertical-align:middle; cursor:pointer;}
+.btn_cus_del i{font-size:18px !important;}
+/* The Modal (background) */
+.cus_modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.cus_modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width:640px;
+  padding:50px;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+.modal-tit{font-size: 20px; border-bottom:1px #ddd solid ; padding:0 0 10px 0; text-align:left;}
+/* The Close Button */
+.cus_close {
+  color: #000;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  margin:-5px 0 0 0;
+}
+.cus_close:hover,
+.cus_close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.cus_modal-header {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+.cus_modal-body {padding: 2px 16px;}
+.cus_modal-footer {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+.cus_box_top{width:100%; border-bottom: dotted 1px #ddd; padding:10px 0; display: inline-block; margin-bottom:20px;}
+.cus_box_top .cus_tit{float:left; font-size:15px;}
+.cus_box_top .cus_tit span{color:#2c1cad; font-weight: 600;}
+.cus_box_top .cus_btn{float:right; line-height:34px;}
+.cus_box_top .cus_btn .cus_info{color:#;}
+.group_on{color:#2196F3;}
+.cus_btn .btn_excel_down{vertical-align: middle; height:34px; line-height:34px; background:#fff url(/dhn/images/leaflets/icon_excel_color.png)no-repeat 6px 10px; border:solid 1px #226440; padding:0 5px 0 20px;}
+.cus_btn .btn_excel_up{vertical-align: middle; display: inline-block; height:34px; line-height:34px; margin-left:5px; background:#226440 url(/dhn/images/leaflets/icon_excel_white.png)no-repeat 6px 10px; border:solid 1px #226440; padding:0 5px 0 20px; color:#fff;}
+.search_tit{font-size: 15px;}
+
+.cus_modal-content .cus_info{background-color: #f1f1f1; padding:20px 10px; border-radius: 5px;}
+.cus_modal-content .cus_info span{color:#f00;}
+
+.cus_group_list{text-align:left !important; line-height: 180% !important;}
+.cus_group_list ul li span{font-size:11px; border:solid 1px #404040; padding:0 3px; margin-right:5px; border-radius: 3px;}
+
+.cus_group_close {cursor: pointer; background-color: #f1f1f1; border:solid 1px #ddd !important;}

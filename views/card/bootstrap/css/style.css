@@ -1,0 +1,74 @@
+
+
+.tui-full-calendar-weekday-schedule-title{cursor: pointer;}
+/* .tui-full-calendar-weekday-schedule-title:hover{color:#fff; background-color:#624AC0;} */
+
+
+/* 달력금액 클릭시 */
+.dh_modal.my_income_list {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 10000; /* Sit on top */
+  padding-top:100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.my_income_list .modal-content {
+  position:relative;
+  background-color:#fefefe;
+  margin:auto;
+  padding:50px;
+  border:1px solid #888;
+  width:970px;
+  height:750px;
+  display: block;
+}
+
+.my_income_list .modal-content table{height:650px; display:block; overflow-y: scroll;}
+.my_income_list .modal-content th{width:213px;}
+.my_income_list .modal-content th:first-child{border-left:0;}
+.my_income_list .modal-content tbody tr:last-child{border-bottom:0;}
+
+/* The Close Button */
+.my_income_list .dh_close {
+    z-index: 10000;
+    color: #aaaaaa;
+    top: 0;
+    left: 50%;
+    width: 50px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    position: fixed;
+    margin: 97px 0 0 428px;
+}
+
+.my_income_list .dh_close:hover,
+.my_income_list .dh_close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.card_wrap .white_box .mall_box_top,
+.card_wrap .white_box .row_label,
+.card_wrap .white_box .row_contents{display:inline-block;}
+.card_wrap .white_box .row_wrap{display:inline;}
+
+.card_wrap .white_box .row_wrap .all_amt{float:left; font-size:16px; color:#666; display:inline-block; padding-top:5px; margin-right:20px;}
+.card_wrap .white_box .row_wrap .all_amt i{font-weight:600; font-size:16px; color:#cf0000; font-style:normal}
+
+.card_wrap .white_box .row_label{margin-right:5px;}
+.card_wrap .white_box .row_contents{margin-right:30px;}
+
+.cardlist .table_top {float:right; display:inline-block; margin-bottom:10px;}
+.cardlist .table_top .fr{margin-left:5px;}
+
+.settle_sum{color:#f00;margin-right: 15px;margin-top: 7px;font-weight: bold;}
